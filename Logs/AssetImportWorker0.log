@@ -1,0 +1,144 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/jhw/Desktop/repository/ParryingSword
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49720
+Successfully changed project path to: /Users/jhw/Desktop/repository/ParryingSword
+/Users/jhw/Desktop/repository/ParryingSword
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 32.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/jhw/Desktop/repository/ParryingSword/Assets
+GfxDevice: creating device client; threaded=0
+2022-11-07 11:36:51.761 Unity[1681:51806] Color LCD preferred device: AMD Radeon Pro 5300M (high power)
+2022-11-07 11:36:51.761 Unity[1681:51806] Metal devices available: 2
+2022-11-07 11:36:51.761 Unity[1681:51806] 0: AMD Radeon Pro 5300M (high power)
+2022-11-07 11:36:51.761 Unity[1681:51806] 1: Intel(R) UHD Graphics 630 (low power)
+2022-11-07 11:36:51.762 Unity[1681:51806] Using device AMD Radeon Pro 5300M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5300M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56681
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000409 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 30.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.587 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000423 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 31.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.962 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1793 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.4 MB.
+System memory in use after: 143.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2233.
+Total: 2.060291 ms (FindLiveObjects: 0.195632 ms CreateObjectMapping: 0.054050 ms MarkObjects: 1.686403 ms  DeleteObjects: 0.123357 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/StageMaknig/BluePrintMakingTest.cs
+  artifactKey: Guid(fe35fffe9fbcc4428b659a1de771450e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StageMaknig/BluePrintMakingTest.cs using Guid(fe35fffe9fbcc4428b659a1de771450e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625cb3170351dee2b528dd4d09a297ba') in 0.219426 seconds
+  Import took 0.222681 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000385 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.836 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.9 MB.
+System memory in use after: 147.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2235.
+Total: 2.855996 ms (FindLiveObjects: 0.240484 ms CreateObjectMapping: 0.086513 ms MarkObjects: 2.388577 ms  DeleteObjects: 0.139026 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.158797 seconds.
+  path: Assets/Scripts/StageMaknig/BluePrint.cs
+  artifactKey: Guid(354c0d7e8266b4fb28e74f0070d21163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StageMaknig/BluePrint.cs using Guid(354c0d7e8266b4fb28e74f0070d21163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad49a44c304ae5567a75225d122815e8') in 0.003452 seconds
+  Import took 0.005904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.320359 seconds.
+  path: Assets/Scripts/StageMaknig/BluePrint.cs
+  artifactKey: Guid(354c0d7e8266b4fb28e74f0070d21163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StageMaknig/BluePrint.cs using Guid(354c0d7e8266b4fb28e74f0070d21163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad49a44c304ae5567a75225d122815e8') in 0.001188 seconds
+  Import took 0.003306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.806431 seconds.
+  path: Assets/Prefabs/System
+  artifactKey: Guid(34ca080bce7594bc88539fb180377c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/System using Guid(34ca080bce7594bc88539fb180377c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a11df755c74ab1ee8891219a9bb79f') in 0.001837 seconds
+  Import took 0.005267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.115273 seconds.
+  path: Assets/Prefabs/Test
+  artifactKey: Guid(bb564c376f58c4f0d8f36a05fd06a08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Test using Guid(bb564c376f58c4f0d8f36a05fd06a08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3cb7fbe60809b446b8acbdc5445994') in 0.001371 seconds
+  Import took 0.004330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.071218 seconds.
+  path: Assets/Prefabs/Test/System/TestMapMaker.prefab
+  artifactKey: Guid(6c5419725a2dc4bdbb643def0fa3293c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Test/System/TestMapMaker.prefab using Guid(6c5419725a2dc4bdbb643def0fa3293c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f828a7983874ad9159277b66a8e395') in 0.246395 seconds
+  Import took 0.252456 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
