@@ -13,6 +13,7 @@ public class MapPiece : MonoBehaviour
     public GameObject[] mapPieceList_LRD;
     public GameObject mapPiece_F;
     public GameObject mapPiece_Start, mapPiece_End;
+    public GameObject mapWall;
     private bool listChecked;
 
     public void listChecking()

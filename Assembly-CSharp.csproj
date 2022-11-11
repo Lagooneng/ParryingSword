@@ -58,9 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/StageMaknig/StageMaker.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/BluePrint.cs" />
+    <Compile Include="Assets/Scripts/Character/BaseController.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/MapPiece.cs" />
+    <Compile Include="Assets/Scripts/Character/PlayerController.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/SpetialMapData.cs" />
+    <Compile Include="Assets/Scripts/Character/PlayerMain.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/MapData.cs" />
+    <Compile Include="Assets/Scripts/StageMaknig/SummonPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
