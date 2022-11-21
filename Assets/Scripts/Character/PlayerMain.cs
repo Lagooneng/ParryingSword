@@ -25,6 +25,26 @@ public class PlayerMain : MonoBehaviour
         {
             playerCtrl.ActionJump();
         }
+
+        if( playerCtrl.actionActive )
+        {
+            if( Input.GetKey(KeyCode.Z) )
+            {
+                playerCtrl.AttackNormal();
+            }
+            else if( Input.GetKey(KeyCode.X) )
+            {
+                playerCtrl.AttackParrying();
+            }
+            else if( Input.GetKey(KeyCode.C) )
+            {
+                playerCtrl.AttackSpecial();
+            }
+        }
+
+        
     }
+
+
 
 }

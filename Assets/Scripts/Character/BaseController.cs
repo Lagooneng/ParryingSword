@@ -13,6 +13,7 @@ public class BaseController : MonoBehaviour
     // 외부 파라미터
     [System.NonSerialized] public float hp = 10.0f;
     [System.NonSerialized] public float dir = 1.0f;
+    [System.NonSerialized] public float prevDir = 1.0f;
     [System.NonSerialized] public float speed = 10.0f;
     [System.NonSerialized] public bool activeSts = false;
     [System.NonSerialized] public bool jumped = false;
@@ -32,7 +33,7 @@ public class BaseController : MonoBehaviour
     protected Rigidbody2D rb;
 
     // =======================================================================
-    private void Awake()
+    protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -54,7 +55,7 @@ public class BaseController : MonoBehaviour
 
         // 지면 체크
         groundedPrev = grounded;
-
+        grounded = false;
 
         Collider2D[][] groundColliderLists = new Collider2D[3][];
         groundColliderLists[0] = Physics2D.OverlapPointAll(groundConnection_Left.position);
@@ -79,18 +80,25 @@ public class BaseController : MonoBehaviour
                                   Mathf.Clamp(rb.velocity.y, velocityMin.y, velocityMax.y));
         rb.AddForce(new Vector2(0.0f, force_y));
         force_y = 0;
+
+        if (!grounded)
+        {
+            animator.SetTrigger("Jump");
+        }
+
     }
 
     public virtual void ActionMove(float n)
     {
         if( n != 0.0f )
         {
+            prevDir = dir;
             dir = (n >= 0) ? 1.0f : -1.0f;
-            animator.SetTrigger("Walk");
+            if( grounded ) animator.SetTrigger("Walk");
         }
         else
         {
-            animator.SetTrigger("Standing");
+            if (grounded) animator.SetTrigger("Standing");
         }
 
         velocity_x = n * movingWeight;
@@ -119,4 +127,5 @@ public class BaseController : MonoBehaviour
         this.hpMax = hpMax;
         return (this.hp <= 0);
     }
+
 }
