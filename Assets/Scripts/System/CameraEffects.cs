@@ -12,7 +12,7 @@ public enum CameraState
 
 public class CameraEffects : MonoBehaviour
 {
-    private float swayTime = 1.0f, sizeDif = 8.0f, sizeOrg;
+    private float swayTime = 1.0f, sizeDif = 4.0f, sizeOrg;
     private float startTime;
     private bool sawyWorking = false;
     private CameraState cState = CameraState.NON;
@@ -42,6 +42,8 @@ public class CameraEffects : MonoBehaviour
 
     public void setState( CameraState cState )
     {
+        if (this.cState != CameraState.NON) return;
+
         this.cState = cState;
     }
 
@@ -75,23 +77,13 @@ public class CameraEffects : MonoBehaviour
             Camera.main.transform.position.z);
     }
 
-    private void zoomIn()
-    {
-        // Debug.Log(Camera.main.orthographicSize);
-        if ( sizeOrg + sizeDif > Camera.main.orthographicSize  )
-        {
-            Camera.main.orthographicSize += 1.0f;
-        }
-        else
-        {
-            cState = CameraState.NON;
-        }
-    }
 
-    private void zoomOut()
+    // 애니메이션에서 줌 인 -> 줌 아웃 순서로 사용해야 함
+    // 원하는 타이밍으로 조절하기 위해 템플릿 메소드는 사용하지 않음
+    public void zoomIn()
     {
         // Debug.Log(Camera.main.orthographicSize);
-        if ( sizeOrg < Camera.main.orthographicSize )
+        if (sizeOrg - sizeDif < Camera.main.orthographicSize)
         {
             Camera.main.orthographicSize -= 1.0f;
         }
@@ -100,4 +92,19 @@ public class CameraEffects : MonoBehaviour
             cState = CameraState.NON;
         }
     }
+
+    public void zoomOut()
+    {
+        // Debug.Log(Camera.main.orthographicSize);
+        if ( sizeOrg > Camera.main.orthographicSize  )
+        {
+            Camera.main.orthographicSize += 0.5f;
+        }
+        else
+        {
+            cState = CameraState.NON;
+        }
+    }
+
+    
 }

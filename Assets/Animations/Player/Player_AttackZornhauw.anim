@@ -536,11 +536,11 @@ AnimationClip:
     functionName: setSwayTime
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 0.25
+    floatParameter: 0.15
     intParameter: 0
     messageOptions: 0
   - time: 0
-    functionName: changeActionActive
+    functionName: offActionActive
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -568,7 +568,7 @@ AnimationClip:
     intParameter: 3
     messageOptions: 0
   - time: 1.5
-    functionName: changeActionActive
+    functionName: onActionActive
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

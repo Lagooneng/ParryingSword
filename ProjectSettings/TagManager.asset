@@ -8,6 +8,10 @@ TagManager:
   - PlayerArm
   - Enemy
   - EnemyArm
+  - Road
+  - EnemyBody
+  - Effect
+  - EnemyPhisicalBody
   layers:
   - Default
   - TransparentFX
@@ -62,6 +66,9 @@ TagManager:
     locked: 0
   - name: Front
     uniqueID: 905443803
+    locked: 0
+  - name: Effect
+    uniqueID: 1031025717
     locked: 0
   - name: GUI
     uniqueID: 1871334305

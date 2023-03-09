@@ -22,6 +22,8 @@ public class BaseController : MonoBehaviour
 
     // 캐시
     [System.NonSerialized] public Animator animator;
+    [System.NonSerialized] public AttackCollider attackCollider;
+    // 바디 컬라이더는 플레이어랑 몬스터랑 다른 걸 쓸 것
     protected Transform groundConnection_Left;
     protected Transform groundConnection_Center;
     protected Transform groundConnection_Right;
@@ -31,13 +33,15 @@ public class BaseController : MonoBehaviour
     protected float force_y = 0.0f;
     protected float jumpAccel_y;
     protected Rigidbody2D rb;
+    
 
     // =======================================================================
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        jumpAccel_y = 2000 / rb.mass + 10 * rb.gravityScale;
+
+        jumpAccel_y = 2700 / rb.mass + 10 * rb.gravityScale;
         groundConnection_Left = transform.Find("GroundConnection_Left");
         groundConnection_Center = transform.Find("GroundConnection_Center");
         groundConnection_Right = transform.Find("GroundConnection_Right");
@@ -66,7 +70,9 @@ public class BaseController : MonoBehaviour
         {
             foreach( Collider2D groundCollider in groundColliderList )
             {
-                if( groundCollider != null )
+                if( groundCollider != null &&
+                    groundCollider.tag == "Road" ||
+                    groundCollider.tag == "Enemy" )
                 {
                     grounded = true;
                 }
@@ -112,13 +118,11 @@ public class BaseController : MonoBehaviour
         }
     }
 
+
     public virtual void Dead()
     {
-        if( activeSts )
-        {
-            return;
-        }
         activeSts = false;
+        
     }
 
     public virtual bool SetHP(float hp, float hpMax)
