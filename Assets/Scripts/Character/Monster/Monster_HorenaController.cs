@@ -48,6 +48,9 @@ public class Monster_HorenaController : MonsterController
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * dir,
                                             transform.localScale.y, transform.localScale.z);
 
+        attackCollider.knockBackVector = new Vector2(attackCollider.knockBackVector.x * dir,
+                                            attackCollider.knockBackVector.y);
+
         rb.velocity = new Vector2(Mathf.Clamp(velocity_x, velocityMin.x, velocityMax.x),
                                   Mathf.Clamp(velocity_y, velocityMin.y, velocityMax.y));
     }
@@ -73,7 +76,6 @@ public class Monster_HorenaController : MonsterController
         this.mState = mState;
         this.nextDelay = nextDelay;
     }
-
 
     private void wait()
     {

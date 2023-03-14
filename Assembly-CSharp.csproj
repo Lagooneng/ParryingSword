@@ -56,10 +56,13 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_BlancMain.cs" />
     <Compile Include="Assets/Scripts/Character/AttackCollider.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysMain.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_BlancController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/hitImpact.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/SummonPlayer.cs" />
+    <Compile Include="Assets/Scripts/System/CameraManager.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/DemolishingBomb.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_DieAfterAtk.cs" />
@@ -81,7 +84,8 @@
     <Compile Include="Assets/Scripts/StageMaknig/MapData.cs" />
     <Compile Include="Assets/Scripts/Character/Player/ParryingCollider.cs" />
     <Compile Include="Assets/Scripts/System/CameraEffects.cs" />
-    <Compile Include="Assets/Scripts/System/CameraManager.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

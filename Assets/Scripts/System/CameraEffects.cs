@@ -12,14 +12,15 @@ public enum CameraState
 
 public class CameraEffects : MonoBehaviour
 {
-    private float swayTime = 1.0f, sizeDif = 4.0f, sizeOrg;
+    private float swayTime = 1.0f, sizeDif = 4.0f;
+    private float sizeOrg = 11.0f;
     private float startTime;
-    private bool sawyWorking = false;
+    private bool sawyWorking = false, zoomWorking = false;
     private CameraState cState = CameraState.NON;
 
     private void Awake()
     {
-        sizeOrg = Camera.main.orthographicSize;
+        Camera.main.orthographicSize = sizeOrg;
     }
 
     private void FixedUpdate()
@@ -85,7 +86,8 @@ public class CameraEffects : MonoBehaviour
         // Debug.Log(Camera.main.orthographicSize);
         if (sizeOrg - sizeDif < Camera.main.orthographicSize)
         {
-            Camera.main.orthographicSize -= 1.0f;
+            zoomWorking = true;
+            Camera.main.orthographicSize -= 0.5f;
         }
         else
         {
@@ -98,6 +100,7 @@ public class CameraEffects : MonoBehaviour
         // Debug.Log(Camera.main.orthographicSize);
         if ( sizeOrg > Camera.main.orthographicSize  )
         {
+            zoomWorking = true;
             Camera.main.orthographicSize += 0.5f;
         }
         else
@@ -106,5 +109,29 @@ public class CameraEffects : MonoBehaviour
         }
     }
 
-    
+    public void setZoomWorking( bool working )
+    {
+        zoomWorking = working;
+        // Debug.Log(zoomWorking);
+    }
+
+    public void zoomFix()
+    {
+        if (zoomWorking) return;
+
+        if( sizeOrg - Camera.main.orthographicSize < 0.1f )
+        {
+            Camera.main.orthographicSize = sizeOrg;
+            return;
+        }
+
+        if( sizeOrg > Camera.main.orthographicSize )
+        {
+            Camera.main.orthographicSize += 0.05f;
+        }
+        else if( sizeOrg < Camera.main.orthographicSize )
+        {
+            Camera.main.orthographicSize -= 0.05f;
+        }
+    }
 }

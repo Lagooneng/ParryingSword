@@ -8,6 +8,7 @@ public enum BossMonster_DecasysState
     BACKSTEP,
     WAIT,
     ATTACK1,
+    ATTACK2,
     ATTACKROAR,
     NON
 }
@@ -25,6 +26,7 @@ public class BossMonster_DecasysController : MonsterController
         hpMax = 60.0f;
         SetHP(hpMax, hpMax);
         movingWeight = 23;
+        activeSts = false;
     }
 
     // 어택 컬라이더의 Awake에서 설정이 0으로 되어 있으니 Start에서 재지정 해야 됨
@@ -51,6 +53,9 @@ public class BossMonster_DecasysController : MonsterController
 
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * dir,
                                             transform.localScale.y, transform.localScale.z);
+
+        attackCollider.knockBackVector = new Vector2(attackCollider.knockBackVector.x * dir,
+                                            attackCollider.knockBackVector.y);
 
         rb.velocity = new Vector2(Mathf.Clamp( velocity_x, velocityMin.x - 100.0f, velocityMax.x),
                                   Mathf.Clamp(rb.velocity.y, velocityMin.y, velocityMax.y));
@@ -84,6 +89,9 @@ public class BossMonster_DecasysController : MonsterController
             case BossMonster_DecasysState.ATTACK1:
                 ActionAttack1();
                 break;
+            case BossMonster_DecasysState.ATTACK2:
+                ActionAttack2();
+                break;
             case BossMonster_DecasysState.ATTACKROAR:
                 ActionAttackRoar();
                 break;
@@ -104,7 +112,7 @@ public class BossMonster_DecasysController : MonsterController
         animator.SetTrigger("Walk");
 
         // 벡터화
-        if ( distanceToPlayerX() > 22 )
+        if ( distanceToPlayerX() > 16 )
         {
             velocity_x = (player.transform.position.x - transform.position.x) /
                         Mathf.Abs(player.transform.position.x - transform.position.x) * movingWeight;
@@ -128,8 +136,19 @@ public class BossMonster_DecasysController : MonsterController
         if (acted) return;
         lookPlayer(true);
         velocity_x = 0.0f;
+        attackCollider.damage = 3.0f;
         acted = true;
         animator.SetTrigger("Attack1");
+    }
+
+    private void ActionAttack2()
+    {
+        if (acted) return;
+        lookPlayer(true);
+        velocity_x = 0.0f;
+        attackCollider.damage = 5.0f;
+        acted = true;
+        animator.SetTrigger("Attack2");
     }
 
     private void ActionAttackRoar()
@@ -137,9 +156,11 @@ public class BossMonster_DecasysController : MonsterController
         if (acted) return;
         lookPlayer(true);
         velocity_x = 0.0f;
+        attackCollider.damage = 2.0f;
         acted = true;
         animator.SetTrigger("Roar");
     }
+
 
     // 애니메이션 지원
     private void backStepForce()
@@ -149,9 +170,9 @@ public class BossMonster_DecasysController : MonsterController
     }
 
 
-    public void setState(CameraState cState)
+    public void sawy()
     {
-        camEf.setState(cState);
+        camEf.setState(CameraState.SWAY);
     }
 
     public void setSwayTime(float time)

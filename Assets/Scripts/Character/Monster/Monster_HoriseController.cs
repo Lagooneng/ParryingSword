@@ -27,8 +27,6 @@ public class Monster_HoriseController : MonsterController
 
     protected override void FixedUpdate()
     {
-        if (!activeSts) return;
-
         if (bodyCollider.damage > 0)
         {
             if (SetHP(hp - bodyCollider.damage, hpMax))
@@ -37,6 +35,11 @@ public class Monster_HoriseController : MonsterController
             }
             bodyCollider.damage = 0;
         }
+
+        if (!activeSts) return;
+
+        attackCollider.knockBackVector = new Vector2(attackCollider.knockBackVector.x * dir,
+                                            attackCollider.knockBackVector.y);
 
         rb.velocity = new Vector2(Mathf.Clamp(movingWeight * transform.localScale.x,
             velocityMin.x, velocityMax.x), 0.0f);

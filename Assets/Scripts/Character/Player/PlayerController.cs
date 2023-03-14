@@ -52,7 +52,6 @@ public class PlayerController : BaseController
         bodyCollider = GetComponentInChildren<PlayerBodyCollider>();
         wireAction = GameObject.Find("WireSet").GetComponent<WireAction>();
         camEf = GameObject.Find("CameraManager").GetComponent<CameraEffects>();
-        hpMax = 30.0f;
         SetHP(hpMax, hpMax);
     }
     
@@ -174,7 +173,6 @@ public class PlayerController : BaseController
             attackCollider.damage = 2.0f;
             animator.SetTrigger("Parrying");
         }
-        
     }
 
     public void AttackSpecial()
@@ -276,17 +274,6 @@ public class PlayerController : BaseController
         actionActive = false;
     }
 
-    public void onSuperMode()
-    {
-        Debug.Log(superMode);
-        superMode = true;
-    }
-
-    public void offSuperMode()
-    {
-        superMode = false;
-    }
-
     public void setState(CameraState cState)
     {
         camEf.setState(cState);
@@ -305,5 +292,15 @@ public class PlayerController : BaseController
     private void zoomOut()
     {
         camEf.zoomOut();
+    }
+
+    private void onZoomWorking()
+    {
+        camEf.setZoomWorking(true);
+    }
+
+    private void offZoomWorking()
+    {
+        camEf.setZoomWorking(false);
     }
 }
