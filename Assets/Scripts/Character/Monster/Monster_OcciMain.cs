@@ -6,7 +6,7 @@ public class Monster_OcciMain : MonoBehaviour
 {
     public Monster_OcciController monsterCtrl;
     public int walk = 10;
-    public int wait = 10;
+    public int wait = 2;
     public int attack = 10;
     public int sum;
 

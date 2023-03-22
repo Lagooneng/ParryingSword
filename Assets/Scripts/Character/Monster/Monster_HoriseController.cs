@@ -16,12 +16,12 @@ public class Monster_HoriseController : MonsterController
         player = GameObject.Find("Player");
         playerCtrl = player.GetComponent<PlayerController>();
         activeSts = false;
-        movingWeight = 90;
+        movingWeight = 130;
     }
 
     private void Start()
     {
-        attackCollider.knockBackVector = new Vector2(500.0f, 0.0f);
+        attackCollider.knockBackVector = new Vector2(500.0f * dir, 0.0f);
         attackCollider.damage = 2.0f;
     }
 
@@ -37,6 +37,7 @@ public class Monster_HoriseController : MonsterController
         }
 
         if (!activeSts) return;
+
 
         attackCollider.knockBackVector = new Vector2(attackCollider.knockBackVector.x * dir,
                                             attackCollider.knockBackVector.y);

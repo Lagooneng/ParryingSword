@@ -12,6 +12,7 @@ TagManager:
   - EnemyBody
   - Effect
   - EnemyPhisicalBody
+  - DamageObjectNoParrying
   layers:
   - Default
   - TransparentFX
@@ -26,8 +27,8 @@ TagManager:
   - Object
   - Char
   - GroundCheck
-  - 
-  - 
+  - Player
+  - Enemy
   - PhysicsETC
   - 
   - 
@@ -52,11 +53,11 @@ TagManager:
   - name: Back
     uniqueID: 3707392643
     locked: 0
-  - name: Road
-    uniqueID: 3951870557
-    locked: 0
   - name: ObjectBack
     uniqueID: 2078602123
+    locked: 0
+  - name: Road
+    uniqueID: 3951870557
     locked: 0
   - name: Object
     uniqueID: 1480529177

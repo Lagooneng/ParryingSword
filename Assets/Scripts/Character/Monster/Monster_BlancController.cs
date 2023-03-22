@@ -18,7 +18,7 @@ public class Monster_BlancController : MonsterController
     private void Start()
     {
         attackCollider.damage = 1.0f;
-        attackCollider.knockBackVector = new Vector2(1500.0f * dir, 0.0f);
+        attackCollider.knockBackVector = new Vector2(2000.0f * dir, 0.0f);
     }
 
     protected override void Awake()
@@ -53,7 +53,7 @@ public class Monster_BlancController : MonsterController
             foreach (Collider2D groundCollider in groundColliderList)
             {
                 if ( groundCollider != null &&
-                    groundCollider.tag == "Road" )
+                    groundCollider.tag == "Road" || groundCollider.tag == "EnemyPhsicalBody" )
                 {
                     // Debug.Log("a");
                     grounded = true;
@@ -73,8 +73,10 @@ public class Monster_BlancController : MonsterController
 
         FixedUpdateAI();
 
+        // attackCollider.knockBackVector = new Vector2(2000.0f * dir, 0.0f);
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * dir,
                                             transform.localScale.y, transform.localScale.z);
+
     }
 
     public override void FixedUpdateAI()
@@ -99,7 +101,9 @@ public class Monster_BlancController : MonsterController
         {
             stop();
         }
+
         if (acted) return;
+
         lookPlayer(true);
         acted = true;
         rb.AddForce(new Vector2( 4000.0f * dir, 13000.0f ));
@@ -115,8 +119,7 @@ public class Monster_BlancController : MonsterController
 
     private void stop()
     {
-        rb.velocity = new Vector2(Mathf.Clamp(0.0f, velocityMin.x, velocityMax.x),
-                                   Mathf.Clamp(transform.position.y, velocityMin.y, velocityMax.y));
+        rb.velocity = new Vector2(0.0f, 0.0f);
     }
 
     public void setState(Monster_BlancState mState, float nextDelay)

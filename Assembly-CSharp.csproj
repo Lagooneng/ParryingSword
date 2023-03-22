@@ -73,6 +73,7 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HorenaMain.cs" />
     <Compile Include="Assets/Scripts/Character/Player/PlayerBodyCollider.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciController.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/StageMaker.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/BluePrint.cs" />
     <Compile Include="Assets/Scripts/Character/BaseController.cs" />
@@ -85,7 +86,7 @@
     <Compile Include="Assets/Scripts/Character/Player/ParryingCollider.cs" />
     <Compile Include="Assets/Scripts/System/CameraEffects.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
-    <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciController.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/MonsterSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

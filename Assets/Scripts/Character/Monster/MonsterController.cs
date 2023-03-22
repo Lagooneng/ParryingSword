@@ -27,6 +27,12 @@ public class MonsterController : BaseController
 
     public void lookPlayer(bool forward)
     {
+        if (distanceToPlayerX() < 0.5f )
+        {
+            dir = 1;
+            return;
+        }
+
         if( player.transform.position.x < gameObject.transform.position.x )
         {
             dir = -1;

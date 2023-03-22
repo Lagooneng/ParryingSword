@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4239664806335332228}
   - component: {fileID: 4239664806335332231}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Collider_PhisicalBody
   m_TagString: EnemyPhisicalBody
   m_Icon: {fileID: 0}
@@ -260,7 +260,6 @@ MonoBehaviour:
   velocityMax: {x: 100, y: 100}
   movingWeight: 20
   hpMax: 10
-  attackCollider: {fileID: 0}
 --- !u!114 &4239664806936740650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,3 +409,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  superArmor: 0

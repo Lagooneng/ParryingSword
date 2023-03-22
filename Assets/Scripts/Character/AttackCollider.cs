@@ -9,7 +9,7 @@ public class AttackCollider : MonoBehaviour
 
     private void Awake()
     {
-        knockBackVector = new Vector2(0, 0);
-        damage = 0.0f;
+        knockBackVector = new Vector2(0f, 0);
+        damage = 1000.0f;
     }
 }

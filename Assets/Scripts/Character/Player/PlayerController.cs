@@ -23,6 +23,8 @@ public class PlayerController : BaseController
         Animator.StringToHash("Base Layer.Player_AttackZornhauw");
     public readonly static int AnimPlayerClimb =
         Animator.StringToHash("Base Layer.Player_Climb");
+    public readonly static int AnimPlayerDamage =
+        Animator.StringToHash("Base Layer.Player_Damage");
 
     public bool superMode = false;
     public GameObject bomb;

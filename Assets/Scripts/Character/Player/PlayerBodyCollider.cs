@@ -26,8 +26,9 @@ public class PlayerBodyCollider : MonoBehaviour
     {
         if (playerCtrl.animator.GetCurrentAnimatorStateInfo(0).fullPathHash == AnimAttackParryingSuccess) return;
 
-        if (  collision.tag == "EnemyArm"   )
+        if (  collision.tag == "EnemyArm" || collision.tag == "DamageObjectNoParrying")
         {
+            // rb.velocity = new Vector2(0.0f, rb.velocity.y);
             rb.AddForce(collision.GetComponent<AttackCollider>().knockBackVector);
             this.damage = collision.GetComponent<AttackCollider>().damage;
             // Debug.Log(damage);

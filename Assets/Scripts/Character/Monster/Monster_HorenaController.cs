@@ -34,7 +34,9 @@ public class Monster_HorenaController : MonsterController
     {
         if (!activeSts) return;
 
-        if( bodyCollider.damage > 0 )
+        attackCollider.knockBackVector = new Vector2(1500.0f * dir, 0.0f);
+
+        if ( bodyCollider.damage > 0 )
         {
             if( SetHP(hp - bodyCollider.damage, hpMax) )
             {

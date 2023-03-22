@@ -210,7 +210,6 @@ MonoBehaviour:
   velocityMax: {x: 100, y: 100}
   movingWeight: 20
   hpMax: 10
-  attackCollider: {fileID: 0}
 --- !u!1 &6529019118422142174
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  superArmor: 0
 --- !u!61 &6529019118772278193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6529019119244497949}
   - component: {fileID: 6529019119244497938}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Collider_PhisicalBody
   m_TagString: EnemyPhisicalBody
   m_Icon: {fileID: 0}

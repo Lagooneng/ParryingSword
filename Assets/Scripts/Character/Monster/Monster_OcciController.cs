@@ -12,7 +12,7 @@ public enum Monster_OcciState
 public class Monster_OcciController : MonsterController
 {
     private Monster_OcciState mState;
-    private bool acted = false;
+    private Monster_OcciState prevState;
 
     protected override void Awake()
     {
@@ -43,8 +43,7 @@ public class Monster_OcciController : MonsterController
 
         FixedUpdateAI();
 
-        attackCollider.knockBackVector = new Vector2(attackCollider.knockBackVector.x * dir,
-                                            attackCollider.knockBackVector.y);
+        attackCollider.knockBackVector = new Vector2(1500.0f * dir, 0.0f);
 
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * dir,
                                             transform.localScale.y, transform.localScale.z);
@@ -72,9 +71,9 @@ public class Monster_OcciController : MonsterController
     public void setState(Monster_OcciState mState, float nextDelay)
     {
         if (!timeCheck()) return;
-        acted = true;
         // Debug.Log(mState);
         startTime = Time.fixedTime;
+        prevState = this.mState;
         this.mState = mState;
         this.nextDelay = nextDelay;
     }
@@ -95,8 +94,11 @@ public class Monster_OcciController : MonsterController
 
     private void attack()
     {
-        if (acted) return;
-        acted = true;
+        if( prevState == Monster_OcciState.ATTACK )
+        {
+            nextDelay = 0.0f;
+            return;
+        }
         velocity_x = 0.0f;
         animator.SetTrigger("Attack");
     }
