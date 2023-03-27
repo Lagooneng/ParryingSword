@@ -8,6 +8,7 @@ public class CameraManager : MonoBehaviour
     public GameObject player;
 
     private CameraEffects camEf;
+    private float offsetY = 5.0f;
 
     // Start is called before the first frame update
     private void Awake()
@@ -18,7 +19,7 @@ public class CameraManager : MonoBehaviour
 
         Camera.main.transform.position =
             new Vector3(subject.transform.position.x,
-                        subject.transform.position.y + 5,
+                        subject.transform.position.y + offsetY,
                         Camera.main.transform.position.z);
     }
 
@@ -27,19 +28,19 @@ public class CameraManager : MonoBehaviour
         camEf.zoomFix();
 
         if ( (Mathf.Abs( distanceCamearaToSubjectX() ) < 0.01f &&
-             Mathf.Abs( distanceCamearaToSubjectY() + 5 ) < 0.01f) ||
+             Mathf.Abs( distanceCamearaToSubjectY() + offsetY) < 0.01f) ||
              (Mathf.Abs(distanceCamearaToSubjectX()) > 20.0f ||
-             Mathf.Abs(distanceCamearaToSubjectY() + 5) > 20.0f) )
+             Mathf.Abs(distanceCamearaToSubjectY() + offsetY) > 20.0f) )
         {
             Camera.main.transform.position =
-                new Vector3(subject.transform.position.x, subject.transform.position.y + 5,
+                new Vector3(subject.transform.position.x, subject.transform.position.y + offsetY,
                                 Camera.main.transform.position.z);
 
             return;
         }
         Camera.main.transform.position =
             new Vector3( Camera.main.transform.position.x + ( distanceCamearaToSubjectX() ) / 3,
-                         Camera.main.transform.position.y + ( distanceCamearaToSubjectY() + 5 ) / 3,
+                         Camera.main.transform.position.y + ( distanceCamearaToSubjectY() + offsetY) / 3,
                          Camera.main.transform.position.z);
 
     }
@@ -52,5 +53,15 @@ public class CameraManager : MonoBehaviour
     public float distanceCamearaToSubjectY()
     {
         return subject.transform.position.y - Camera.main.transform.position.y;
+    }
+
+    public void cameraDown()
+    {
+        offsetY = -10.0f;
+    }
+
+    public void cameraRePosition()
+    {
+        offsetY = 5.0f;
     }
 }

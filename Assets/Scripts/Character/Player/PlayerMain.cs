@@ -7,6 +7,7 @@ public class PlayerMain : MonoBehaviour
 {
     // 캐시
     PlayerController playerCtrl;
+    CameraManager cam;
 
     bool climbing = false;
     bool climbJump = false;
@@ -16,6 +17,7 @@ public class PlayerMain : MonoBehaviour
     private void Awake()
     {
         playerCtrl = GetComponent<PlayerController>();
+        cam = Camera.main.GetComponentInChildren<CameraManager>();
     }
 
     private void Update()
@@ -28,7 +30,6 @@ public class PlayerMain : MonoBehaviour
 
         // 선입력 문제로 인해 actionActive 체크가 Input 다음에 체크되어야 함
         // if( playerCtrl.actionActive ) { ~~~ } 가 불가능하다는 뜻
-
 
         // 와이어 액션 **************************************
         if ( Input.GetKey(KeyCode.S) && playerCtrl.actionActive && wire != 0 )
@@ -58,8 +59,6 @@ public class PlayerMain : MonoBehaviour
         if (wire > 0) return;
         // ************************************************
 
-        playerCtrl.ActionMove(movingH);
-
         // 폭탄
         if( Input.GetKey(KeyCode.UpArrow) && Input.GetKeyDown(KeyCode.Z) && playerCtrl.actionActive )
         {
@@ -73,6 +72,18 @@ public class PlayerMain : MonoBehaviour
             if (playerCtrl.ActionClimb())
             {
                 climbing = true;
+
+                // 클라이밍 중 카메라 내리기
+                if (Input.GetKey(KeyCode.DownArrow))
+                {
+                    cam.cameraDown();
+                }
+
+                // 클라이밍 중 카메라 정위치
+                if (Input.GetKeyUp(KeyCode.DownArrow))
+                {
+                    cam.cameraRePosition();
+                }
             }
         }
 
@@ -93,6 +104,23 @@ public class PlayerMain : MonoBehaviour
         // ***********************************************
 
         if (wire == 1 || climbing) return;
+
+        // 시점 내리기 *************************************
+        if (Input.GetKey(KeyCode.DownArrow) && playerCtrl.actionActive)
+        {
+            cam.cameraDown();
+            playerCtrl.ActionMove(0.0f);
+            return;
+        }
+
+        if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            cam.cameraRePosition();
+        }
+        // *************************************************
+
+        // 이동
+        playerCtrl.ActionMove(movingH);
 
         if ( Input.GetKeyDown(KeyCode.Space) && playerCtrl.actionActive)
         {

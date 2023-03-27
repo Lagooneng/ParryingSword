@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MonsterController : BaseController
 {
+    public GameObject dropItem;
+
     protected PlayerController playerCtrl;
     protected GameObject player;
     protected MonsterBodyCollider bodyCollider;
@@ -66,6 +68,10 @@ public class MonsterController : BaseController
 
     public override void Dead()
     {
+        if( dropItem )
+        {
+            Instantiate(dropItem, transform.position, Quaternion.identity);
+        }
         base.Dead();
         Destroy(this.gameObject);
     }

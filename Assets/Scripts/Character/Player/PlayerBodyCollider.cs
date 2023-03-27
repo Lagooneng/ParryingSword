@@ -8,6 +8,7 @@ public class PlayerBodyCollider : MonoBehaviour
 
     private PlayerController playerCtrl;
     private AnimatorStateInfo animStateInfo;
+    private ItemManager itemManager;
 
     public readonly static int AnimAttackParryingSuccess =
         Animator.StringToHash("Base Layer.Player_AttackParryingSuccess");
@@ -19,6 +20,7 @@ public class PlayerBodyCollider : MonoBehaviour
     {
         rb = GetComponentInParent<Rigidbody2D>();
         playerCtrl = transform.parent.GetComponent<PlayerController>();
+        itemManager = transform.parent.GetComponent<ItemManager>();
         damage = 0;
     }
 
@@ -32,6 +34,14 @@ public class PlayerBodyCollider : MonoBehaviour
             rb.AddForce(collision.GetComponent<AttackCollider>().knockBackVector);
             this.damage = collision.GetComponent<AttackCollider>().damage;
             // Debug.Log(damage);
+        }
+        else if( collision.tag == "Item" )
+        {
+            ItemController item = collision.GetComponent<ItemController>();
+
+            itemManager.renewItem(item.itemName, itemManager.countItem(item.itemName) + 1);
+
+            Destroy(collision.gameObject);
         }
     }
 }

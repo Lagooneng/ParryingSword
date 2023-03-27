@@ -62,14 +62,17 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_BlancController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/hitImpact.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/SummonPlayer.cs" />
+    <Compile Include="Assets/Scripts/System/ItemController.cs" />
     <Compile Include="Assets/Scripts/System/CameraManager.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/DemolishingBomb.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_DieAfterAtk.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HorenaController.cs" />
+    <Compile Include="Assets/Scripts/UI/UI_MagicCrystalController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/WireAction.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysController.cs" />
+    <Compile Include="Assets/Scripts/UI/UI_HPController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HorenaMain.cs" />
     <Compile Include="Assets/Scripts/Character/Player/PlayerBodyCollider.cs" />
@@ -77,6 +80,7 @@
     <Compile Include="Assets/Scripts/StageMaknig/StageMaker.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/BluePrint.cs" />
     <Compile Include="Assets/Scripts/Character/BaseController.cs" />
+    <Compile Include="Assets/Scripts/Character/Player/MagicCrystalManager.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterBodyCollider.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/MapPiece.cs" />
     <Compile Include="Assets/Scripts/Character/Player/PlayerController.cs" />
@@ -87,6 +91,7 @@
     <Compile Include="Assets/Scripts/System/CameraEffects.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterSpawner.cs" />
+    <Compile Include="Assets/Scripts/System/ItemManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

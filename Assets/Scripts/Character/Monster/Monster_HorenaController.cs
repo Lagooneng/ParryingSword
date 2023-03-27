@@ -102,4 +102,5 @@ public class Monster_HorenaController : MonsterController
                         distanceToPlayerY() * movingWeight;
         }
     }
+
 }

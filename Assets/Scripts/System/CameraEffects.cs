@@ -13,7 +13,7 @@ public enum CameraState
 public class CameraEffects : MonoBehaviour
 {
     private float swayTime = 1.0f, sizeDif = 4.0f;
-    private float sizeOrg = 11.0f;
+    private float sizeOrg = 15.0f;
     private float startTime;
     private bool sawyWorking = false, zoomWorking = false;
     private CameraState cState = CameraState.NON;

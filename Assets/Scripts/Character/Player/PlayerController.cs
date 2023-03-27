@@ -35,8 +35,10 @@ public class PlayerController : BaseController
 
     private AnimatorStateInfo animStateInfo;
     private CameraEffects camEf;
+    private MagicCrystalManager magicCrystalManager;
     private bool climbing = false;
     private bool usingWire = false;
+    private int additionalJumpCount = 0;
 
     public override void Dead()
     {
@@ -54,6 +56,7 @@ public class PlayerController : BaseController
         bodyCollider = GetComponentInChildren<PlayerBodyCollider>();
         wireAction = GameObject.Find("WireSet").GetComponent<WireAction>();
         camEf = GameObject.Find("CameraManager").GetComponent<CameraEffects>();
+        magicCrystalManager = GetComponent<MagicCrystalManager>();
         SetHP(hpMax, hpMax);
     }
     
@@ -98,6 +101,7 @@ public class PlayerController : BaseController
                     groundCollider.tag == "EnemyPhisicalBody")
                 {
                     grounded = true;
+                    additionalJumpCount = 0;
                 }
             }
         }
@@ -124,9 +128,11 @@ public class PlayerController : BaseController
 
         // usingWire = false;
 
+        jumped = false;
         if (!grounded && !climbing && !usingWire )
         {
             animator.SetTrigger("Jump");
+            jumped = true;
         }
     }
 
@@ -134,6 +140,23 @@ public class PlayerController : BaseController
     {
         if (climbing) return;
         base.ActionMove(n);
+    }
+
+    public override void ActionJump()
+    {
+        base.ActionJump();
+
+        if( jumped && additionalJumpCount < 1 && magicCrystalManager.haveMagicCrystal(MagicCrystalList.ACTIONDJUMP) )
+        {
+            ActionMustJump();
+            additionalJumpCount++;
+        }
+    }
+
+    public void ActionMustJump()
+    {
+        rb.velocity = new Vector2(0.0f, 0.0f);
+        force_y = jumpAccel_y * rb.mass;
     }
 
     public void AttackNormal()
@@ -201,6 +224,7 @@ public class PlayerController : BaseController
             if( col.tag == "Road" )
             {
                 climbing = true;
+                additionalJumpCount = 0;
                 animator.SetTrigger("Climb");
                 rb.constraints = RigidbodyConstraints2D.FreezeAll;
                 return true;
@@ -216,15 +240,15 @@ public class PlayerController : BaseController
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
-    public void ActionMustJump()
-    {
-        force_y = jumpAccel_y * rb.mass;
-    }
-
 
     // 와이어액션
     public int ActionWireJump()
     {
+        if( !magicCrystalManager.haveMagicCrystal(MagicCrystalList.ACTIONWIRE) )
+        {
+            return 0;
+        }
+
         int success = wireAction.ActionWireJump();
 
         if( success > 0 )
@@ -238,6 +262,11 @@ public class PlayerController : BaseController
 
     public void ActionWireInertia()
     {
+        if (!magicCrystalManager.haveMagicCrystal(MagicCrystalList.ACTIONWIRE))
+        {
+            return;
+        }
+
         usingWire = false;
         wireAction.inactiveWire();
         rb.velocity = new Vector2(rb.velocity.x * 1.3f, 40.0f);

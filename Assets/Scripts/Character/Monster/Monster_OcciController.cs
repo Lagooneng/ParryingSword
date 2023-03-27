@@ -102,4 +102,5 @@ public class Monster_OcciController : MonsterController
         velocity_x = 0.0f;
         animator.SetTrigger("Attack");
     }
+
 }
