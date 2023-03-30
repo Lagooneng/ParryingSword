@@ -6,6 +6,7 @@ public class CameraManager : MonoBehaviour
 {
     public GameObject subject;
     public GameObject player;
+    public float cameraSize;
 
     private CameraEffects camEf;
     private float offsetY = 5.0f;
@@ -16,6 +17,8 @@ public class CameraManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         camEf = GetComponent<CameraEffects>();
         subject = player;
+
+        Camera.main.orthographicSize = cameraSize;
 
         Camera.main.transform.position =
             new Vector3(subject.transform.position.x,

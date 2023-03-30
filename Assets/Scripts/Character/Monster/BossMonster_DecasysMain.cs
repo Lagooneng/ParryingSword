@@ -6,12 +6,12 @@ public class BossMonster_DecasysMain : MonoBehaviour
 {
     public BossMonster_DecasysController monsterCtrl;
     public int moveToPlayer = 5;
-    public int backStep = 2;
-    public int attack1 = 10;
-    public int attack2 = 10;
-    public int attackRoar = 10;
+    public int backStep = 5;
+    public int attack1 = 15;
+    public int attack2 = 15;
+    public int attackRoar = 20;
 
-    public int wait = 2;
+    public int wait = 1;
     public int sum;
 
     private int attackCount = 0;
@@ -26,12 +26,13 @@ public class BossMonster_DecasysMain : MonoBehaviour
     private void Awake()
     {
         delayDict = new Dictionary<BossMonster_DecasysState, float>();
-        delayDict.Add(BossMonster_DecasysState.MOVETOPLAYER, 0.6f);
+        delayDict.Add(BossMonster_DecasysState.MOVETOPLAYER, 1.0f);
+        // 백스텝 시간은 1.5초인데 좀 짧게 해놓으면 공중에서 돌진 1.3
         delayDict.Add(BossMonster_DecasysState.BACKSTEP, 1.3f);
-        delayDict.Add(BossMonster_DecasysState.ATTACK1, 1.4f);
+        delayDict.Add(BossMonster_DecasysState.ATTACK1, 1.45f);
         delayDict.Add(BossMonster_DecasysState.ATTACK2, 1.3f);
         delayDict.Add(BossMonster_DecasysState.ATTACKROAR, 1.5f);
-        delayDict.Add(BossMonster_DecasysState.WAIT, 1.0f);
+        delayDict.Add(BossMonster_DecasysState.WAIT, 0.75f);
 
         sum = moveToPlayer + wait + backStep + attack1 + attackRoar;
         monsterCtrl = GetComponent<BossMonster_DecasysController>();
@@ -67,13 +68,12 @@ public class BossMonster_DecasysMain : MonoBehaviour
             nextState = BossMonster_DecasysState.MOVETOPLAYER;
         }
 
-        if( monsterCtrl.distanceToPlayerY() > 4.0f )
+        if (monsterCtrl.distanceToPlayerY() > 3.0f)
         {
             nextState = BossMonster_DecasysState.ATTACKROAR;
-            attackCount = 0;
         }
 
-        if( nextState != BossMonster_DecasysState.NON )
+        if ( nextState != BossMonster_DecasysState.NON )
         {
             monsterCtrl.setState(nextState, delayDict[nextState]);
             prevState = nextState;
@@ -87,11 +87,11 @@ public class BossMonster_DecasysMain : MonoBehaviour
         if (num < moveToPlayer)
         {
             if (prevState == BossMonster_DecasysState.MOVETOPLAYER) return;
-            if( monsterCtrl.distanceToPlayerX() < 17 )
+            /*if( monsterCtrl.distanceToPlayerX() < 17 )
             {
                 prevState = BossMonster_DecasysState.MOVETOPLAYER;
                 return;
-            }
+            }*/
 
             monsterCtrl.setState(BossMonster_DecasysState.MOVETOPLAYER,
                             delayDict[BossMonster_DecasysState.MOVETOPLAYER]);

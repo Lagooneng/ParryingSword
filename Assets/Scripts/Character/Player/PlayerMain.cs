@@ -78,9 +78,7 @@ public class PlayerMain : MonoBehaviour
                 {
                     cam.cameraDown();
                 }
-
-                // 클라이밍 중 카메라 정위치
-                if (Input.GetKeyUp(KeyCode.DownArrow))
+                else
                 {
                     cam.cameraRePosition();
                 }
@@ -112,8 +110,7 @@ public class PlayerMain : MonoBehaviour
             playerCtrl.ActionMove(0.0f);
             return;
         }
-
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        else
         {
             cam.cameraRePosition();
         }

@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4916113565906804509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4916113565906804498}
+  - component: {fileID: 4916113565906804499}
+  - component: {fileID: 4916113565906804508}
+  m_Layer: 0
+  m_Name: ForestMaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4916113565906804498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916113565906804509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4916113565906804499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916113565906804509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794ea68bb626b44e2ab1ba4dabbea98a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: 9
+  width: 7
+--- !u!114 &4916113565906804508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916113565906804509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a5691f63f29448f9b59c436845f029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapPieceList_L:
+  - {fileID: 8284393228995219658, guid: 69149edece06f4b4fb6b7b4b43a3119b, type: 3}
+  - {fileID: 2287898971408625985, guid: eee86f22889f9462b8d7d1493cbb6755, type: 3}
+  - {fileID: 7746630742650983538, guid: 3d1f83b891f4c415ba736bf0a1c99734, type: 3}
+  mapPieceList_R:
+  - {fileID: 1504094376393173580, guid: c8f96865f98e74df3944a0b171cc567f, type: 3}
+  - {fileID: 1169643688479149352, guid: 2b593dd99db3341c0a3a5e57445a7cc5, type: 3}
+  mapPieceList_D:
+  - {fileID: 7673019970030291856, guid: f513d8b0ec80149a4a807443b4e9ddd4, type: 3}
+  - {fileID: 3723825849381881482, guid: 827fd77ea770f4b1382508576046db1b, type: 3}
+  mapPieceList_LR:
+  - {fileID: 5103849329325453692, guid: d0a0728b1fd244b69b66b93da5a3a2c6, type: 3}
+  - {fileID: 3451623754338040399, guid: 7e662f3b778a64b49bb929734bfe3b0e, type: 3}
+  - {fileID: 3713882846347124291, guid: 969493f3c36bb46cea1d6f161abbd5ce, type: 3}
+  mapPieceList_LD:
+  - {fileID: 952750858638665352, guid: 236cdc7a98e174e24a6c36ed787f5962, type: 3}
+  - {fileID: 565538821784578774, guid: cae41f84df76e438e86fb71866df9096, type: 3}
+  mapPieceList_RD:
+  - {fileID: 1179949855166494969, guid: 10e24941d302946508b402bab6a7fca6, type: 3}
+  - {fileID: 403335860415662519, guid: d1e8d6d0768a7498db867373dffe9994, type: 3}
+  mapPieceList_LRD:
+  - {fileID: 3338834812745870085, guid: fc09d82706ef9407f99f9322dad4107d, type: 3}
+  - {fileID: 2420058979882601224, guid: 61558c7d6cc094b868e89d7491239a25, type: 3}
+  - {fileID: 6144974214351085230, guid: 5cad1ad92436c4bac854fc80e7cec7c3, type: 3}
+  mapPiece_F: {fileID: 9156879280172092285, guid: 26498b983887545ff92c975032a9a383, type: 3}
+  mapPiece_Start: {fileID: 1582661548748172416, guid: 1496285bcc8ed425cb21e8e5d6c46ffd, type: 3}
+  mapPiece_End: {fileID: 3199475825101459797, guid: cdad777c1d34444679fbcb73fe60b7bd, type: 3}
+  mapWall: {fileID: 9156879280172092285, guid: 26498b983887545ff92c975032a9a383, type: 3}

@@ -10,8 +10,8 @@ public class PlayerBodyCollider : MonoBehaviour
     private AnimatorStateInfo animStateInfo;
     private ItemManager itemManager;
 
-    public readonly static int AnimAttackParryingSuccess =
-        Animator.StringToHash("Base Layer.Player_AttackParryingSuccess");
+    //public readonly static int AnimAttackParryingSuccess =
+    //    Animator.StringToHash("Base Layer.Player_AttackParryingSuccess");
 
     public float damage;
 
@@ -26,7 +26,7 @@ public class PlayerBodyCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (playerCtrl.animator.GetCurrentAnimatorStateInfo(0).fullPathHash == AnimAttackParryingSuccess) return;
+        // if (playerCtrl.animator.GetCurrentAnimatorStateInfo(0).fullPathHash == AnimAttackParryingSuccess) return;
 
         if (  collision.tag == "EnemyArm" || collision.tag == "DamageObjectNoParrying")
         {

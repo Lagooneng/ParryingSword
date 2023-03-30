@@ -24,7 +24,7 @@ public class Monster_OcciController : MonsterController
 
     private void Start()
     {
-        attackCollider.damage = 1.0f;
+        attackCollider.damage = 20.0f;
         attackCollider.knockBackVector = new Vector2(1500.0f * dir, 0.0f);
     }
 

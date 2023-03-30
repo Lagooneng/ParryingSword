@@ -18,6 +18,10 @@ public class BossMonster_DecasysController : MonsterController
     private BossMonster_DecasysState mState;
     private CameraEffects camEf;
     private bool acted = false;
+    private AnimatorStateInfo animStateInfo;
+
+    public readonly static int AnimWalk =
+        Animator.StringToHash("Base Layer.BossMonster_Decasys_Walk");
 
     protected override void Awake()
     {
@@ -32,7 +36,7 @@ public class BossMonster_DecasysController : MonsterController
     // 어택 컬라이더의 Awake에서 설정이 0으로 되어 있으니 Start에서 재지정 해야 됨
     private void Start()
     {
-        attackCollider.damage = 1.0f;
+        attackCollider.damage = 20.0f;
         attackCollider.knockBackVector = new Vector2(1500.0f * dir, 0.0f);
     }
 
@@ -51,14 +55,45 @@ public class BossMonster_DecasysController : MonsterController
 
         FixedUpdateAI();
 
+        grounded = false;
+
+        Collider2D[][] groundColliderLists = new Collider2D[3][];
+        groundColliderLists[0] = Physics2D.OverlapPointAll(groundConnection_Left.position);
+        groundColliderLists[1] = Physics2D.OverlapPointAll(groundConnection_Center.position);
+        groundColliderLists[2] = Physics2D.OverlapPointAll(groundConnection_Right.position);
+
+        foreach (Collider2D[] groundColliderList in groundColliderLists)
+        {
+            foreach (Collider2D groundCollider in groundColliderList)
+            {
+                if (groundCollider != null &&
+                    groundCollider.tag == "Road" ||
+                    groundCollider.tag == "EnemyPhisicalBody")
+                {
+                    grounded = true;
+                }
+            }
+        }
+
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * dir,
                                             transform.localScale.y, transform.localScale.z);
 
-        attackCollider.knockBackVector = new Vector2(attackCollider.knockBackVector.x * dir,
-                                            attackCollider.knockBackVector.y);
+        attackCollider.knockBackVector = new Vector2(1500.0f * dir, 0.0f);
 
         rb.velocity = new Vector2(Mathf.Clamp( velocity_x, velocityMin.x - 100.0f, velocityMax.x),
                                   Mathf.Clamp(rb.velocity.y, velocityMin.y, velocityMax.y));
+
+        animStateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+        if( animStateInfo.fullPathHash == AnimWalk && velocity_x == 0.0f )
+        {
+            animator.Play("BossMonster_Decasys_Standing");
+        }
+
+        if( grounded && velocity_x * dir > 0.0f )
+        {
+            animator.Play("BossMonster_Decasys_Walk");
+        }
 
     }
 
@@ -108,11 +143,15 @@ public class BossMonster_DecasysController : MonsterController
 
     private void ActionMoveToPlayer()
     {
-        lookPlayer(true);
-        animator.SetTrigger("Walk");
+        if( !acted )
+        {
+            lookPlayer(true);
+            animator.SetTrigger("Walk");
+            acted = true;
+        }
 
         // 벡터화
-        if ( distanceToPlayerX() > 16 )
+        /*if ( distanceToPlayerX() > 16 )
         {
             velocity_x = (player.transform.position.x - transform.position.x) /
                         Mathf.Abs(player.transform.position.x - transform.position.x) * movingWeight;
@@ -120,7 +159,9 @@ public class BossMonster_DecasysController : MonsterController
         else
         {
             nextDelay = 0.0f;
-        }
+        }*/
+
+        velocity_x = (movingWeight + 10 ) * dir;
     }
 
     private void ActionBackStep()
@@ -136,7 +177,7 @@ public class BossMonster_DecasysController : MonsterController
         if (acted) return;
         lookPlayer(true);
         velocity_x = 0.0f;
-        attackCollider.damage = 3.0f;
+        attackCollider.damage = 20.0f;
         acted = true;
         animator.SetTrigger("Attack1");
     }
@@ -146,17 +187,18 @@ public class BossMonster_DecasysController : MonsterController
         if (acted) return;
         lookPlayer(true);
         velocity_x = 0.0f;
-        attackCollider.damage = 5.0f;
+        attackCollider.damage = 30.0f;
         acted = true;
         animator.SetTrigger("Attack2");
     }
 
     private void ActionAttackRoar()
     {
+        velocity_x = 0.0f;
         if (acted) return;
         lookPlayer(true);
         velocity_x = 0.0f;
-        attackCollider.damage = 2.0f;
+        attackCollider.damage = 10.0f;
         acted = true;
         animator.SetTrigger("Roar");
     }

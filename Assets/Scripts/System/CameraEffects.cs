@@ -12,15 +12,18 @@ public enum CameraState
 
 public class CameraEffects : MonoBehaviour
 {
+    public float sizeOrg;
+
     private float swayTime = 1.0f, sizeDif = 4.0f;
-    private float sizeOrg = 15.0f;
     private float startTime;
     private bool sawyWorking = false, zoomWorking = false;
     private CameraState cState = CameraState.NON;
+    private CameraManager camManager;
 
     private void Awake()
     {
-        Camera.main.orthographicSize = sizeOrg;
+        camManager = GetComponent<CameraManager>();
+        sizeOrg = camManager.cameraSize;
     }
 
     private void FixedUpdate()
