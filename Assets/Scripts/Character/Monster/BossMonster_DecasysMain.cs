@@ -49,14 +49,14 @@ public class BossMonster_DecasysMain : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapPointAll(roadConnection.position);
 
         // 특정 상황에서의 스테이트 강제 *******************************************
-        foreach (Collider2D col in colliders)
+        /* foreach (Collider2D col in colliders)
         {
             if (col.tag == "Road")
             {
                 nextState = BossMonster_DecasysState.BACKSTEP;
             }
         }
-
+        */ 
         if( attackCount > 3 )
         {
             nextState = BossMonster_DecasysState.WAIT;
