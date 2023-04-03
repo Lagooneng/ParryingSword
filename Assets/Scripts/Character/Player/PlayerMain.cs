@@ -12,6 +12,8 @@ public class PlayerMain : MonoBehaviour
     bool climbing = false;
     bool climbJump = false;
 
+    private bool interaction = false;
+
     int wire = -1, prevWire = -1;   // 계속 벽 잡고 있다가 상실하는 경우 대처용 prevWire 변수
 
     private void Awake()
@@ -22,10 +24,27 @@ public class PlayerMain : MonoBehaviour
 
     private void Update()
     {
+        if( Input.GetKeyDown(KeyCode.Escape) )
+        {
+            if( Time.timeScale > 0.0f )
+            {
+                Pause.gamePause();
+                playerCtrl.actionActive = false;
+            }
+            else
+            {
+                Pause.gamePlay();
+                playerCtrl.actionActive = true;
+            }
+
+            return;
+        }
+
         if( !playerCtrl.activeSts ) return;
 
         float movingH = Input.GetAxis("Horizontal");
         // Debug.Log(string.Format("{0}", movingH));
+
 
 
         // 선입력 문제로 인해 actionActive 체크가 Input 다음에 체크되어야 함
@@ -128,7 +147,7 @@ public class PlayerMain : MonoBehaviour
         {
             playerCtrl.AttackNormal();
         }
-        else if( Input.GetKey(KeyCode.X) && playerCtrl.actionActive)
+        else if( Input.GetKey(KeyCode.X) && playerCtrl.actionActive && !interaction )
         {
             playerCtrl.AttackParrying();
         }
@@ -136,5 +155,16 @@ public class PlayerMain : MonoBehaviour
         {
             playerCtrl.AttackSpecial();
         }   
+    }
+
+
+    public void setInteraction(bool interaction)
+    {
+        this.interaction = interaction;
+    }
+
+    public bool getInteraction()
+    {
+        return interaction;
     }
 }
