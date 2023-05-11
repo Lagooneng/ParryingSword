@@ -8,11 +8,13 @@ public class PlayerMain : MonoBehaviour
     // 캐시
     PlayerController playerCtrl;
     CameraManager cam;
+    MenuManager menuManager;
 
     bool climbing = false;
     bool climbJump = false;
 
     private bool interaction = false;
+    public StageTrigger_Interaction interactingObject;
 
     int wire = -1, prevWire = -1;   // 계속 벽 잡고 있다가 상실하는 경우 대처용 prevWire 변수
 
@@ -20,21 +22,21 @@ public class PlayerMain : MonoBehaviour
     {
         playerCtrl = GetComponent<PlayerController>();
         cam = Camera.main.GetComponentInChildren<CameraManager>();
+        menuManager = GameObject.Find("MenuManager").GetComponent<MenuManager>();
+        interactingObject = null;
     }
 
     private void Update()
     {
-        if( Input.GetKeyDown(KeyCode.Escape) )
+        if ( Input.GetKeyDown(KeyCode.Escape) )
         {
             if( Time.timeScale > 0.0f )
             {
-                Pause.gamePause();
-                playerCtrl.actionActive = false;
+                menuManager.pause();
             }
             else
             {
-                Pause.gamePlay();
-                playerCtrl.actionActive = true;
+                menuManager.undoPause();
             }
 
             return;
@@ -143,7 +145,7 @@ public class PlayerMain : MonoBehaviour
             playerCtrl.ActionJump();
         }
 
-        if ( Input.GetKeyDown(KeyCode.Z) && playerCtrl.actionActive)
+        if ( Input.GetKeyDown(KeyCode.Z) && playerCtrl.actionActive && !interaction )
         {
             playerCtrl.AttackNormal();
         }
@@ -151,7 +153,7 @@ public class PlayerMain : MonoBehaviour
         {
             playerCtrl.AttackParrying();
         }
-        else if( Input.GetKey(KeyCode.C) && playerCtrl.actionActive)
+        else if( Input.GetKey(KeyCode.C) && playerCtrl.actionActive && !interaction )
         {
             playerCtrl.AttackSpecial();
         }   

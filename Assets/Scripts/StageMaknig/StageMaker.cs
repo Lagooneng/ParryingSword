@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StageMaker : MonoBehaviour
 {
+    // randomHeighWidth 체크 시, height width 지정과 관계 없이 범위 내에서 랜덤 재지
+    public bool randomHeighWidth;
     public int height = 10;
     public int width = 6;
     // public float scale = 1;
@@ -13,6 +15,12 @@ public class StageMaker : MonoBehaviour
     // 오브젝트에 붙여서 스테이지를 생성
     private void Awake()
     {
+        if (randomHeighWidth == true)
+        {
+            height = Random.Range(5, 12);
+            width = Random.Range(3, 9);
+        }
+
         BluePrint bluePrint = new BluePrint(height, width);
         MapData[,] mapData = bluePrint.getBluePrint();
         MapPiece mapPiece = GetComponent<MapPiece>();

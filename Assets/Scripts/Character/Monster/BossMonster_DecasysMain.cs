@@ -57,7 +57,7 @@ public class BossMonster_DecasysMain : MonoBehaviour
             }
         }
         */ 
-        if( attackCount > 3 )
+        if( attackCount > 2 )
         {
             nextState = BossMonster_DecasysState.WAIT;
             attackCount = 0;

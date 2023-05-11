@@ -27,7 +27,6 @@ public class BossMonster_DecasysController : MonsterController
     {
         base.Awake();
         camEf = GameObject.Find("CameraManager").GetComponent<CameraEffects>();
-        hpMax = 60.0f;
         SetHP(hpMax, hpMax);
         movingWeight = 23;
         activeSts = false;
