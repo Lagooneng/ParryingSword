@@ -7,9 +7,12 @@ public class CameraManager : MonoBehaviour
     public GameObject subject;
     public GameObject player;
     public float cameraSize;
+    public bool stopX = false, stopY = false;
+
 
     private CameraEffects camEf;
     private float offsetY = 5.0f;
+    private float posX, posY;
 
     // Start is called before the first frame update
     private void Awake()
@@ -30,6 +33,16 @@ public class CameraManager : MonoBehaviour
     {
         camEf.zoomFix();
 
+        if( !stopX )
+        {
+            posX = Camera.main.transform.position.x + distanceCamearaToSubjectX() / 5;
+        }
+
+        if ( !stopY )
+        {
+            posY = Camera.main.transform.position.y + (distanceCamearaToSubjectY() + offsetY) / 3;
+        }
+
         if ( (Mathf.Abs( distanceCamearaToSubjectX() ) < 0.01f &&
              Mathf.Abs( distanceCamearaToSubjectY() + offsetY) < 0.01f) ||
              (Mathf.Abs(distanceCamearaToSubjectX()) > 20.0f ||
@@ -42,9 +55,7 @@ public class CameraManager : MonoBehaviour
             return;
         }
         Camera.main.transform.position =
-            new Vector3( Camera.main.transform.position.x + ( distanceCamearaToSubjectX() ) / 3,
-                         Camera.main.transform.position.y + ( distanceCamearaToSubjectY() + offsetY) / 3,
-                         Camera.main.transform.position.z);
+            new Vector3( posX, posY, Camera.main.transform.position.z);
 
     }
 
