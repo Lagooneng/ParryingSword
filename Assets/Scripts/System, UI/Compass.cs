@@ -113,7 +113,7 @@ public class Compass : MonoBehaviour
     private float yPosFunctionForRight()
     {
         return inclination * (player.position.x + 17 - normalGate.position.x) +
-            normalGate.position.y + transform.parent.position.y - player.position.y;
+            normalGate.position.y - player.position.y;
     }
 
     private float yPosFunctionForLeft()

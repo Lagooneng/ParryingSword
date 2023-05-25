@@ -97,8 +97,8 @@ public class PlayerController : BaseController
             foreach (Collider2D groundCollider in groundColliderList)
             {
                 if (groundCollider != null &&
-                    groundCollider.tag == "Road" ||
-                    groundCollider.tag == "EnemyPhisicalBody")
+                    groundCollider.CompareTag("Road") ||
+                    groundCollider.CompareTag("EnemyPhysicalBody"))
                 {
                     grounded = true;
                     additionalJumpCount = 0;
@@ -221,7 +221,7 @@ public class PlayerController : BaseController
         Collider2D[] colliders = Physics2D.OverlapPointAll(roadConnection.position);
 
         foreach( Collider2D col in colliders ){
-            if( col.tag == "Road" )
+            if( col.CompareTag("Road") )
             {
                 climbing = true;
                 additionalJumpCount = 0;

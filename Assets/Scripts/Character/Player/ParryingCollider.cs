@@ -13,7 +13,7 @@ public class ParryingCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if( collision.tag == "EnemyArm" )
+        if( collision.CompareTag("EnemyArm") )
         {
             playerCtrl.attackCollider.knockBackVector = 
                 new Vector2(12000.0f * playerCtrl.dir, 3000.0f);

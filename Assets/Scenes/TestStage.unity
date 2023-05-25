@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 402995611246047937, guid: d0a0728b1fd244b69b66b93da5a3a2c6, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 402995611246047937, guid: d0a0728b1fd244b69b66b93da5a3a2c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -243,6 +243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapPiece_Forest_LR (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5103849329325453692, guid: d0a0728b1fd244b69b66b93da5a3a2c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a0728b1fd244b69b66b93da5a3a2c6, type: 3}
 --- !u!1001 &586185174
@@ -254,7 +258,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6214188757871390026, guid: 8dbe33c6c6b4d4e13b18c07564e9057b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6214188757871390026, guid: 8dbe33c6c6b4d4e13b18c07564e9057b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -262,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6214188757871390026, guid: 8dbe33c6c6b4d4e13b18c07564e9057b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6214188757871390026, guid: 8dbe33c6c6b4d4e13b18c07564e9057b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -357,6 +361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NormalGate
       objectReference: {fileID: 0}
+    - target: {fileID: 3353968928816976920, guid: f614b193309e044ec8c9d8e233290940, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f614b193309e044ec8c9d8e233290940, type: 3}
 --- !u!1001 &1058829306
@@ -376,7 +384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3987395387736359518, guid: 640343da45e2c4ed5891415e8e85a483, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3987395387736359518, guid: 640343da45e2c4ed5891415e8e85a483, type: 3}
       propertyPath: m_LocalPosition.z
@@ -414,6 +422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3987395387736359519, guid: 640343da45e2c4ed5891415e8e85a483, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640343da45e2c4ed5891415e8e85a483, type: 3}
 --- !u!1001 &1809923994
@@ -425,7 +437,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7580956113230957929, guid: ed0d0a805ef104f7f87779c6fb5f2334, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7580956113230957929, guid: ed0d0a805ef104f7f87779c6fb5f2334, type: 3}
       propertyPath: m_LocalPosition.x
@@ -483,6 +495,10 @@ PrefabInstance:
     - target: {fileID: 5561791028188663144, guid: 3eb5c6af054554bf59c1e1ee1bbcff97, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5561791028188663144, guid: 3eb5c6af054554bf59c1e1ee1bbcff97, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5561791028188663188, guid: 3eb5c6af054554bf59c1e1ee1bbcff97, type: 3}
       propertyPath: m_RootOrder

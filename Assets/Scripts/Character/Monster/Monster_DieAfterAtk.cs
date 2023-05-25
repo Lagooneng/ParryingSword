@@ -8,7 +8,7 @@ public class Monster_DieAfterAtk : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if( collision.tag == "PlayerBody" )
+        if( collision.CompareTag("PlayerBody") )
         {
             Destroy(this.transform.parent.gameObject, time);
         }

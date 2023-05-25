@@ -53,7 +53,7 @@ public class Monster_BlancController : MonsterController
             foreach (Collider2D groundCollider in groundColliderList)
             {
                 if ( groundCollider != null &&
-                    groundCollider.tag == "Road" || groundCollider.tag == "EnemyPhsicalBody" )
+                    groundCollider.CompareTag("Road") || groundCollider.CompareTag("EnemyPhysicalBody") )
                 {
                     // Debug.Log("a");
                     grounded = true;

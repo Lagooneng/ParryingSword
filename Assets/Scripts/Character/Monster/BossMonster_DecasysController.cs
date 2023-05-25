@@ -66,8 +66,8 @@ public class BossMonster_DecasysController : MonsterController
             foreach (Collider2D groundCollider in groundColliderList)
             {
                 if (groundCollider != null &&
-                    groundCollider.tag == "Road" ||
-                    groundCollider.tag == "EnemyPhisicalBody")
+                    groundCollider.CompareTag("Road") ||
+                    groundCollider.CompareTag("EnemyPhysicalBody"))
                 {
                     grounded = true;
                 }

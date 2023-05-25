@@ -25,7 +25,7 @@ public class DemolishingBomb : MonoBehaviour
 
         foreach( Collider2D collider in colliders )
         {
-            if( collider.tag == "Road" )
+            if( collider.CompareTag("Road") )
             {
                 Destroy(collider.gameObject);
             }

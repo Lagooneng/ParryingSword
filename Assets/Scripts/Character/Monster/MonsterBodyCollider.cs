@@ -16,7 +16,7 @@ public class MonsterBodyCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if( collision.tag == "PlayerArm" || collision.tag == "DamageObjectNoParrying" )
+        if( collision.CompareTag("PlayerArm") || collision.CompareTag("DamageObjectNoParrying"))
         {
             if( ! superArmor )
             {

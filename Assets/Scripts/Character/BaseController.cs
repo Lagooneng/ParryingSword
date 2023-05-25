@@ -71,8 +71,8 @@ public class BaseController : MonoBehaviour
             foreach( Collider2D groundCollider in groundColliderList )
             {
                 if( groundCollider != null &&
-                    groundCollider.tag == "Road" ||
-                    groundCollider.tag == "Enemy" )
+                    groundCollider.CompareTag("Road") ||
+                    groundCollider.CompareTag("Enemy") )
                 {
                     grounded = true;
                 }

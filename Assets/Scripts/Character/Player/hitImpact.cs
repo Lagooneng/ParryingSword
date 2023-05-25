@@ -18,7 +18,7 @@ public class hitImpact : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if( collision.tag == "EnemyBody" )
+        if( collision.CompareTag("EnemyBody") )
         {
             // 시각 효과
             effect.transform.position =

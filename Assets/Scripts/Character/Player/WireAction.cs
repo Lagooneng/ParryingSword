@@ -56,7 +56,7 @@ public class WireAction : MonoBehaviour
             // Debug.Log(i);
             foreach (Collider2D collider in colliders)
             {
-                if (collider.tag == "Road")
+                if (collider.CompareTag("Road"))
                 {
                     return 0;
                 }
@@ -71,7 +71,7 @@ public class WireAction : MonoBehaviour
             // Debug.Log(i);
             foreach( Collider2D collider in colliders )
             {
-                if( collider.tag == "Road" )
+                if( collider.CompareTag("Road"))
                 {
                     distance = i;
                     return 1;
