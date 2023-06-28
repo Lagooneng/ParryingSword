@@ -5,8 +5,8 @@ using UnityEngine;
 public class BaseController : MonoBehaviour
 {
     // 외부 파라미터, 인스펙터 표시
-    public Vector2 velocityMin = new Vector2(-100.0f, -100.0f);
-    public Vector2 velocityMax = new Vector2(100.0f, 100.0f);
+    public Vector2 velocityMin = new Vector2(-100.0f, -10.0f);
+    public Vector2 velocityMax = new Vector2(100.0f, 10.0f);
     public float movingWeight = 20.0f;
     public float hpMax = 10.0f;
 
@@ -84,6 +84,7 @@ public class BaseController : MonoBehaviour
 
         rb.velocity = new Vector2(Mathf.Clamp(velocity_x, velocityMin.x, velocityMax.x),
                                   Mathf.Clamp(rb.velocity.y, velocityMin.y, velocityMax.y));
+
         rb.AddForce(new Vector2(0.0f, force_y));
         force_y = 0;
 
@@ -117,7 +118,6 @@ public class BaseController : MonoBehaviour
             force_y = jumpAccel_y * rb.mass;
         }
     }
-
 
     public virtual void Dead()
     {

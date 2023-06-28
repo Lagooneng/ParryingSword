@@ -57,7 +57,7 @@ public class BluePrint
         while( bluePrint[pos[0], pos[1]].getPrev() != "End" )
         {
             selectDirection(pos);
-            System.Threading.Thread.Sleep(1);
+            //System.Threading.Thread.Sleep(1);
         }
     }
 
@@ -65,7 +65,7 @@ public class BluePrint
     {
         int flag = 0;
         int num;
-        Random.InitState(System.DateTime.Now.Millisecond);
+        //Random.InitState(System.DateTime.Now.Millisecond);
 
         if( pos[0] + 1 == height )
         {

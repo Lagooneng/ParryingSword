@@ -98,7 +98,8 @@ public class PlayerController : BaseController
             {
                 if (groundCollider != null &&
                     groundCollider.CompareTag("Road") ||
-                    groundCollider.CompareTag("EnemyPhysicalBody"))
+                    groundCollider.CompareTag("EnemyPhysicalBody") ||
+                    groundCollider.CompareTag("Liquid"))
                 {
                     grounded = true;
                     additionalJumpCount = 0;
@@ -119,14 +120,15 @@ public class PlayerController : BaseController
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * dir,
                                             transform.localScale.y, transform.localScale.z);
 
-            if( !usingWire )
+            if (!usingWire)
             {
                 rb.velocity = new Vector2(Mathf.Clamp(velocity_x, velocityMin.x, velocityMax.x),
                                       Mathf.Clamp(rb.velocity.y, velocityMin.y, velocityMax.y));
             }
         }
 
-        // usingWire = false;
+        
+
 
         jumped = false;
         if (!grounded && !climbing && !usingWire )
@@ -287,6 +289,18 @@ public class PlayerController : BaseController
 
         GameObject go = Instantiate(bomb, muzzle.transform.position , Quaternion.identity);
         go.GetComponentInChildren<DemolishingBomb>().addForce(dir);
+    }
+
+    public void weakJump(bool inLq)
+    {
+        if (inLq)
+        {
+            jumpAccel_y = 1000 / rb.mass + 10 * rb.gravityScale;
+        }
+        else
+        {
+            jumpAccel_y = 2700 / rb.mass + 10 * rb.gravityScale;
+        }
     }
 
     public bool isSuperMode()

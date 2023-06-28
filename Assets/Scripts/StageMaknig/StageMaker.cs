@@ -8,13 +8,18 @@ public class StageMaker : MonoBehaviour
     public bool randomHeighWidth;
     public int height = 10;
     public int width = 6;
-    // public float scale = 1;
+    public float mapPieceWidthScale = 1.0f;
+    public float mapPieceHeightScale = 1.0f;
 
-    private int mapPieceHegiht = 36, mapPieceWidth = 80;
+
+    private float mapPieceHegiht = 36.0f, mapPieceWidth = 80.0f;
 
     // 오브젝트에 붙여서 스테이지를 생성
     private void Awake()
     {
+        mapPieceHegiht = mapPieceHegiht * mapPieceHeightScale;
+        mapPieceWidth = mapPieceWidth * mapPieceWidthScale;
+
         if (randomHeighWidth == true)
         {
             height = Random.Range(5, 12);

@@ -49,21 +49,17 @@ public class WireAction : MonoBehaviour
     {
         Collider2D[] colliders;
 
-        for( int i = 0; i < 2; i++ )
+        colliders = Physics2D.OverlapPointAll(new Vector2(transform.position.x,
+                                                              transform.position.y));
+        // Debug.Log(i);
+        foreach (Collider2D collider in colliders)
         {
-            colliders = Physics2D.OverlapPointAll(new Vector2(transform.position.x + i * playerCtrl.dir,
-                                                              transform.position.y + i));
-            // Debug.Log(i);
-            foreach (Collider2D collider in colliders)
+            if (collider.CompareTag("Road"))
             {
-                if (collider.CompareTag("Road"))
-                {
-                    return 0;
-                }
+                return 0;
             }
         }
 
-        
         for( int i = 1; i < 26; i++ )
         {
             colliders = Physics2D.OverlapPointAll(new Vector2(transform.position.x + i * playerCtrl.dir,

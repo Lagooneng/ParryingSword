@@ -12,139 +12,146 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51079
+50483
 Successfully changed project path to: /Users/jhw/Desktop/repository/ParryingSword
 /Users/jhw/Desktop/repository/ParryingSword
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 41.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jhw/Desktop/repository/ParryingSword/Assets
 GfxDevice: creating device client; threaded=0
-2023-05-25 11:11:43.832 Unity[1613:53727] Color LCD preferred device: AMD Radeon Pro 5300M (high power)
-2023-05-25 11:11:43.832 Unity[1613:53727] Metal devices available: 2
-2023-05-25 11:11:43.832 Unity[1613:53727] 0: AMD Radeon Pro 5300M (high power)
-2023-05-25 11:11:43.832 Unity[1613:53727] 1: Intel(R) UHD Graphics 630 (low power)
-2023-05-25 11:11:43.832 Unity[1613:53727] Using device AMD Radeon Pro 5300M (high power)
+2023-06-28 12:55:50.470 Unity[1707:69603] Color LCD preferred device: AMD Radeon Pro 5300M (high power)
+2023-06-28 12:55:50.470 Unity[1707:69603] Metal devices available: 2
+2023-06-28 12:55:50.470 Unity[1707:69603] 0: AMD Radeon Pro 5300M (high power)
+2023-06-28 12:55:50.470 Unity[1707:69603] 1: Intel(R) UHD Graphics 630 (low power)
+2023-06-28 12:55:50.470 Unity[1707:69603] Using device AMD Radeon Pro 5300M (high power)
 Initializing Metal device caps: AMD Radeon Pro 5300M
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56613
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56707
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000426 seconds.
+Registered in 0.000400 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 35.30 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 36.73 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.632 seconds
+- Completed reload, in  2.222 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000465 seconds.
+Registered in 0.000469 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 34.13 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 34.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.979 seconds
+- Completed reload, in  0.913 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1832 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 219.0 MB.
-System memory in use after: 219.1 MB.
+Unloading 1833 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.0 MB.
+System memory in use after: 154.0 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2283.
-Total: 2.455107 ms (FindLiveObjects: 0.244267 ms CreateObjectMapping: 0.136841 ms MarkObjects: 1.956207 ms  DeleteObjects: 0.116016 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/TestStage.unity
-  artifactKey: Guid(fef531348951044dca625bebddf42da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TestStage.unity using Guid(fef531348951044dca625bebddf42da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee15dca9fa34e0e485cd287a1da7889') in 0.013614 seconds
-  Import took 0.017655 seconds .
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2284.
+Total: 2.166489 ms (FindLiveObjects: 0.203557 ms CreateObjectMapping: 0.076344 ms MarkObjects: 1.718276 ms  DeleteObjects: 0.167294 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 58.410855 seconds.
-  path: Assets/Sprites/Road/Volcano
-  artifactKey: Guid(4d8d46245888049469ccdf7bc6dc8c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Road/Volcano using Guid(4d8d46245888049469ccdf7bc6dc8c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede58a9294acce1bab5aefc18c9e811e') in 0.001502 seconds
-  Import took 0.004447 seconds .
+  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab
+  artifactKey: Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab using Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd95c09e4df54419e7a3a4b2ca58702c2') in 0.269209 seconds
+  Import took 0.273464 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.630730 seconds.
-  path: Assets/Sprites/Road/Volcano/Earth_Volcano_cut.psb
-  artifactKey: Guid(1f052ca4eb8174b35a56e0d453404ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Road/Volcano/Earth_Volcano_cut.psb using Guid(1f052ca4eb8174b35a56e0d453404ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03f9467c3be45854e7027f47d50c46f') in 2.372584 seconds
-  Import took 2.377056 seconds .
+  Time since last request: 320.779078 seconds.
+  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_End.prefab
+  artifactKey: Guid(0c4ae768b229c4330bd794da147dd066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_End.prefab using Guid(0c4ae768b229c4330bd794da147dd066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91540d855aeec1091ef78ea4075994a7') in 0.049459 seconds
+  Import took 0.053988 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.264348 seconds.
-  path: Assets/Sprites/Road/Volcano/Volcano_cut.psb
-  artifactKey: Guid(4765facafcfaf405cbbe023d7900a277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Road/Volcano/Volcano_cut.psb using Guid(4765facafcfaf405cbbe023d7900a277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a77f2f3acc88d066e633701acc0ab2e') in 0.100647 seconds
-  Import took 0.104231 seconds .
+  Time since last request: 3.770277 seconds.
+  path: Assets/Scenes/Volcano.unity
+  artifactKey: Guid(cf8a08dcacd9f4208aa9a2d7978852c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Volcano.unity using Guid(cf8a08dcacd9f4208aa9a2d7978852c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5729d87ca2e5d94f1c65d8fe52dff3c') in 0.001615 seconds
+  Import took 0.004622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 142.430870 seconds.
+  path: Assets/Scripts/Character/Player/PlayerController.cs
+  artifactKey: Guid(4637bc18a4fb145d58b6f9e8cddaefd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Character/Player/PlayerController.cs using Guid(4637bc18a4fb145d58b6f9e8cddaefd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b44948c07223b8081a72e96aa34d8352') in 0.214846 seconds
+  Import took 0.217908 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000886 seconds.
+Registered in 0.000629 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.875 seconds
+- Completed reload, in  0.844 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 229.0 MB.
-System memory in use after: 229.0 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 309.6 MB.
+System memory in use after: 309.6 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2313.
-Total: 2.611144 ms (FindLiveObjects: 0.280928 ms CreateObjectMapping: 0.101451 ms MarkObjects: 2.108329 ms  DeleteObjects: 0.118782 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 92.912039 seconds.
-  path: Assets/Sprites/Road/Volcano/Earth_Volcano_cut.psb
-  artifactKey: Guid(1f052ca4eb8174b35a56e0d453404ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Road/Volcano/Earth_Volcano_cut.psb using Guid(1f052ca4eb8174b35a56e0d453404ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3301c4f89fc803647e784635950abd00') in 0.409835 seconds
-  Import took 0.414425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.411109 seconds.
-  path: Assets/Sprites/Road/Volcano/Volcano_cut.psb
-  artifactKey: Guid(4765facafcfaf405cbbe023d7900a277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Road/Volcano/Volcano_cut.psb using Guid(4765facafcfaf405cbbe023d7900a277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26528319ec4afa6ce07fe24f74294815') in 0.080551 seconds
-  Import took 0.084709 seconds .
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2294.
+Total: 1.796137 ms (FindLiveObjects: 0.246365 ms CreateObjectMapping: 0.079747 ms MarkObjects: 1.375667 ms  DeleteObjects: 0.093637 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000571 seconds.
+Registered in 0.000636 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.810 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 311.6 MB.
+System memory in use after: 311.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2297.
+Total: 1.940730 ms (FindLiveObjects: 0.185945 ms CreateObjectMapping: 0.053768 ms MarkObjects: 1.609608 ms  DeleteObjects: 0.090532 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000596 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
@@ -153,47 +160,876 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.834 seconds
+- Completed reload, in  0.800 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 232.0 MB.
-System memory in use after: 232.0 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 312.5 MB.
+System memory in use after: 312.6 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2317.
-Total: 1.796291 ms (FindLiveObjects: 0.258686 ms CreateObjectMapping: 0.050209 ms MarkObjects: 1.380977 ms  DeleteObjects: 0.076058 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2300.
+Total: 1.927481 ms (FindLiveObjects: 0.207889 ms CreateObjectMapping: 0.053585 ms MarkObjects: 1.574424 ms  DeleteObjects: 0.090727 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000533 seconds.
+Registered in 0.000659 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.843 seconds
+- Completed reload, in  0.817 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 232.1 MB.
-System memory in use after: 232.1 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 313.7 MB.
+System memory in use after: 313.7 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2320.
-Total: 1.778771 ms (FindLiveObjects: 0.176944 ms CreateObjectMapping: 0.061766 ms MarkObjects: 1.445897 ms  DeleteObjects: 0.093027 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2303.
+Total: 2.143442 ms (FindLiveObjects: 0.221112 ms CreateObjectMapping: 0.077396 ms MarkObjects: 1.728212 ms  DeleteObjects: 0.115063 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 200.422805 seconds.
+  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab
+  artifactKey: Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab using Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21dffbb921d9252d5a8d4802bd739e0f') in 0.081670 seconds
+  Import took 0.086263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.068353 seconds.
+  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab
+  artifactKey: Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab using Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2615d1f9892d77614941b93d0b98558d') in 0.032602 seconds
+  Import took 0.036305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.737346 seconds.
+  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab
+  artifactKey: Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab using Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06e05cb735e75be695cd3300c375d66') in 0.026433 seconds
+  Import took 0.030704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.200039 seconds.
+  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab
+  artifactKey: Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab using Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd525af5ae59ca73f73c1f58cddf215bb') in 0.028387 seconds
+  Import took 0.032585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.904162 seconds.
+  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab
+  artifactKey: Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Start.prefab using Guid(01dccb1cc7d244808adb4815dc91aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab6613b12b296c8be7eb7636749fba6') in 0.025946 seconds
+  Import took 0.029667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.439144 seconds.
+  path: Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab
+  artifactKey: Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab using Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd6898122589038d9fb7f1817bd002f') in 0.038669 seconds
+  Import took 0.042707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.769182 seconds.
+  path: Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab
+  artifactKey: Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab using Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebd4d45d559b85321faf9df4c813e94') in 0.029305 seconds
+  Import took 0.033459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.587461 seconds.
+  path: Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab
+  artifactKey: Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab using Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c24e760f6452c57fb658d24e5ade15') in 0.039936 seconds
+  Import took 0.043900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.383155 seconds.
+  path: Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab
+  artifactKey: Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab using Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca92c0419a415bb1239fcdfd6cc03d2') in 0.028753 seconds
+  Import took 0.032654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.583566 seconds.
+  path: Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab
+  artifactKey: Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab using Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862e82c8d62b0fdacbd351e6e61690c9') in 0.029213 seconds
+  Import took 0.033221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.888606 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab
+  artifactKey: Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab using Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23d69952edc17ca4516d5f7216feeb4') in 0.033876 seconds
+  Import took 0.038134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.327285 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab
+  artifactKey: Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab using Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009a3af72192e5d787dd7254e276224d') in 0.030719 seconds
+  Import took 0.034804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.311636 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab
+  artifactKey: Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab using Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd396c1eca0fe9244711e683eede6c096') in 0.029833 seconds
+  Import took 0.034388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.735370 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab
+  artifactKey: Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab using Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6b5239f81d5d38454a7275ab5db3b4') in 0.030776 seconds
+  Import took 0.034838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.194817 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab
+  artifactKey: Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L1.prefab using Guid(b6d5fb8f8ca804f98807298b891fb826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e9eb7f7841ce44f5e3f07b5e97efd2') in 0.030224 seconds
+  Import took 0.034222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.940334 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab
+  artifactKey: Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab using Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83ad171ec93df93983853998fe2b05c') in 0.036502 seconds
+  Import took 0.041453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.518547 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab
+  artifactKey: Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab using Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6428e23afa039b20b961508e3ad3cd0') in 0.028411 seconds
+  Import took 0.032497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.578118 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab
+  artifactKey: Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab using Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8db3953fef3c7ecc5c5624f0c678e37') in 0.032919 seconds
+  Import took 0.036783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.184153 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab
+  artifactKey: Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab using Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fbd36f47b5afddc50401a166daf8af4') in 0.029826 seconds
+  Import took 0.033562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.772351 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab
+  artifactKey: Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L2.prefab using Guid(0ae263dabf8bd4644a862c8cba9c5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea5912e3180a93d9bcc0aff93b0f18c0') in 0.038808 seconds
+  Import took 0.042574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.114352 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L3.prefab
+  artifactKey: Guid(d47f939d5973946e49fb7af6058e0c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L3.prefab using Guid(d47f939d5973946e49fb7af6058e0c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b914bf7ce40a0ae82b31a440c7d9aa2') in 0.032337 seconds
+  Import took 0.036731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.527485 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L3.prefab
+  artifactKey: Guid(d47f939d5973946e49fb7af6058e0c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L3.prefab using Guid(d47f939d5973946e49fb7af6058e0c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208e4c2d01677bdabe8d04ae15933773') in 0.034833 seconds
+  Import took 0.039002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.104055 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L3.prefab
+  artifactKey: Guid(d47f939d5973946e49fb7af6058e0c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L3.prefab using Guid(d47f939d5973946e49fb7af6058e0c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151bdb4b49a978fd0a102f11b9d94d3a') in 0.034596 seconds
+  Import took 0.039114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.434306 seconds.
+  path: Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L3.prefab
+  artifactKey: Guid(d47f939d5973946e49fb7af6058e0c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/L/MapPiece_Volcano_L3.prefab using Guid(d47f939d5973946e49fb7af6058e0c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a57f62de4f6b6760587cf8058ebbbc') in 0.034554 seconds
+  Import took 0.039190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.844587 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab
+  artifactKey: Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab using Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1071b7fbc2a80bfa124d91470e70b5aa') in 0.029100 seconds
+  Import took 0.032796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.768899 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab
+  artifactKey: Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab using Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae71aa3e90c65ab96145e833599c445a') in 0.032801 seconds
+  Import took 0.036611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.541375 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab
+  artifactKey: Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab using Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176859272877b7837d2615ef989d63b1') in 0.037306 seconds
+  Import took 0.041221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.578117 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab
+  artifactKey: Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab using Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58482ee372ff3337ff8a5b3f553b76e0') in 0.034344 seconds
+  Import took 0.038101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.087207 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab
+  artifactKey: Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab using Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fdbe8a5924db784e68218171d24bbd6') in 0.027502 seconds
+  Import took 0.031222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.579506 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab
+  artifactKey: Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD1.prefab using Guid(cbb2632c0b91c4355a0638322873e393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5e7fdca0cd6a74a2f845458ae94237') in 0.032360 seconds
+  Import took 0.036223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.415984 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab
+  artifactKey: Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab using Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84b6973c5389617f722097ff7e442cd') in 0.032405 seconds
+  Import took 0.036103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.558349 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab
+  artifactKey: Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab using Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa20aeda602175a6158480da4a7dbe2e') in 0.027417 seconds
+  Import took 0.031181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.162795 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab
+  artifactKey: Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab using Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023b91dc1eefaaadc5f2647d116689af') in 0.026905 seconds
+  Import took 0.030760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.973901 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab
+  artifactKey: Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab using Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727fc881e05996605539f8c43822c9a5') in 0.036326 seconds
+  Import took 0.040308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.509225 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab
+  artifactKey: Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD2.prefab using Guid(81b21794d6b204e09ab6d2cf66fc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eafbff8831c4daa1b00aed7a25bf896') in 0.036004 seconds
+  Import took 0.039987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.200608 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab
+  artifactKey: Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab using Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1760e354373af8e9d4f2407d70e988') in 0.029812 seconds
+  Import took 0.033547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.754702 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab
+  artifactKey: Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab using Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c8b09caa7c12fbcb83fb3cf34c3bec') in 0.033628 seconds
+  Import took 0.038342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.114568 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab
+  artifactKey: Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab using Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40670a252bc99f06effa90fa9d540e87') in 0.038014 seconds
+  Import took 0.042008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.810274 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab
+  artifactKey: Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab using Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c049462976b83d719c4eba393d7dc3') in 0.036049 seconds
+  Import took 0.040079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.562264 seconds.
+  path: Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab
+  artifactKey: Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LD/MapPiece_Volcano_LD3.prefab using Guid(214d7fe3812d14aea98307a0099dcf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911932cc96d49190f562d7a5c0702ca7') in 0.033688 seconds
+  Import took 0.037750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.854563 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab
+  artifactKey: Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab using Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8dd5717b5a8afd1ffca02e7c2353467') in 0.029135 seconds
+  Import took 0.033148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.314683 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab
+  artifactKey: Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab using Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecf8633ae7d0400033d7caa9dc7e7a4a') in 0.028247 seconds
+  Import took 0.032145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.412919 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab
+  artifactKey: Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab using Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f09fc61508a627829b03db892feec5') in 0.031479 seconds
+  Import took 0.035613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.289839 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab
+  artifactKey: Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab using Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac847bfbf918af4a44617531e3b58387') in 0.038842 seconds
+  Import took 0.043356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.364904 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab
+  artifactKey: Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR1.prefab using Guid(09bd5aecf10ab4fb79fed6689ae093ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b12820cd8993d7209f81df5c990e98') in 0.031180 seconds
+  Import took 0.035142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.023445 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab
+  artifactKey: Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab using Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3739c551465fdb1fb2d48dddd02a44e1') in 0.038392 seconds
+  Import took 0.042330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.334529 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab
+  artifactKey: Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab using Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cebe93c9e44b2725e5f5aaa574ee6250') in 0.029504 seconds
+  Import took 0.033189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.843811 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab
+  artifactKey: Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab using Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b90f9cafa9c6c885d86ede3e8796d76d') in 0.029002 seconds
+  Import took 0.032831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.567880 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab
+  artifactKey: Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab using Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd15adb0c96088e7ea14282a7d8f075af') in 0.034376 seconds
+  Import took 0.038190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.349962 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab
+  artifactKey: Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR2.prefab using Guid(bc70299ffbf584c80913892c3db0e045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4278abf8c32dbf63e61ff95f31ca7aab') in 0.029822 seconds
+  Import took 0.033729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.672031 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR3.prefab
+  artifactKey: Guid(6fa3fba7774374a12b7809cb04abf0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR3.prefab using Guid(6fa3fba7774374a12b7809cb04abf0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc171bdaa930fe99822c9fffa69b2f5') in 0.029102 seconds
+  Import took 0.033022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.562432 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR3.prefab
+  artifactKey: Guid(6fa3fba7774374a12b7809cb04abf0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR3.prefab using Guid(6fa3fba7774374a12b7809cb04abf0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8353177774651ce3795cb1641265fd6') in 0.028793 seconds
+  Import took 0.033199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.873916 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR3.prefab
+  artifactKey: Guid(6fa3fba7774374a12b7809cb04abf0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR3.prefab using Guid(6fa3fba7774374a12b7809cb04abf0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec3283dd3717ff9c1cbda2bc486e2ad') in 0.036967 seconds
+  Import took 0.041129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.985901 seconds.
+  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR3.prefab
+  artifactKey: Guid(6fa3fba7774374a12b7809cb04abf0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR3.prefab using Guid(6fa3fba7774374a12b7809cb04abf0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51054771723c26780a02108ef69e683') in 0.028698 seconds
+  Import took 0.032606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.239712 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab
+  artifactKey: Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab using Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f595a39faa714f13d7d99779dedbf952') in 0.024785 seconds
+  Import took 0.028515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.350590 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab
+  artifactKey: Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab using Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e90e5d326fd737d8eb895eede22d12') in 0.026534 seconds
+  Import took 0.030259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.703299 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab
+  artifactKey: Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab using Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195d8df7316bd07538ba18221adaca2d') in 0.026587 seconds
+  Import took 0.030637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.453838 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab
+  artifactKey: Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab using Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b00039a0c98195884b6ddc97cf3df6') in 0.039639 seconds
+  Import took 0.043516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.404076 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab
+  artifactKey: Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD1.prefab using Guid(04ca3998ed54d43a482f57d0a46901da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc553c6ab77d6ad8540c8ded039032de') in 0.027017 seconds
+  Import took 0.030711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.190088 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab
+  artifactKey: Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab using Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02253ca8a4a9c4c8a46e5160be23003c') in 0.038002 seconds
+  Import took 0.041675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.752411 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab
+  artifactKey: Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab using Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ed568cffb64d9c3eced428bc5a9a77') in 0.028537 seconds
+  Import took 0.032181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.339180 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab
+  artifactKey: Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab using Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23240dad4e9433ab7c3608ba80992d33') in 0.039272 seconds
+  Import took 0.043074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.743964 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab
+  artifactKey: Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab using Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac0e962bf87cb16db230cadb9968bc1') in 0.036028 seconds
+  Import took 0.039643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.463104 seconds.
+  path: Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab
+  artifactKey: Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/LRD/MapPiece_Volcano_LRD3.prefab using Guid(8b53b3ac2b40d4488a3a5e847655e98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e5110b5a9e7b273e299c5d589d2190f') in 0.032540 seconds
+  Import took 0.036250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.720925 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab
+  artifactKey: Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab using Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8a3cef8b1b79bf852044bbf384c4ded') in 0.032259 seconds
+  Import took 0.036293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.773141 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab
+  artifactKey: Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab using Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2ab61545af4c88ebb449dcbb3ec8cd6') in 0.033264 seconds
+  Import took 0.037248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.625830 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab
+  artifactKey: Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab using Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6834ba21bce3fe604afe22bebab7fbfe') in 0.035943 seconds
+  Import took 0.040268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.317932 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab
+  artifactKey: Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab using Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b89772151678250bfd40b50eab2baa7') in 0.029217 seconds
+  Import took 0.033277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.839521 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab
+  artifactKey: Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R1.prefab using Guid(0efc6122ba4344408a3ada6eae228b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114fbed2148951aaf4bf4812da72e872') in 0.038010 seconds
+  Import took 0.042203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.032911 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab
+  artifactKey: Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab using Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5d2993898a78035e1dbacab65259a8') in 0.030725 seconds
+  Import took 0.034671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.269243 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab
+  artifactKey: Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab using Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6dea72d266f8943923bd850d148700') in 0.027666 seconds
+  Import took 0.031542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.693710 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab
+  artifactKey: Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab using Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e6d6f6506abfe12460cb059d05e2c45') in 0.034233 seconds
+  Import took 0.038085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.670620 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab
+  artifactKey: Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab using Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252c366f56d4a7c85530c7764a92cf23') in 0.027680 seconds
+  Import took 0.031548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.648029 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab
+  artifactKey: Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2 1.prefab using Guid(74ea7945604c84181bf146cc42d72a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d7e0f2e60b62c7fe66341ac731ea017') in 0.029807 seconds
+  Import took 0.033622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.933203 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab
+  artifactKey: Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab using Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7eb69c940dc6dcf045087e73e83fa0') in 0.030773 seconds
+  Import took 0.035032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.330406 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab
+  artifactKey: Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab using Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66acc5fb07c6c701f9e8fb4858fb1eb1') in 0.030893 seconds
+  Import took 0.034974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.619623 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab
+  artifactKey: Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab using Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a901e86a6521f4710dd29445b186209') in 0.031479 seconds
+  Import took 0.035674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.298189 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab
+  artifactKey: Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab using Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b92830e276b0e430a617559f929488') in 0.031000 seconds
+  Import took 0.035121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.581035 seconds.
+  path: Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab
+  artifactKey: Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/R/MapPiece_Volcano_R2.prefab using Guid(8524d795b88884088b759640cd7b92d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa23a4385dfe99724d06025d13810f90') in 0.031348 seconds
+  Import took 0.035440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.939770 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab
+  artifactKey: Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab using Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27bd9c3351561c6557a5465876b5be29') in 0.033356 seconds
+  Import took 0.037260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.814894 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab
+  artifactKey: Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab using Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece6814ca026da67d41936521988b6f7') in 0.031652 seconds
+  Import took 0.035482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.949202 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab
+  artifactKey: Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab using Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb9540ea703f39c6602d0b80e119db2') in 0.030205 seconds
+  Import took 0.033973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.862944 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab
+  artifactKey: Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab using Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677ccb407b6bb2b6cbafa914ade21520') in 0.033031 seconds
+  Import took 0.036744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.077237 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab
+  artifactKey: Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD1.prefab using Guid(25dd47e5e79024c0991269c143068114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09c167f8599b1d6ed5fbb6242832e17') in 0.034920 seconds
+  Import took 0.038744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.675554 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab
+  artifactKey: Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab using Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f83545f3aae3140cd9e15c2a6e813a') in 0.027206 seconds
+  Import took 0.031735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.614417 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab
+  artifactKey: Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab using Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5021b3d7cd6aae37f59b6b21cadbbbd6') in 0.026358 seconds
+  Import took 0.030139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.877584 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab
+  artifactKey: Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab using Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da89b128c78f8e4eb5f75b4f2ba7b740') in 0.033111 seconds
+  Import took 0.037046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.488013 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab
+  artifactKey: Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab using Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9947e13c04edd146b361dcaa37d53cf4') in 0.026488 seconds
+  Import took 0.030250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.892290 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab
+  artifactKey: Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD2.prefab using Guid(938760b1033de434e9c02b7e88544743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b0383b0eee679028b66e5e4bf85438') in 0.035636 seconds
+  Import took 0.039765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.969980 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab
+  artifactKey: Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab using Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f8a4e5cefb5cd2e7673447dceb2d53') in 0.026973 seconds
+  Import took 0.030602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.288359 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab
+  artifactKey: Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab using Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f1b9fbbc5aab214de055d0094a78402') in 0.038827 seconds
+  Import took 0.042539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.913025 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab
+  artifactKey: Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab using Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab51f5d3d827366a7fa8b0bec2b4e4e') in 0.034612 seconds
+  Import took 0.038314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.032586 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab
+  artifactKey: Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab using Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd208745ef6ef3ed1fb10923021e86f') in 0.030737 seconds
+  Import took 0.034369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.894378 seconds.
+  path: Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab
+  artifactKey: Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/RD/MapPiece_Volcano_RD3.prefab using Guid(9164e657c39ed4656817f677853486bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb7fbee2915311101d46ae5a5337f86') in 0.034532 seconds
+  Import took 0.038244 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000563 seconds.
+Registered in 0.000788 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.830 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 316.8 MB.
+System memory in use after: 316.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 2.020419 ms (FindLiveObjects: 0.221387 ms CreateObjectMapping: 0.068476 ms MarkObjects: 1.625555 ms  DeleteObjects: 0.103670 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.333611 seconds.
+  path: Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab
+  artifactKey: Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Volcano/D/MapPiece_Volcano_D1.prefab using Guid(d81ba732485e64e6c87659b3bfcc8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbe0c3bd0f57be071b1d3f44d7c82de') in 0.082661 seconds
+  Import took 0.087449 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000589 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 318.0 MB.
+System memory in use after: 318.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2311.
+Total: 3.066808 ms (FindLiveObjects: 0.299799 ms CreateObjectMapping: 0.129183 ms MarkObjects: 2.488443 ms  DeleteObjects: 0.147600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000598 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 318.8 MB.
+System memory in use after: 318.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2314.
+Total: 1.983612 ms (FindLiveObjects: 0.184002 ms CreateObjectMapping: 0.067470 ms MarkObjects: 1.634043 ms  DeleteObjects: 0.096098 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000599 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -203,17 +1039,87 @@ Mono: successfully reloaded assembly
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 232.4 MB.
-System memory in use after: 232.4 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 320.0 MB.
+System memory in use after: 320.1 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2323.
-Total: 2.013287 ms (FindLiveObjects: 0.205495 ms CreateObjectMapping: 0.067990 ms MarkObjects: 1.637889 ms  DeleteObjects: 0.100421 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2317.
+Total: 2.347851 ms (FindLiveObjects: 0.364519 ms CreateObjectMapping: 0.134085 ms MarkObjects: 1.745972 ms  DeleteObjects: 0.101766 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000566 seconds.
+Registered in 0.000966 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.821 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 321.1 MB.
+System memory in use after: 321.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2321.
+Total: 1.777244 ms (FindLiveObjects: 0.202567 ms CreateObjectMapping: 0.054831 ms MarkObjects: 1.433105 ms  DeleteObjects: 0.085929 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 478.100944 seconds.
+  path: Assets/Scripts/System, UI/SingletonRandom.cs
+  artifactKey: Guid(d6c212386af5e464987558e4198bc009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/System, UI/SingletonRandom.cs using Guid(d6c212386af5e464987558e4198bc009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c59242961bd53d6bfcc3794ac785bb2') in 0.004403 seconds
+  Import took 0.007444 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000516 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.981 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 322.1 MB.
+System memory in use after: 322.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2324.
+Total: 2.153430 ms (FindLiveObjects: 0.221985 ms CreateObjectMapping: 0.075611 ms MarkObjects: 1.747310 ms  DeleteObjects: 0.107037 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 256.944886 seconds.
+  path: Assets/Scripts/System, UI/SingletonRandom.cs
+  artifactKey: Guid(d6c212386af5e464987558e4198bc009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/System, UI/SingletonRandom.cs using Guid(d6c212386af5e464987558e4198bc009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d0453a3c9868b501a51b02a88027cb') in 0.005083 seconds
+  Import took 0.008261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.230066 seconds.
+  path: Assets/Scripts/System, UI/SingletonRandom.cs
+  artifactKey: Guid(d6c212386af5e464987558e4198bc009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/System, UI/SingletonRandom.cs using Guid(d6c212386af5e464987558e4198bc009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cddf274c0df77bb80bcb1d3d4182b962') in 0.002614 seconds
+  Import took 0.005784 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000681 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
@@ -222,90 +1128,90 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.873 seconds
+- Completed reload, in  0.818 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 232.6 MB.
-System memory in use after: 232.6 MB.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 323.1 MB.
+System memory in use after: 323.2 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2326.
-Total: 3.222406 ms (FindLiveObjects: 0.423828 ms CreateObjectMapping: 0.165483 ms MarkObjects: 2.483734 ms  DeleteObjects: 0.147091 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2327.
+Total: 2.017254 ms (FindLiveObjects: 0.210161 ms CreateObjectMapping: 0.089460 ms MarkObjects: 1.612704 ms  DeleteObjects: 0.103509 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000535 seconds.
+Registered in 0.000704 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.815 seconds
+- Completed reload, in  0.944 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 232.8 MB.
-System memory in use after: 232.8 MB.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 324.2 MB.
+System memory in use after: 324.2 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2329.
-Total: 2.076325 ms (FindLiveObjects: 0.226208 ms CreateObjectMapping: 0.085810 ms MarkObjects: 1.661221 ms  DeleteObjects: 0.101621 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2330.
+Total: 2.188743 ms (FindLiveObjects: 0.302479 ms CreateObjectMapping: 0.110528 ms MarkObjects: 1.665773 ms  DeleteObjects: 0.108456 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000586 seconds.
+Registered in 0.000638 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.879 seconds
+- Completed reload, in  0.956 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 232.8 MB.
-System memory in use after: 232.8 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 325.1 MB.
+System memory in use after: 325.2 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2332.
-Total: 2.055235 ms (FindLiveObjects: 0.217125 ms CreateObjectMapping: 0.081510 ms MarkObjects: 1.651672 ms  DeleteObjects: 0.103206 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2332.
+Total: 2.694735 ms (FindLiveObjects: 0.300214 ms CreateObjectMapping: 0.092305 ms MarkObjects: 2.169014 ms  DeleteObjects: 0.131869 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000579 seconds.
+Registered in 0.000620 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.852 seconds
+- Completed reload, in  0.863 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 233.2 MB.
-System memory in use after: 233.2 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 326.0 MB.
+System memory in use after: 326.0 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2335.
-Total: 1.954989 ms (FindLiveObjects: 0.218791 ms CreateObjectMapping: 0.074632 ms MarkObjects: 1.560156 ms  DeleteObjects: 0.099905 ms)
+Total: 3.239411 ms (FindLiveObjects: 0.422999 ms CreateObjectMapping: 0.171146 ms MarkObjects: 2.492273 ms  DeleteObjects: 0.150613 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000575 seconds.
+Registered in 0.000617 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
@@ -314,90 +1220,83 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.851 seconds
+- Completed reload, in  0.807 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 233.4 MB.
-System memory in use after: 233.4 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 327.2 MB.
+System memory in use after: 327.2 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2338.
-Total: 2.084508 ms (FindLiveObjects: 0.224093 ms CreateObjectMapping: 0.076285 ms MarkObjects: 1.680756 ms  DeleteObjects: 0.101959 ms)
+Total: 2.047323 ms (FindLiveObjects: 0.226282 ms CreateObjectMapping: 0.066385 ms MarkObjects: 1.654981 ms  DeleteObjects: 0.098653 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000571 seconds.
+Registered in 0.000601 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.878 seconds
+- Completed reload, in  0.797 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 233.5 MB.
-System memory in use after: 233.5 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 328.2 MB.
+System memory in use after: 328.2 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2341.
-Total: 2.102412 ms (FindLiveObjects: 0.268554 ms CreateObjectMapping: 0.086960 ms MarkObjects: 1.640881 ms  DeleteObjects: 0.104613 ms)
+Total: 2.054021 ms (FindLiveObjects: 0.204410 ms CreateObjectMapping: 0.064415 ms MarkObjects: 1.685378 ms  DeleteObjects: 0.098682 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000584 seconds.
+Registered in 0.000564 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.851 seconds
+- Completed reload, in  0.856 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 233.8 MB.
-System memory in use after: 233.8 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 329.2 MB.
+System memory in use after: 329.2 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2344.
-Total: 2.799738 ms (FindLiveObjects: 0.262383 ms CreateObjectMapping: 0.074678 ms MarkObjects: 2.314017 ms  DeleteObjects: 0.146535 ms)
+Total: 2.128854 ms (FindLiveObjects: 0.243501 ms CreateObjectMapping: 0.074479 ms MarkObjects: 1.701899 ms  DeleteObjects: 0.107426 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.156294 seconds.
+  path: Assets/Scenes/Volcano.unity
+  artifactKey: Guid(cf8a08dcacd9f4208aa9a2d7978852c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Volcano.unity using Guid(cf8a08dcacd9f4208aa9a2d7978852c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '580de82aeaa72db87c46ad24294312b5') in 0.010813 seconds
+  Import took 0.013865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003153 seconds.
+  path: Assets/Scenes/Volcano.unity
+  artifactKey: Guid(cf8a08dcacd9f4208aa9a2d7978852c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Volcano.unity using Guid(cf8a08dcacd9f4208aa9a2d7978852c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '580de82aeaa72db87c46ad24294312b5') in 0.001004 seconds
+  Import took 0.003654 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000531 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.857 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 234.0 MB.
-System memory in use after: 234.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2347.
-Total: 2.113671 ms (FindLiveObjects: 0.224379 ms CreateObjectMapping: 0.076721 ms MarkObjects: 1.703145 ms  DeleteObjects: 0.108025 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000572 seconds.
+Registered in 0.000591 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
@@ -406,39 +1305,16 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.866 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 234.2 MB.
-System memory in use after: 234.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2350.
-Total: 1.858348 ms (FindLiveObjects: 0.175109 ms CreateObjectMapping: 0.056374 ms MarkObjects: 1.529734 ms  DeleteObjects: 0.095549 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000574 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.858 seconds
+- Completed reload, in  0.761 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 234.2 MB.
-System memory in use after: 234.2 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 330.0 MB.
+System memory in use after: 330.0 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2353.
-Total: 2.026436 ms (FindLiveObjects: 0.188161 ms CreateObjectMapping: 0.064839 ms MarkObjects: 1.678091 ms  DeleteObjects: 0.093552 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2347.
+Total: 2.134997 ms (FindLiveObjects: 0.251306 ms CreateObjectMapping: 0.059992 ms MarkObjects: 1.726662 ms  DeleteObjects: 0.096225 ms)
 
 ========================================================================
 Received Prepare
@@ -446,249 +1322,96 @@ Registering precompiled user dll's ...
 Registered in 0.000606 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.843 seconds
+- Completed reload, in  0.797 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 234.6 MB.
-System memory in use after: 234.6 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 331.3 MB.
+System memory in use after: 331.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2350.
+Total: 1.986203 ms (FindLiveObjects: 0.211707 ms CreateObjectMapping: 0.071606 ms MarkObjects: 1.608241 ms  DeleteObjects: 0.093764 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000622 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.846 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 332.3 MB.
+System memory in use after: 332.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2353.
+Total: 2.096993 ms (FindLiveObjects: 0.221892 ms CreateObjectMapping: 0.085752 ms MarkObjects: 1.681314 ms  DeleteObjects: 0.106543 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000580 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 333.2 MB.
+System memory in use after: 333.2 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2356.
-Total: 1.775501 ms (FindLiveObjects: 0.205892 ms CreateObjectMapping: 0.060809 ms MarkObjects: 1.417826 ms  DeleteObjects: 0.089677 ms)
+Total: 2.005593 ms (FindLiveObjects: 0.210682 ms CreateObjectMapping: 0.063571 ms MarkObjects: 1.637795 ms  DeleteObjects: 0.092690 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000631 seconds.
+Registered in 0.000589 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.801 seconds
+- Completed reload, in  0.804 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 234.8 MB.
-System memory in use after: 234.8 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 334.3 MB.
+System memory in use after: 334.4 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2359.
-Total: 1.816889 ms (FindLiveObjects: 0.236296 ms CreateObjectMapping: 0.054616 ms MarkObjects: 1.428228 ms  DeleteObjects: 0.096974 ms)
+Total: 2.020489 ms (FindLiveObjects: 0.249133 ms CreateObjectMapping: 0.071037 ms MarkObjects: 1.603804 ms  DeleteObjects: 0.095509 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000604 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.886 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 234.9 MB.
-System memory in use after: 235.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2362.
-Total: 2.301725 ms (FindLiveObjects: 0.267923 ms CreateObjectMapping: 0.086143 ms MarkObjects: 1.840270 ms  DeleteObjects: 0.105602 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1490.792967 seconds.
-  path: Assets/Prefabs/Map
-  artifactKey: Guid(b28230ed397704254ab9ea939c229ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map using Guid(b28230ed397704254ab9ea939c229ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6872cc1825b2cbd3e0c86fabb420c312') in 0.004748 seconds
-  Import took 0.009235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.196412 seconds.
-  path: Assets/Prefabs/Map/Volcano
-  artifactKey: Guid(52cebdc2bf992495c9a663b9106cf447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano using Guid(52cebdc2bf992495c9a663b9106cf447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad86a276fcca002c5fe11d407189df4d') in 0.002673 seconds
-  Import took 0.007008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.172013 seconds.
-  path: Assets/Prefabs/Map/Volcano/Volcano_Base.prefab
-  artifactKey: Guid(c5f84863c4d2042db80a845495ba44dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/Volcano_Base.prefab using Guid(c5f84863c4d2042db80a845495ba44dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac3f62583124f84c24dbf9e3cab79e0') in 0.562290 seconds
-  Import took 0.566378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.304563 seconds.
-  path: Assets/Prefabs/Map/Volcano/Earth_Volcano_Base.prefab
-  artifactKey: Guid(a9834a4b25bf443d3a6c3319f85cf461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/Earth_Volcano_Base.prefab using Guid(a9834a4b25bf443d3a6c3319f85cf461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf13c0af8abced9abe727b1fd07c7c4') in 0.023788 seconds
-  Import took 0.028033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.526591 seconds.
-  path: Assets/Prefabs/Map/Volcano/D
-  artifactKey: Guid(a2a50f09646294bb3b8b6a824b162b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/D using Guid(a2a50f09646294bb3b8b6a824b162b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387e3c0e5e4d2b6676611e4793efb8b6') in 0.001450 seconds
-  Import took 0.005274 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.362267 seconds.
-  path: Assets/Prefabs/Map/Volcano/F
-  artifactKey: Guid(ec7fc94f5d74648dab03448358dcb641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/F using Guid(ec7fc94f5d74648dab03448358dcb641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5457cf9e74ecc6fac8a2c073b6a4e41') in 0.002659 seconds
-  Import took 0.006595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Prefabs/Map/Volcano/F
-  artifactKey: Guid(ec7fc94f5d74648dab03448358dcb641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/F using Guid(ec7fc94f5d74648dab03448358dcb641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5457cf9e74ecc6fac8a2c073b6a4e41') in 0.001208 seconds
-  Import took 0.004003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.407615 seconds.
-  path: Assets/Prefabs/Map/Volcano/L
-  artifactKey: Guid(81aed45c509904543a003fa56f0c123c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/L using Guid(81aed45c509904543a003fa56f0c123c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8a3520d2adeff49856cc9882ae2bcd') in 0.001376 seconds
-  Import took 0.005700 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.004868 seconds.
-  path: Assets/Prefabs/Map/Volcano/LD
-  artifactKey: Guid(abdda053e62164b2f94a2cdac6ceccb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LD using Guid(abdda053e62164b2f94a2cdac6ceccb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ff9d705ec39663de637831c6cde043') in 0.002016 seconds
-  Import took 0.005521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.684440 seconds.
-  path: Assets/Prefabs/Map/Volcano/LR
-  artifactKey: Guid(50ee8512d6b7046f584d49beb5bfea3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LR using Guid(50ee8512d6b7046f584d49beb5bfea3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79d8c8bfd7b8ffb7c950ce7339c7699') in 0.003430 seconds
-  Import took 0.006624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Prefabs/Map/Volcano/LR
-  artifactKey: Guid(50ee8512d6b7046f584d49beb5bfea3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LR using Guid(50ee8512d6b7046f584d49beb5bfea3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79d8c8bfd7b8ffb7c950ce7339c7699') in 0.001384 seconds
-  Import took 0.004022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.856971 seconds.
-  path: Assets/Prefabs/Map/Volcano/LRD
-  artifactKey: Guid(cfe391122289f41c9a0e8a6d405273cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LRD using Guid(cfe391122289f41c9a0e8a6d405273cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b67c87be86f69fbe98dff8cac6c69184') in 0.001267 seconds
-  Import took 0.004857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.672730 seconds.
-  path: Assets/Prefabs/Map/Volcano/R
-  artifactKey: Guid(d97c2d8172144452b913ebc404e2f07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/R using Guid(d97c2d8172144452b913ebc404e2f07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e65dc0f6313062688dbcd8f3e93db0') in 0.001396 seconds
-  Import took 0.005380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.725412 seconds.
-  path: Assets/Prefabs/Map/Volcano/RD
-  artifactKey: Guid(9a8a12f2e65224357b889a729b532ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/RD using Guid(9a8a12f2e65224357b889a729b532ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c63400be6709321c6b16c14347def2') in 0.001414 seconds
-  Import took 0.005182 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.158994 seconds.
-  path: Assets/Prefabs/Map/Volcano/Special
-  artifactKey: Guid(6a046c319c954489daf281b336fb2397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/Special using Guid(6a046c319c954489daf281b336fb2397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d8d2fc7b948626fd84e28b8fae4212') in 0.001770 seconds
-  Import took 0.005135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.573006 seconds.
-  path: Assets/Prefabs/Map/Volcano/zPiece
-  artifactKey: Guid(95f4f8b5ff7d9490cb677ccb01c5d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/zPiece using Guid(95f4f8b5ff7d9490cb677ccb01c5d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11cc4f0648270e6c828c358ae0f0e701') in 0.001619 seconds
-  Import took 0.005446 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.849858 seconds.
-  path: Assets/Prefabs/Map/Forest/zEtc
-  artifactKey: Guid(ebde8d6e517874c9aa399d7593fb1022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Forest/zEtc using Guid(ebde8d6e517874c9aa399d7593fb1022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18444fa2b35fa96351d45a423120f085') in 0.000883 seconds
-  Import took 0.004387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.184600 seconds.
-  path: Assets/Prefabs/Map/Volcano/zEtc
-  artifactKey: Guid(95f4f8b5ff7d9490cb677ccb01c5d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/zEtc using Guid(95f4f8b5ff7d9490cb677ccb01c5d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33dbe226e79724957bc9df03a5795f9d') in 0.000885 seconds
-  Import took 0.004722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 76.596078 seconds.
-  path: Assets/Prefabs/Map/Volcano/z_etc
-  artifactKey: Guid(95f4f8b5ff7d9490cb677ccb01c5d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/z_etc using Guid(95f4f8b5ff7d9490cb677ccb01c5d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455e276157f1e604a306737b9969eba0') in 0.000983 seconds
-  Import took 0.005117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.644358 seconds.
-  path: Assets/Prefabs/Map/Forest/z_etc
-  artifactKey: Guid(ebde8d6e517874c9aa399d7593fb1022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Forest/z_etc using Guid(ebde8d6e517874c9aa399d7593fb1022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c603026fedb22461fa87c831df1ea3') in 0.000872 seconds
-  Import took 0.004720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.767223 seconds.
-  path: Assets/Prefabs/Map/Volcano/z_etc/Earth_Volcano_Base.prefab
-  artifactKey: Guid(a9834a4b25bf443d3a6c3319f85cf461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/z_etc/Earth_Volcano_Base.prefab using Guid(a9834a4b25bf443d3a6c3319f85cf461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb834b2af8f769f3e56dd0c213ab01a9') in 0.024978 seconds
-  Import took 0.029332 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.375027 seconds.
-  path: Assets/Prefabs/Map/Volcano/z_etc/Earth_Volcano_Base.prefab
-  artifactKey: Guid(a9834a4b25bf443d3a6c3319f85cf461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/z_etc/Earth_Volcano_Base.prefab using Guid(a9834a4b25bf443d3a6c3319f85cf461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '037572f9fe61a276888c9262fc429fe0') in 0.021861 seconds
-  Import took 0.026614 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000566 seconds.
+Registered in 0.000590 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
@@ -697,21 +1420,21 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.828 seconds
+- Completed reload, in  0.776 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 239.5 MB.
-System memory in use after: 239.5 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 335.4 MB.
+System memory in use after: 335.4 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2366.
-Total: 2.074147 ms (FindLiveObjects: 0.233078 ms CreateObjectMapping: 0.064875 ms MarkObjects: 1.669136 ms  DeleteObjects: 0.105875 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2362.
+Total: 1.959042 ms (FindLiveObjects: 0.211740 ms CreateObjectMapping: 0.059441 ms MarkObjects: 1.592626 ms  DeleteObjects: 0.094311 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000557 seconds.
+Registered in 0.000613 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
@@ -720,21 +1443,21 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.861 seconds
+- Completed reload, in  0.810 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 240.0 MB.
-System memory in use after: 240.0 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 336.4 MB.
+System memory in use after: 336.4 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2369.
-Total: 2.018406 ms (FindLiveObjects: 0.218902 ms CreateObjectMapping: 0.063277 ms MarkObjects: 1.633258 ms  DeleteObjects: 0.101656 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2365.
+Total: 2.182362 ms (FindLiveObjects: 0.333466 ms CreateObjectMapping: 0.085033 ms MarkObjects: 1.655525 ms  DeleteObjects: 0.106649 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000575 seconds.
+Registered in 0.000622 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
@@ -743,44 +1466,21 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.799 seconds
+- Completed reload, in  0.761 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 240.2 MB.
-System memory in use after: 240.2 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 337.2 MB.
+System memory in use after: 337.2 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2372.
-Total: 1.881609 ms (FindLiveObjects: 0.216306 ms CreateObjectMapping: 0.059745 ms MarkObjects: 1.513213 ms  DeleteObjects: 0.091531 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2368.
+Total: 2.570239 ms (FindLiveObjects: 0.241519 ms CreateObjectMapping: 0.070881 ms MarkObjects: 2.088750 ms  DeleteObjects: 0.167655 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000600 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.844 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 240.3 MB.
-System memory in use after: 240.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2375.
-Total: 2.621828 ms (FindLiveObjects: 0.314371 ms CreateObjectMapping: 0.138318 ms MarkObjects: 2.057176 ms  DeleteObjects: 0.109801 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000587 seconds.
+Registered in 0.000614 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
@@ -789,494 +1489,44 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.808 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 240.6 MB.
-System memory in use after: 240.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2378.
-Total: 1.929487 ms (FindLiveObjects: 0.201052 ms CreateObjectMapping: 0.057775 ms MarkObjects: 1.580027 ms  DeleteObjects: 0.089785 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000605 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.824 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 240.8 MB.
-System memory in use after: 240.8 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2381.
-Total: 1.922016 ms (FindLiveObjects: 0.209024 ms CreateObjectMapping: 0.054582 ms MarkObjects: 1.564724 ms  DeleteObjects: 0.092816 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000539 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.844 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 241.0 MB.
-System memory in use after: 241.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2384.
-Total: 2.309884 ms (FindLiveObjects: 0.423047 ms CreateObjectMapping: 0.117071 ms MarkObjects: 1.659948 ms  DeleteObjects: 0.108038 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000596 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.883 seconds
+- Completed reload, in  0.791 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 240.9 MB.
-System memory in use after: 240.9 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 338.4 MB.
+System memory in use after: 338.4 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2387.
-Total: 3.131390 ms (FindLiveObjects: 0.261006 ms CreateObjectMapping: 0.121827 ms MarkObjects: 2.643012 ms  DeleteObjects: 0.104081 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1290.544045 seconds.
-  path: Assets/Prefabs/Map/Volcano/LR/Volcano_LR.prefab
-  artifactKey: Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LR/Volcano_LR.prefab using Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b87876794bfbee68caa4761e8f712512') in 0.083847 seconds
-  Import took 0.088914 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2371.
+Total: 2.273468 ms (FindLiveObjects: 0.250147 ms CreateObjectMapping: 0.071003 ms MarkObjects: 1.843211 ms  DeleteObjects: 0.107496 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000615 seconds.
+Registered in 0.000594 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.803 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 241.6 MB.
-System memory in use after: 241.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2391.
-Total: 1.700147 ms (FindLiveObjects: 0.170815 ms CreateObjectMapping: 0.057656 ms MarkObjects: 1.385997 ms  DeleteObjects: 0.084501 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000571 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.814 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 241.8 MB.
-System memory in use after: 241.8 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2394.
-Total: 1.964422 ms (FindLiveObjects: 0.229158 ms CreateObjectMapping: 0.070636 ms MarkObjects: 1.561222 ms  DeleteObjects: 0.102245 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000562 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.827 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 241.9 MB.
-System memory in use after: 241.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2397.
-Total: 2.150525 ms (FindLiveObjects: 0.229000 ms CreateObjectMapping: 0.079033 ms MarkObjects: 1.716213 ms  DeleteObjects: 0.124659 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000577 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.832 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 242.2 MB.
-System memory in use after: 242.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2400.
-Total: 2.118342 ms (FindLiveObjects: 0.238509 ms CreateObjectMapping: 0.073089 ms MarkObjects: 1.698298 ms  DeleteObjects: 0.107280 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000563 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.860 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 242.3 MB.
-System memory in use after: 242.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2403.
-Total: 2.095099 ms (FindLiveObjects: 0.247463 ms CreateObjectMapping: 0.075915 ms MarkObjects: 1.661640 ms  DeleteObjects: 0.108142 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000543 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.835 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 242.5 MB.
-System memory in use after: 242.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2406.
-Total: 2.016954 ms (FindLiveObjects: 0.235962 ms CreateObjectMapping: 0.083757 ms MarkObjects: 1.590674 ms  DeleteObjects: 0.105044 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000547 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.877 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 242.6 MB.
-System memory in use after: 242.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2409.
-Total: 1.906518 ms (FindLiveObjects: 0.200250 ms CreateObjectMapping: 0.068150 ms MarkObjects: 1.543206 ms  DeleteObjects: 0.093751 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000553 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.866 seconds
+- Completed reload, in  0.809 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 242.9 MB.
-System memory in use after: 242.9 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 339.4 MB.
+System memory in use after: 339.5 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2412.
-Total: 1.956131 ms (FindLiveObjects: 0.214660 ms CreateObjectMapping: 0.068804 ms MarkObjects: 1.568539 ms  DeleteObjects: 0.103076 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1223.709843 seconds.
-  path: Assets/Prefabs/Map/Volcano/F/Volcano_F.prefab
-  artifactKey: Guid(91cc4a8338b02493093a7e159386bb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/F/Volcano_F.prefab using Guid(91cc4a8338b02493093a7e159386bb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b92774830f239929948e56b79fe49f') in 0.084917 seconds
-  Import took 0.090445 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2374.
+Total: 1.989384 ms (FindLiveObjects: 0.221137 ms CreateObjectMapping: 0.066392 ms MarkObjects: 1.604805 ms  DeleteObjects: 0.096187 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000582 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.847 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 243.4 MB.
-System memory in use after: 243.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2416.
-Total: 1.922409 ms (FindLiveObjects: 0.207458 ms CreateObjectMapping: 0.065599 ms MarkObjects: 1.532954 ms  DeleteObjects: 0.115391 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 326.997243 seconds.
-  path: Assets/Scenes/Volcano.unity
-  artifactKey: Guid(cf8a08dcacd9f4208aa9a2d7978852c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Volcano.unity using Guid(cf8a08dcacd9f4208aa9a2d7978852c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915bd51c9c54f1c1eabafe36fe65e886') in 0.011612 seconds
-  Import took 0.015193 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.158163 seconds.
-  path: Assets/Prefabs/System/MenuManager.prefab
-  artifactKey: Guid(ed0d0a805ef104f7f87779c6fb5f2334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/System/MenuManager.prefab using Guid(ed0d0a805ef104f7f87779c6fb5f2334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d2cd14e9b631ee4adf66d8579352ae') in 0.017829 seconds
-  Import took 0.022054 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.772344 seconds.
-  path: Assets/Prefabs/System/MenuManager.prefab
-  artifactKey: Guid(ed0d0a805ef104f7f87779c6fb5f2334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/System/MenuManager.prefab using Guid(ed0d0a805ef104f7f87779c6fb5f2334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b8b0a3a9d1eb4eb25f26f765e269c4') in 0.003425 seconds
-  Import took 0.006489 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.005038 seconds.
-  path: Assets/Prefabs/System/MenuManager.prefab
-  artifactKey: Guid(ed0d0a805ef104f7f87779c6fb5f2334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/System/MenuManager.prefab using Guid(ed0d0a805ef104f7f87779c6fb5f2334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83fec037ea96f372865474592f72b11a') in 0.004527 seconds
-  Import took 0.008013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 97.544368 seconds.
-  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab
-  artifactKey: Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab using Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65677df05a2a0ad8da88063e4c851297') in 0.077626 seconds
-  Import took 0.083089 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.281450 seconds.
-  path: Assets/Prefabs/Map/Volcano/F/MapPiece_Volcano_F.prefab
-  artifactKey: Guid(91cc4a8338b02493093a7e159386bb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/F/MapPiece_Volcano_F.prefab using Guid(91cc4a8338b02493093a7e159386bb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd6f59c63897306d9f79a760bcb01a7') in 0.031569 seconds
-  Import took 0.036633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.434727 seconds.
-  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Wall.prefab
-  artifactKey: Guid(a7d66ff92847c4114b6e2b9eb7600216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Wall.prefab using Guid(a7d66ff92847c4114b6e2b9eb7600216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408cf875a816ced9f69102ef8ea2bd21') in 0.033438 seconds
-  Import took 0.038508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006620 seconds.
-  path: Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Wall.prefab
-  artifactKey: Guid(a7d66ff92847c4114b6e2b9eb7600216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/Special/MapPiece_Volcano_Wall.prefab using Guid(a7d66ff92847c4114b6e2b9eb7600216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408cf875a816ced9f69102ef8ea2bd21') in 0.031124 seconds
-  Import took 0.036047 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 234.905675 seconds.
-  path: Assets/Prefabs/Map/Volcano/z_etc/MapPiece_Volcano_Start.prefab
-  artifactKey: Guid(539e37da0a60a49e2965c422c708b238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/z_etc/MapPiece_Volcano_Start.prefab using Guid(539e37da0a60a49e2965c422c708b238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd639928fd6e4bcde3e563303210096d6') in 0.032859 seconds
-  Import took 0.037553 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003981 seconds.
-  path: Assets/Prefabs/Map/Volcano/z_etc/MapPiece_Volcano_Start.prefab
-  artifactKey: Guid(539e37da0a60a49e2965c422c708b238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/z_etc/MapPiece_Volcano_Start.prefab using Guid(539e37da0a60a49e2965c422c708b238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd639928fd6e4bcde3e563303210096d6') in 0.026094 seconds
-  Import took 0.030563 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000609 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.905 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 244.8 MB.
-System memory in use after: 244.8 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2420.
-Total: 1.941599 ms (FindLiveObjects: 0.199579 ms CreateObjectMapping: 0.068184 ms MarkObjects: 1.566243 ms  DeleteObjects: 0.106354 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 224.001076 seconds.
-  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab
-  artifactKey: Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab using Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad55278f7d71377afde665233a1d0eee') in 0.085271 seconds
-  Import took 0.090676 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.952643 seconds.
-  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab
-  artifactKey: Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab using Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15993295837683c5ff9b1e129099d45e') in 0.031602 seconds
-  Import took 0.036474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.625228 seconds.
-  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab
-  artifactKey: Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab using Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3adf8adedd3f18dbf73ee997a8ed56b9') in 0.034916 seconds
-  Import took 0.040009 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.037121 seconds.
-  path: Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab
-  artifactKey: Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Volcano/LR/MapPiece_Volcano_LR.prefab using Guid(0d0142a1a2f384179996ced08b34dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c10e490984cf5864c0d1ba88e34658') in 0.030100 seconds
-  Import took 0.035684 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000623 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.816 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 245.2 MB.
-System memory in use after: 245.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2424.
-Total: 1.815645 ms (FindLiveObjects: 0.193289 ms CreateObjectMapping: 0.058811 ms MarkObjects: 1.478085 ms  DeleteObjects: 0.084636 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000611 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.891 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 245.7 MB.
-System memory in use after: 245.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2427.
-Total: 2.051965 ms (FindLiveObjects: 0.246046 ms CreateObjectMapping: 0.092965 ms MarkObjects: 1.606874 ms  DeleteObjects: 0.104830 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000608 seconds.
+Registered in 0.000593 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
@@ -1285,14 +1535,31 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
+- Completed reload, in  0.809 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 245.9 MB.
-System memory in use after: 245.9 MB.
+Unloading 1828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 340.4 MB.
+System memory in use after: 340.4 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2430.
-Total: 2.208385 ms (FindLiveObjects: 0.234485 ms CreateObjectMapping: 0.076676 ms MarkObjects: 1.775831 ms  DeleteObjects: 0.120138 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2377.
+Total: 1.966173 ms (FindLiveObjects: 0.218975 ms CreateObjectMapping: 0.061642 ms MarkObjects: 1.583832 ms  DeleteObjects: 0.100184 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 516.230526 seconds.
+  path: Assets/Prefabs/Map/Forest/LR/MapPiece_Forest_LR.prefab
+  artifactKey: Guid(d0a0728b1fd244b69b66b93da5a3a2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Map/Forest/LR/MapPiece_Forest_LR.prefab using Guid(d0a0728b1fd244b69b66b93da5a3a2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0dd3cdfc933197e3a150bf881431c2') in 0.094460 seconds
+  Import took 0.099521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.340316 seconds.
+  path: Assets/Prefabs/Test/System/TestMapMaker.prefab
+  artifactKey: Guid(6c5419725a2dc4bdbb643def0fa3293c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Test/System/TestMapMaker.prefab using Guid(6c5419725a2dc4bdbb643def0fa3293c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d5c4f398b865b349209148d98492bc') in 0.017053 seconds
+  Import took 0.022909 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
