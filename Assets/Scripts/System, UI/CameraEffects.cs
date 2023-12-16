@@ -13,24 +13,40 @@ public enum CameraState
 public class CameraEffects : MonoBehaviour
 {
     public float sizeOrg;
+    public GameObject darkFilter;
 
     private float swayTime = 1.0f, sizeDif = 4.0f;
     private float startTime;
     private bool sawyWorking = false, zoomWorking = false;
     private CameraState cState = CameraState.NON;
     private CameraManager camManager;
+    private SpriteRenderer darkFilterRenderer;
+
+    // 암전 효과를 분리한 이유 -> 줌이랑 겹치거나 하면 둘 중 하나가 무시될 가능성이 있음 
+    bool isDarkEffectOn = false;
 
     private void Awake()
     {
         camManager = GetComponent<CameraManager>();
+        darkFilterRenderer = darkFilter.GetComponent<SpriteRenderer>();
         sizeOrg = camManager.cameraSize;
     }
 
     private void FixedUpdate()
     {
+        if( isDarkEffectOn )
+        {
+            darkEffectOn();
+        }
+        else
+        {
+            darkEffectOff();
+        }
+
         switch (cState)
         {
             case CameraState.NON:
+                zoomFix();
                 break;
             case CameraState.SWAY:
                 cameraSway();
@@ -135,6 +151,33 @@ public class CameraEffects : MonoBehaviour
         else if( sizeOrg < Camera.main.orthographicSize )
         {
             Camera.main.orthographicSize -= 0.05f;
+        }
+    }
+
+    public void switchDarkEffect(bool on)
+    {
+        isDarkEffectOn = on;
+    }
+
+    private void darkEffectOn()
+    {
+        if( darkFilterRenderer.color.a < 0.6f )
+        {
+            darkFilterRenderer.color = new Color(darkFilterRenderer.color.r,
+                                                darkFilterRenderer.color.g,
+                                                darkFilterRenderer.color.b,
+                                                darkFilterRenderer.color.a + 0.01f);
+        }
+    }
+
+    private void darkEffectOff()
+    {
+        if (darkFilterRenderer.color.a > 0.0f)
+        {
+            darkFilterRenderer.color = new Color(darkFilterRenderer.color.r,
+                                                darkFilterRenderer.color.g,
+                                                darkFilterRenderer.color.b,
+                                                darkFilterRenderer.color.a - 0.05f);
         }
     }
 }
