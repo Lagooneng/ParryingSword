@@ -57,17 +57,24 @@ public class StageMaker : MonoBehaviour
         // 세로 벽
         for( int i = 0; i < height + 2; i++ )
         {
-            go = Instantiate(mapPiece.mapWall,
+            if( i != height )
+            {
+                go = Instantiate(mapPiece.mapWall,
                                 new Vector3(-mapPieceWidth, mapPieceHegiht * i, 0), Quaternion.identity);
-            go.transform.SetParent(gameObject.transform);
+                go.transform.SetParent(gameObject.transform);
+            }
 
             /*go = Instantiate(mapPiece.mapWall,
                                 new Vector3(-mapPieceWidth * 2, mapPieceHegiht * i, 0), Quaternion.identity);
             go.transform.SetParent(gameObject.transform);*/
 
-            go = Instantiate(mapPiece.mapWall,
+            if( i != 1 )
+            {
+                go = Instantiate(mapPiece.mapWall,
                                 new Vector3(mapPieceWidth * width, mapPieceHegiht * i, 0), Quaternion.identity);
-            go.transform.SetParent(gameObject.transform);
+                go.transform.SetParent(gameObject.transform);
+            }
+            
 
             /*go = Instantiate(mapPiece.mapWall,
                                 new Vector3(mapPieceWidth * (width + 1), mapPieceHegiht * i, 0), Quaternion.identity);

@@ -45,8 +45,8 @@ public class CameraManager : MonoBehaviour
 
         if ( (Mathf.Abs( distanceCamearaToSubjectX() ) < 0.01f &&
              Mathf.Abs( distanceCamearaToSubjectY() + offsetY) < 0.01f) ||
-             (Mathf.Abs(distanceCamearaToSubjectX()) > 20.0f ||
-             Mathf.Abs(distanceCamearaToSubjectY() + offsetY) > 20.0f) )
+             (Mathf.Abs(distanceCamearaToSubjectX()) > 20.0f && !stopX ||
+             Mathf.Abs(distanceCamearaToSubjectY() + offsetY) > 20.0f) && !stopY )
         {
             Camera.main.transform.position =
                 new Vector3(subject.transform.position.x, subject.transform.position.y + offsetY,
