@@ -134,9 +134,11 @@ public class BossMonster_DecasysController : MonsterController
 
     private void ActionWait()
     {
-        animator.SetTrigger("Standing");
-        lookPlayer(true);
         velocity_x = 0;
+        if (acted) return;
+        animator.SetTrigger("Standing");
+        acted = true;
+        lookPlayer(true);
     }
 
 
@@ -166,6 +168,7 @@ public class BossMonster_DecasysController : MonsterController
     private void ActionBackStep()
     {
         if (acted) return;
+        velocity_x = 0.0f;
         acted = true;
         // Debug.Log("a");
         animator.SetTrigger("BackStep");
@@ -173,20 +176,20 @@ public class BossMonster_DecasysController : MonsterController
 
     private void ActionAttack1()
     {
+        velocity_x = 0.0f;
         if (acted) return;
         lookPlayer(true);
-        velocity_x = 0.0f;
-        attackCollider.damage = 20.0f;
+        attackCollider.damage = 10.0f;
         acted = true;
         animator.SetTrigger("Attack1");
     }
 
     private void ActionAttack2()
     {
+        velocity_x = 0.0f;
         if (acted) return;
         lookPlayer(true);
-        velocity_x = 0.0f;
-        attackCollider.damage = 30.0f;
+        attackCollider.damage = 12.0f;
         acted = true;
         animator.SetTrigger("Attack2");
     }
@@ -197,7 +200,7 @@ public class BossMonster_DecasysController : MonsterController
         if (acted) return;
         lookPlayer(true);
         velocity_x = 0.0f;
-        attackCollider.damage = 10.0f;
+        attackCollider.damage = 8.0f;
         acted = true;
         animator.SetTrigger("Roar");
     }

@@ -27,12 +27,11 @@ public class BossMonster_DecasysMain : MonoBehaviour
     {
         delayDict = new Dictionary<BossMonster_DecasysState, float>();
         delayDict.Add(BossMonster_DecasysState.MOVETOPLAYER, 0.833f);
-        // 백스텝 시간은 1.5초인데 좀 짧게 해놓으면 공중에서 돌진 1.3
-        delayDict.Add(BossMonster_DecasysState.BACKSTEP, 1.3f);
-        delayDict.Add(BossMonster_DecasysState.ATTACK1, 1.4f);
-        delayDict.Add(BossMonster_DecasysState.ATTACK2, 1.2f);
+        delayDict.Add(BossMonster_DecasysState.BACKSTEP, 0.833f);
+        delayDict.Add(BossMonster_DecasysState.ATTACK1, 1.55f);
+        delayDict.Add(BossMonster_DecasysState.ATTACK2, 1.583f);
         delayDict.Add(BossMonster_DecasysState.ATTACKROAR, 1.5f);
-        delayDict.Add(BossMonster_DecasysState.WAIT, 1.00f);
+        delayDict.Add(BossMonster_DecasysState.WAIT, 2.25f);
 
         sum = moveToPlayer + wait + backStep + attack1 + attackRoar;
         monsterCtrl = GetComponent<BossMonster_DecasysController>();
@@ -72,18 +71,18 @@ public class BossMonster_DecasysMain : MonoBehaviour
         {
             nextState = BossMonster_DecasysState.ATTACKROAR;
         }
-
+        
         if ( nextState != BossMonster_DecasysState.NON )
         {
             monsterCtrl.setState(nextState, delayDict[nextState]);
             prevState = nextState;
-
+            
             return;
         }
         // ******************************************************************
 
         num = Random.Range(0, sum);
-
+        
         if (num < moveToPlayer)
         {
             if (prevState == BossMonster_DecasysState.MOVETOPLAYER) return;
@@ -140,8 +139,9 @@ public class BossMonster_DecasysMain : MonoBehaviour
 
             attackCount += 1;
         }
-        else
+        else if(num < moveToPlayer + backStep + attack1 + attack2 + attackRoar + wait)
         {
+            if (attackCount == 0) return;
             monsterCtrl.setState(BossMonster_DecasysState.WAIT,
                             delayDict[BossMonster_DecasysState.WAIT]);
             prevState = BossMonster_DecasysState.WAIT;

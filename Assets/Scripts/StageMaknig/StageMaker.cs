@@ -11,7 +11,7 @@ public class StageMaker : MonoBehaviour
     public float mapPieceWidthScale = 1.0f;
     public float mapPieceHeightScale = 1.0f;
 
-    public GameObject backGround;
+    //public GameObject backGround;
 
 
     private float mapPieceHegiht = 36.0f, mapPieceWidth = 80.0f;
@@ -105,7 +105,7 @@ public class StageMaker : MonoBehaviour
                                            transform.localScale.y * scale,
                                            transform.localScale.z * scale); */
     }
-
+    /*
     private void Start()
     {
         if (!backGround) return;
@@ -113,4 +113,5 @@ public class StageMaker : MonoBehaviour
 
         backGround.transform.localScale = new Vector3(longer * 2.5f, longer * 2.5f, 1.0f);
     }
+    */
 }

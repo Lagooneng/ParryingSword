@@ -2,16 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StageTrigger_NormalGate : StageTrigger_Interaction
+public class StageTrigger_NormalGate : MonoBehaviour
 {
     public string nextSceneName;
+    private FadeFilter fadeFilter;
 
-    public override void buttonYes()
+    private void Awake()
     {
-        if (nextSceneName == "") return;
+        fadeFilter = GameObject.Find("FadeFilter").GetComponent<FadeFilter>();
+    }
 
-        fadeFilter.fadeOut();
-        Invoke("sceneChange", 1.0f);
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if( collision.tag == "PlayerBody" )
+        {
+            if (nextSceneName == "") return;
+
+            fadeFilter.fadeOut();
+            Invoke("sceneChange", 1.7f);
+        }
     }
 
     private void sceneChange()
