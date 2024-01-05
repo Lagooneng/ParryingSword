@@ -20,7 +20,7 @@ public class Monster_FireGummyController : MonsterController
 
     private void Start()
     {
-        attackCollider.knockBackVector = new Vector2(1000.0f * playerCtrl.dir * (-1.0f), 0.0f);
+        attackCollider.knockBackVector = new Vector2(3000.0f * playerCtrl.dir * (-1.0f), 0.0f);
         attackCollider.damage = 10.0f;
     }
 

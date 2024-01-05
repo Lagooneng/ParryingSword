@@ -82,8 +82,11 @@
     <Compile Include="Assets/Scripts/System, UI/CameraTrigger.cs" />
     <Compile Include="Assets/Scripts/System, UI/UI_HPController.cs" />
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_Interaction.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_FireGummyMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseController.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_ObserverController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_MagmaSlimeController.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_FireGummyController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HorenaMain.cs" />
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_NormalGate.cs" />
     <Compile Include="Assets/Scripts/Character/Player/PlayerBodyCollider.cs" />
@@ -93,6 +96,7 @@
     <Compile Include="Assets/Scripts/System, UI/UI_FPS.cs" />
     <Compile Include="Assets/Scripts/Character/BaseController.cs" />
     <Compile Include="Assets/Scripts/System, UI/MenuManager.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_ObserverMain.cs" />
     <Compile Include="Assets/Scripts/Character/Player/MagicCrystalManager.cs" />
     <Compile Include="Assets/Scripts/System, UI/SortingLayerInMesh.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterBodyCollider.cs" />
@@ -106,8 +110,8 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterSpawner.cs" />
     <Compile Include="Assets/Scripts/System, UI/ItemManager.cs" />
-    <Compile Include="Assets/Scripts/Character/Monster/Monster_FireGummyController.cs" />
-    <Compile Include="Assets/Scripts/Character/Monster/Monster_FireGummyMain.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoController.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
