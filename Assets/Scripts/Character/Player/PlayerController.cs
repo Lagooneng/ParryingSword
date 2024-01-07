@@ -141,6 +141,10 @@ public class PlayerController : BaseController
     public override void ActionMove(float n)
     {
         if (climbing) return;
+        if (Mathf.Abs(n) < 0.1f)
+        {
+            n = 0.0f;
+        }
         base.ActionMove(n);
     }
 

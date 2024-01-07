@@ -139,8 +139,8 @@ public class PlayerMain : MonoBehaviour
 
         // 이동
         playerCtrl.ActionMove(movingH);
-
-        if ( Input.GetKeyDown(KeyCode.Space) && playerCtrl.actionActive)
+        //Debug.Log(Input.GetAxisRaw("Right Trigger"));
+        if ( (Input.GetKeyDown(KeyCode.Space) ) && playerCtrl.actionActive)
         {
             playerCtrl.ActionJump();
         }
@@ -155,8 +155,11 @@ public class PlayerMain : MonoBehaviour
         }
         else if( Input.GetKey(KeyCode.C) && playerCtrl.actionActive && !interaction )
         {
+            //Debug.Log("a");
             playerCtrl.AttackSpecial();
-        }   
+        }
+
+
     }
 
 

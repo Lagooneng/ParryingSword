@@ -63,6 +63,7 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_BlancController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/hitImpact.cs" />
     <Compile Include="Assets/Scripts/System, UI/SummonPlayer.cs" />
+    <Compile Include="Assets/Scripts/System, UI/DontDestroyOnLoad.cs" />
     <Compile Include="Assets/Scripts/System, UI/ItemController.cs" />
     <Compile Include="Assets/Scripts/System, UI/FadeFilter.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_ScalootController.cs" />
@@ -78,11 +79,13 @@
     <Compile Include="Assets/Scripts/System, UI/UI_MagicCrystalController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/WireAction.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseMain.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysController.cs" />
     <Compile Include="Assets/Scripts/System, UI/CameraTrigger.cs" />
     <Compile Include="Assets/Scripts/System, UI/UI_HPController.cs" />
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_Interaction.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_FireGummyMain.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_ObserverController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_MagmaSlimeController.cs" />
@@ -110,8 +113,7 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterSpawner.cs" />
     <Compile Include="Assets/Scripts/System, UI/ItemManager.cs" />
-    <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoController.cs" />
-    <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoMain.cs" />
+    <Compile Include="Assets/Scripts/System, UI/StageTrigger_NewStageGate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

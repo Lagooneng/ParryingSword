@@ -20,11 +20,11 @@ public class MenuManager : MonoBehaviour
         interactingObject = playerMain.interactingObject;
         if (interactingObject == null) return;
 
-        if( Input.GetKeyDown(KeyCode.X) )
+        if( Input.GetKeyDown(KeyCode.Z) )
         {
             interactingObject.buttonYes();
         }
-        else if( Input.GetKeyDown(KeyCode.Z) )
+        else if( Input.GetKeyDown(KeyCode.X) )
         {
             interactingObject.buttonNo();
         }

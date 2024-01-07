@@ -7,7 +7,8 @@ public enum ItemList
     ITEM_FUROFBLANC,
     ITEM_WINGSOFHORENA,
     ITEM_STINGOFHORISE,
-    ITEM_HORNOFOCCI
+    ITEM_HORNOFOCCI,
+    ITEM_ETC
 }
 
 public class ItemManager : MonoBehaviour

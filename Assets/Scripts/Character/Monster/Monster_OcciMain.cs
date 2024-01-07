@@ -32,7 +32,7 @@ public class Monster_OcciMain : MonoBehaviour
         }
         else if( num < walk + attack )
         {
-            monsterCtrl.setState(Monster_OcciState.ATTACK, 1.5f);
+            monsterCtrl.setState(Monster_OcciState.ATTACK, 1.333f);
         }
         else
         {
