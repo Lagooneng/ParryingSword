@@ -8,6 +8,7 @@ public enum ItemList
     ITEM_WINGSOFHORENA,
     ITEM_STINGOFHORISE,
     ITEM_HORNOFOCCI,
+    ITEM_HEAL,
     ITEM_ETC
 }
 

@@ -152,7 +152,7 @@ public class PlayerController : BaseController
     {
         base.ActionJump();
 
-        if( jumped && additionalJumpCount < 1 && magicCrystalManager.haveMagicCrystal(MagicCrystalList.ACTIONDJUMP) )
+        if( jumped && additionalJumpCount < 1 /*&& magicCrystalManager.haveMagicCrystal(MagicCrystalList.ACTIONDJUMP)*/ )
         {
             ActionMustJump();
             additionalJumpCount++;
@@ -250,11 +250,12 @@ public class PlayerController : BaseController
     // 와이어액션
     public int ActionWireJump()
     {
+        /*
         if( !magicCrystalManager.haveMagicCrystal(MagicCrystalList.ACTIONWIRE) )
         {
             return 0;
         }
-
+        */
         int success = wireAction.ActionWireJump();
 
         if( success > 0 )
@@ -268,11 +269,12 @@ public class PlayerController : BaseController
 
     public void ActionWireInertia()
     {
+        /*
         if (!magicCrystalManager.haveMagicCrystal(MagicCrystalList.ACTIONWIRE))
         {
             return;
         }
-
+        */
         usingWire = false;
         wireAction.inactiveWire();
         rb.velocity = new Vector2(rb.velocity.x * 1.3f, 40.0f);
@@ -305,6 +307,18 @@ public class PlayerController : BaseController
         {
             jumpAccel_y = 2700 / rb.mass + 10 * rb.gravityScale;
         }
+    }
+
+    public void ActionHeal()
+    {
+        if (magicCrystalManager.getCount() < 1) return;
+
+        animator.SetTrigger("Heal");
+    }
+
+    public void getHealItem()
+    {
+        magicCrystalManager.setCount(magicCrystalManager.getCount() + 1);
     }
 
     public bool isSuperMode()
@@ -351,5 +365,11 @@ public class PlayerController : BaseController
     private void offZoomWorking()
     {
         camEf.setZoomWorking(false);
+    }
+
+    private void heal()
+    {
+        magicCrystalManager.setCount(magicCrystalManager.getCount() - 1);
+        hp = hp + 20.0f < 100.0f ? hp + 20.0f : 100.0f;
     }
 }

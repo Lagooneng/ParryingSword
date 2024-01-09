@@ -80,10 +80,18 @@ public class PlayerMain : MonoBehaviour
         if (wire > 0) return;
         // ************************************************
 
-        // 폭탄
+        /* 폭탄
         if( Input.GetKey(KeyCode.UpArrow) && Input.GetKeyDown(KeyCode.Z) && playerCtrl.actionActive )
         {
             playerCtrl.ActionThrowBomb();
+            return;
+        }
+        */
+
+        // 회복 
+        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKeyDown(KeyCode.Z) && playerCtrl.actionActive)
+        {
+            playerCtrl.ActionHeal();
             return;
         }
 

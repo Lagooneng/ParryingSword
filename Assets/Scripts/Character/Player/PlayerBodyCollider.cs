@@ -39,7 +39,11 @@ public class PlayerBodyCollider : MonoBehaviour
         {
             ItemController item = collision.GetComponent<ItemController>();
 
-            itemManager.renewItem(item.itemName, itemManager.countItem(item.itemName) + 1);
+            if( item.itemName == ItemList.ITEM_HEAL )
+            {
+                playerCtrl.getHealItem();
+            }
+            //itemManager.renewItem(item.itemName, itemManager.countItem(item.itemName) + 1);
 
             Destroy(collision.gameObject);
         }

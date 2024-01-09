@@ -5,24 +5,34 @@ using UnityEngine;
 public class UI_MagicCrystalController : MonoBehaviour
 {
     public GameObject[] crystals;
+    public GameObject countObj;
+    public GameObject countMaxObj;
     private MagicCrystalManager magicCrystalM;
+    private TextMesh countMesh;
 
-    private Transform[] boxList;
+    //private Transform[] boxList;
+    private Transform box;
 
     private void Awake()
     {
         magicCrystalM =
             GameObject.FindGameObjectWithTag("Player").GetComponent<MagicCrystalManager>();
 
-        boxList = new Transform[3];
+        //boxList = new Transform[3];
 
-        boxList[0] = transform.Find("CrystalBox0");
-        boxList[1] = transform.Find("CrystalBox1");
-        boxList[2] = transform.Find("CrystalBox2");
+        //boxList[0] = transform.Find("CrystalBox0");
+        //boxList[1] = transform.Find("CrystalBox1");
+        //boxList[2] = transform.Find("CrystalBox2");
+        box = transform.Find("CrystalBox0");
     }
 
     private void Start()
     {
+        Instantiate(crystals[1], box);
+        countMesh = countObj.GetComponent<TextMesh>();
+        countMesh.text = magicCrystalM.getCount().ToString();
+        countMaxObj.GetComponent<TextMesh>().text = magicCrystalM.getCountMax().ToString();
+        /*
         for( int i = 0; i < 3; i++ )
         {
             switch (magicCrystalM.getMagicCrystal(i))
@@ -52,5 +62,11 @@ public class UI_MagicCrystalController : MonoBehaviour
                     break;
             }
         }
+        */
+    }
+
+    private void Update()
+    {
+        countMesh.text = magicCrystalM.getCount().ToString();
     }
 }

@@ -16,17 +16,38 @@ public enum MagicCrystalList
 
 public class MagicCrystalManager : MonoBehaviour
 {
-    private MagicCrystalList[] crystalSlots;
+    //private MagicCrystalList[] crystalSlots;
+    private int count = 5;
+    private int countMax = 9;
 
     private void Awake()
     {
+        /*
         crystalSlots = new MagicCrystalList[3];
 
-        crystalSlots[0] = MagicCrystalList.ACTIONWIRE;
-        crystalSlots[1] = MagicCrystalList.ACTIONDJUMP;
+        crystalSlots[0] = MagicCrystalList.ACTIONHEAL;
+        crystalSlots[1] = MagicCrystalList.INACTIVE;
         crystalSlots[2] = MagicCrystalList.INACTIVE;
+        */
     }
 
+    public int getCount()
+    {
+        return count;
+    }
+
+    public int getCountMax()
+    {
+        return countMax;
+    }
+
+    public void setCount(int n)
+    {
+        if (n > 9 || n < 0) return;
+        count = n;
+    }
+
+    /*
     public MagicCrystalList getMagicCrystal(int i)
     {
         return crystalSlots[i];
@@ -46,4 +67,5 @@ public class MagicCrystalManager : MonoBehaviour
 
         return false;
     }
+    */
 }
