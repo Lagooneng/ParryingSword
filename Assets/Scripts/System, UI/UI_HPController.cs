@@ -22,7 +22,7 @@ public class UI_HPController : MonoBehaviour
         float difference = dif();
 
         // HP 표시를 감소 시켜야 하는 경우
-        if (bar.GetPosition(1).x - widthX * difference > 0.1f)
+        if (bar.GetPosition(1).x - widthX * difference > 0.0f)
         {
             bar.SetPosition(1, new Vector3(bar.GetPosition(1).x - 1.0f, 0, 10.0f));
         }

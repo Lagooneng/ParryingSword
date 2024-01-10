@@ -127,9 +127,9 @@ public class BaseController : MonoBehaviour
 
     public virtual bool SetHP(float hp, float hpMax)
     {
-        this.hp = hp;
+        this.hp = hp <= 0 ? 0 : hp;
         this.hpMax = hpMax;
-        return (this.hp <= 0);
+        return (this.hp == 0);
     }
 
 }

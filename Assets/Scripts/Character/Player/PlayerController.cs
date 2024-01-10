@@ -43,9 +43,13 @@ public class PlayerController : BaseController
     public override void Dead()
     {
         base.Dead();
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+        animator.SetTrigger("Dead");
         // 리로드
+        /*
         UnityEngine.SceneManagement.SceneManager.LoadScene(
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        */
     }
     
     protected override void Awake()
@@ -75,9 +79,11 @@ public class PlayerController : BaseController
             {
                 Dead();
             }
-            animStateInfo = animator.GetCurrentAnimatorStateInfo(0);
-
-            animator.SetTrigger("Damage");
+            else
+            {
+                animator.SetTrigger("Damage");
+            }
+            
 
             bodyCollider.damage = 0;
             // Debug.Log(hp);
