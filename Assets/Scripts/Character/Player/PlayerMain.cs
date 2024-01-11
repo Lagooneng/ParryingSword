@@ -13,8 +13,9 @@ public class PlayerMain : MonoBehaviour
     bool climbing = false;
     bool climbJump = false;
 
-    private bool interaction = false;
-    public StageTrigger_Interaction interactingObject;
+    private bool interaction = false, orgInteraction = false;
+    public StageTrigger_Interaction interactingObject, orgInteractingObject;
+    private Menu_SelectionBoxPause menu_SelectionBoxPause;
 
     int wire = -1, prevWire = -1;   // 계속 벽 잡고 있다가 상실하는 경우 대처용 prevWire 변수
 
@@ -24,19 +25,26 @@ public class PlayerMain : MonoBehaviour
         cam = Camera.main.GetComponentInChildren<CameraManager>();
         menuManager = GameObject.Find("MenuManager").GetComponent<MenuManager>();
         interactingObject = null;
+        menu_SelectionBoxPause = GameObject.Find("SelectionBox_Pause").GetComponent<Menu_SelectionBoxPause>();
     }
 
     private void Update()
     {
         if ( Input.GetKeyDown(KeyCode.Escape) )
         {
-            if( Time.timeScale > 0.0f )
+            if( interactingObject != menu_SelectionBoxPause )
             {
-                menuManager.pause();
+                orgInteraction = interaction;
+                interaction = true;
+                orgInteractingObject = interactingObject;
+                interactingObject = menu_SelectionBoxPause;
+                menu_SelectionBoxPause.pause();
             }
             else
             {
-                menuManager.undoPause();
+                interaction = orgInteraction;
+                interactingObject = orgInteractingObject;
+                menu_SelectionBoxPause.undoPause();
             }
 
             return;
@@ -146,7 +154,11 @@ public class PlayerMain : MonoBehaviour
         // *************************************************
 
         // 이동
-        playerCtrl.ActionMove(movingH);
+        if( playerCtrl.actionActive )
+        {
+            playerCtrl.ActionMove(movingH);
+        }
+        
         //Debug.Log(Input.GetAxisRaw("Right Trigger"));
         if ( (Input.GetKeyDown(KeyCode.Space) ) && playerCtrl.actionActive)
         {

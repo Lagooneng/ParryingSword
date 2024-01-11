@@ -2,34 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum MagicCrystalList
-{
-    ACTIONDJUMP,
-    ACTIONHEAL,
-    ACTIONWIRE,
-    UPATTACK,
-    UPDEFENSE,
-    UPHP,
-    INACTIVE,
-    NON
-}
-
 public class MagicCrystalManager : MonoBehaviour
 {
-    //private MagicCrystalList[] crystalSlots;
     private int count = 5;
     private int countMax = 9;
-
-    private void Awake()
-    {
-        /*
-        crystalSlots = new MagicCrystalList[3];
-
-        crystalSlots[0] = MagicCrystalList.ACTIONHEAL;
-        crystalSlots[1] = MagicCrystalList.INACTIVE;
-        crystalSlots[2] = MagicCrystalList.INACTIVE;
-        */
-    }
 
     public int getCount()
     {
@@ -47,25 +23,8 @@ public class MagicCrystalManager : MonoBehaviour
         count = n;
     }
 
-    /*
-    public MagicCrystalList getMagicCrystal(int i)
+    public void inactiveCrystal()
     {
-        return crystalSlots[i];
-    }
 
-    public void setMagicCrystal(int i, MagicCrystalList crystal)
-    {
-        crystalSlots[i] = crystal;
     }
-
-    public bool haveMagicCrystal(MagicCrystalList crystal)
-    {
-        if( (crystalSlots[0] == crystal ) || (crystalSlots[1] == crystal) || (crystalSlots[2] == crystal))
-        {
-            return true;
-        }
-
-        return false;
-    }
-    */
 }

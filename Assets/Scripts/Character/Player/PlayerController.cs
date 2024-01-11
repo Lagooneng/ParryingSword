@@ -36,6 +36,8 @@ public class PlayerController : BaseController
     private AnimatorStateInfo animStateInfo;
     private CameraEffects camEf;
     private MagicCrystalManager magicCrystalManager;
+    private UI_MagicCrystalController magicCrystalUI;
+    private PlayerMain playerMain;
     private bool climbing = false;
     private bool usingWire = false;
     private int additionalJumpCount = 0;
@@ -45,11 +47,9 @@ public class PlayerController : BaseController
         base.Dead();
         rb.constraints = RigidbodyConstraints2D.FreezePositionX;
         animator.SetTrigger("Dead");
-        // 리로드
-        /*
-        UnityEngine.SceneManagement.SceneManager.LoadScene(
-            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-        */
+        camEf.switchDarkEffect(true);
+        magicCrystalUI.inactiveCrystal();
+        playerMain.interactingObject = GameObject.Find("SelectionBox_Dead").GetComponent<Menu_SelectionBoxDead>();
     }
     
     protected override void Awake()
@@ -61,6 +61,8 @@ public class PlayerController : BaseController
         wireAction = GameObject.Find("WireSet").GetComponent<WireAction>();
         camEf = GameObject.Find("CameraManager").GetComponent<CameraEffects>();
         magicCrystalManager = GetComponent<MagicCrystalManager>();
+        magicCrystalUI = GameObject.Find("Crystals").GetComponent<UI_MagicCrystalController>();
+        playerMain = GetComponent<PlayerMain>();
         SetHP(hpMax, hpMax);
     }
     
@@ -330,6 +332,11 @@ public class PlayerController : BaseController
     public bool isSuperMode()
     {
         return superMode;
+    }
+
+    public void pause()
+    {
+        
     }
 
     // 애니메이션 지원 메소드

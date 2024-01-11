@@ -94,6 +94,7 @@
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_NormalGate.cs" />
     <Compile Include="Assets/Scripts/Character/Player/PlayerBodyCollider.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciController.cs" />
+    <Compile Include="Assets/Scripts/System, UI/StageTrigger_NewStageGate.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/StageMaker.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/BluePrint.cs" />
     <Compile Include="Assets/Scripts/System, UI/UI_FPS.cs" />
@@ -113,7 +114,8 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterSpawner.cs" />
     <Compile Include="Assets/Scripts/System, UI/ItemManager.cs" />
-    <Compile Include="Assets/Scripts/System, UI/StageTrigger_NewStageGate.cs" />
+    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBoxDead.cs" />
+    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBoxPause.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

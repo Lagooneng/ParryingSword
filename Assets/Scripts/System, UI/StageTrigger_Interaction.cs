@@ -41,4 +41,14 @@ public class StageTrigger_Interaction : MonoBehaviour
     public virtual void buttonLeft() { }
     public virtual void buttonUp() { }
     public virtual void buttonDown() { }
+
+    public void quitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
 }

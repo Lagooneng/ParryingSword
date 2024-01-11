@@ -51,15 +51,5 @@ public class MenuManager : MonoBehaviour
 
     }
 
-    public void pause()
-    {
-        Time.timeScale = 0.0f;
-        playerCtrl.actionActive = false;
-    }
-
-    public void undoPause()
-    {
-        Time.timeScale = 1.0f;
-        playerCtrl.actionActive = true;
-    }
+    
 }
