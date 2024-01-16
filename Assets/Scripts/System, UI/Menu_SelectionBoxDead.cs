@@ -22,7 +22,7 @@ public class Menu_SelectionBoxDead : StageTrigger_Interaction
 
     private void Update()
     {
-        if (playerCtrl.hp > 0) return;
+        if (PlayerController.hp > 0) return;
         transform.position = new Vector3(pos.position.x, pos.position.y, 0.0f);
     }
 

@@ -5,6 +5,8 @@ using UnityEngine;
 public class MonsterController : BaseController
 {
     public GameObject dropItem;
+    public float hpMax = 10.0f;
+    [System.NonSerialized] public float hp = 10.0f;
 
     protected PlayerController playerCtrl;
     protected GameObject player;
@@ -74,5 +76,12 @@ public class MonsterController : BaseController
         }
         base.Dead();
         Destroy(this.gameObject);
+    }
+
+    public virtual bool SetHP(float hp, float hpMax)
+    {
+        this.hp = hp <= 0 ? 0 : hp;
+        this.hpMax = hpMax;
+        return (this.hp == 0);
     }
 }

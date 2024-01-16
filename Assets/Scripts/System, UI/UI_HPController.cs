@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class UI_HPController : MonoBehaviour
 {
-    private PlayerController playerCtrl;
     private LineRenderer bar;
     private float HPMax;
     private float widthX = 20.0f;
 
     private void Awake()
     {
-        playerCtrl =
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         bar = GetComponent<LineRenderer>();
-        HPMax = playerCtrl.hpMax;
+        HPMax = PlayerController.hpMax;
     }
 
     private void FixedUpdate()
@@ -35,6 +32,6 @@ public class UI_HPController : MonoBehaviour
 
     private float dif()
     {
-        return (playerCtrl.hp / HPMax);
+        return (PlayerController.hp / HPMax);
     }
 }

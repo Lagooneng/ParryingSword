@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MagicCrystalManager : MonoBehaviour
 {
-    private int count = 5;
+    public static int count = 5;
     private int countMax = 9;
 
     public int getCount()
@@ -21,10 +21,5 @@ public class MagicCrystalManager : MonoBehaviour
     {
         if (n > 9 || n < 0) return;
         count = n;
-    }
-
-    public void inactiveCrystal()
-    {
-
     }
 }

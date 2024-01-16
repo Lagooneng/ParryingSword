@@ -25,6 +25,7 @@ public class StageTrigger_NormalGate : MonoBehaviour
 
     private void sceneChange()
     {
+        SaveData.saveGamePlay();
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
     }
 }

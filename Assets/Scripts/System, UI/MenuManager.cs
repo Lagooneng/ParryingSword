@@ -10,7 +10,6 @@ public class MenuManager : MonoBehaviour
 
     private void Awake()
     {
-        playerCtrl = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         playerMain = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMain>();
         interactingObject = null;
     }

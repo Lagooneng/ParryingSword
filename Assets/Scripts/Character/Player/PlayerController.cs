@@ -7,6 +7,9 @@ public class PlayerController : BaseController
     [System.NonSerialized] public bool actionActive = true;
     [System.NonSerialized] public PlayerBodyCollider bodyCollider;
 
+    public static float hpMax = 100.0f;
+    public static float hp = 100.0f;
+
     public readonly static int AnimStanding =
         Animator.StringToHash("Base Layer.Player_Standing");
     public readonly static int AnimWalk =
@@ -51,10 +54,18 @@ public class PlayerController : BaseController
         magicCrystalUI.inactiveCrystal();
         playerMain.interactingObject = GameObject.Find("SelectionBox_Dead").GetComponent<Menu_SelectionBoxDead>();
     }
-    
+
+    public virtual bool SetHP(float hp, float hpMax)
+    {
+        PlayerController.hp = hp <= 0 ? 0 : hp;
+        PlayerController.hpMax = hpMax;
+        return (PlayerController.hp == 0);
+    }
+
     protected override void Awake()
     {
         base.Awake();
+        SaveData.loadGamePlay();
         roadConnection = transform.Find("RoadConnection");
         attackCollider = GetComponentInChildren<AttackCollider>();
         bodyCollider = GetComponentInChildren<PlayerBodyCollider>();
@@ -63,9 +74,21 @@ public class PlayerController : BaseController
         magicCrystalManager = GetComponent<MagicCrystalManager>();
         magicCrystalUI = GameObject.Find("Crystals").GetComponent<UI_MagicCrystalController>();
         playerMain = GetComponent<PlayerMain>();
-        SetHP(hpMax, hpMax);
+        SetHP(hp, hpMax);
     }
-    
+
+    private void Start()
+    {
+        if( UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "WatingArea" ||
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Tutorial" ||
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Forest1")
+        {
+            PlayerController.hp = PlayerController.hpMax;
+            MagicCrystalManager.count = 5;
+            SaveData.saveGamePlay();
+        }
+    }
+
     protected override void FixedUpdate()
     {
         // 낙하 체크

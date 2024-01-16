@@ -22,6 +22,7 @@ public class StageTrigger_NewStageGate : StageTrigger_Interaction
 
     private void sceneChange()
     {
+        SaveData.saveGamePlay();
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
     }
 }

@@ -8,10 +8,7 @@ public class BaseController : MonoBehaviour
     public Vector2 velocityMin = new Vector2(-100.0f, -10.0f);
     public Vector2 velocityMax = new Vector2(100.0f, 10.0f);
     public float movingWeight = 20.0f;
-    public float hpMax = 10.0f;
 
-    // 외부 파라미터
-    [System.NonSerialized] public float hp = 10.0f;
     [System.NonSerialized] public float dir = 1.0f;
     [System.NonSerialized] public float prevDir = 1.0f;
     [System.NonSerialized] public float speed = 10.0f;
@@ -125,11 +122,6 @@ public class BaseController : MonoBehaviour
         
     }
 
-    public virtual bool SetHP(float hp, float hpMax)
-    {
-        this.hp = hp <= 0 ? 0 : hp;
-        this.hpMax = hpMax;
-        return (this.hp == 0);
-    }
+    
 
 }

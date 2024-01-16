@@ -57,9 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Character/Monster/Monster_BlancMain.cs" />
+    <Compile Include="Assets/Scripts/System, UI/MenuManagerWithoutPlayer.cs" />
+    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBoxPause.cs" />
     <Compile Include="Assets/Scripts/Character/AttackCollider.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysMain.cs" />
-    <Compile Include="Assets/Scripts/System, UI/StageTrigger_SpecialGate.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_BlancController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/hitImpact.cs" />
     <Compile Include="Assets/Scripts/System, UI/SummonPlayer.cs" />
@@ -82,10 +83,12 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysController.cs" />
     <Compile Include="Assets/Scripts/System, UI/CameraTrigger.cs" />
+    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBoxDead.cs" />
     <Compile Include="Assets/Scripts/System, UI/UI_HPController.cs" />
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_Interaction.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_FireGummyMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoMain.cs" />
+    <Compile Include="Assets/Scripts/System, UI/CameraScrollX.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_ObserverController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_MagmaSlimeController.cs" />
@@ -96,9 +99,11 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciController.cs" />
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_NewStageGate.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/StageMaker.cs" />
+    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBox_Option.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/BluePrint.cs" />
     <Compile Include="Assets/Scripts/System, UI/UI_FPS.cs" />
     <Compile Include="Assets/Scripts/Character/BaseController.cs" />
+    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBox_MainMenu.cs" />
     <Compile Include="Assets/Scripts/System, UI/MenuManager.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_ObserverMain.cs" />
     <Compile Include="Assets/Scripts/Character/Player/MagicCrystalManager.cs" />
@@ -114,8 +119,8 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterSpawner.cs" />
     <Compile Include="Assets/Scripts/System, UI/ItemManager.cs" />
-    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBoxDead.cs" />
-    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBoxPause.cs" />
+    <Compile Include="Assets/Scripts/System, UI/SaveData.cs" />
+    <Compile Include="Assets/Scripts/System, UI/DataPackingString.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
