@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-enum FadeState
+public enum FadeState
 {
     FADEIN,     // 나타남
     FADEOUT,    // 흐려짐

@@ -16,6 +16,8 @@ public class Menu_SelectionBox_Option : StageTrigger_Interaction
     public GameObject bgm, se;
     private TextMesh bgmText, seText;
 
+    private SoundController soundBGMController;
+
     protected override void Awake()
     {
         fadeFilter = GameObject.Find("FadeFilter").GetComponent<FadeFilter>();
@@ -23,6 +25,7 @@ public class Menu_SelectionBox_Option : StageTrigger_Interaction
         menu_SelectionBox_MainMenu = GameObject.Find("SelectionBox_MainMenu").GetComponent<Menu_SelectionBox_MainMenu>();
         bgmText = bgm.GetComponent<TextMesh>();
         seText = se.GetComponent<TextMesh>();
+        soundBGMController = GameObject.FindGameObjectWithTag("BGM").GetComponent<SoundController>();
 
         SaveData.loadOption();
         soundBGMVolume = (int)(SaveData.SoundBGMVolume * 10);
@@ -44,17 +47,17 @@ public class Menu_SelectionBox_Option : StageTrigger_Interaction
         {
             soundBGMVolume += 1;
             if (soundBGMVolume > 10) soundBGMVolume = 10;
-            SaveData.SoundBGMVolume = (float)(soundBGMVolume / 10);
+            SaveData.SoundBGMVolume = ((float)soundBGMVolume / 10);
             bgmText.text = soundBGMVolume.ToString();
         }
         else if( now == 1 )
         {
             soundSEVolume += 1;
             if (soundSEVolume > 10) soundSEVolume = 10;
-            SaveData.SoundSEVolume = (float)(soundSEVolume / 10);
+            SaveData.SoundSEVolume = ((float)soundSEVolume / 10);
             seText.text = soundSEVolume.ToString();
         }
-
+        soundBGMController.updateVolume();
     }
 
     public override void buttonLeft()
@@ -73,6 +76,7 @@ public class Menu_SelectionBox_Option : StageTrigger_Interaction
             SaveData.SoundSEVolume = ((float)soundSEVolume / 10);
             seText.text = soundSEVolume.ToString();
         }
+        soundBGMController.updateVolume();
     }
 
     public override void buttonNo()

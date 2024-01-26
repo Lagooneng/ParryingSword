@@ -41,6 +41,7 @@ public class PlayerController : BaseController
     private MagicCrystalManager magicCrystalManager;
     private UI_MagicCrystalController magicCrystalUI;
     private PlayerMain playerMain;
+    private SoundController runSoundController, jumpSoundController;
     private bool climbing = false;
     private bool usingWire = false;
     private int additionalJumpCount = 0;
@@ -74,6 +75,8 @@ public class PlayerController : BaseController
         magicCrystalManager = GetComponent<MagicCrystalManager>();
         magicCrystalUI = GameObject.Find("Crystals").GetComponent<UI_MagicCrystalController>();
         playerMain = GetComponent<PlayerMain>();
+        runSoundController = transform.Find("RunSound").gameObject.GetComponent<SoundController>();
+        jumpSoundController = transform.Find("JumpSound").gameObject.GetComponent<SoundController>();
         SetHP(hp, hpMax);
     }
 
@@ -176,15 +179,27 @@ public class PlayerController : BaseController
         {
             n = 0.0f;
         }
+        else if(Mathf.Abs(n) > 0.5f )
+        {
+            if( !runSoundController.isPlaying() && grounded )
+            {
+                runSoundController.playClip();
+            }
+        }
         base.ActionMove(n);
     }
 
     public override void ActionJump()
     {
         base.ActionJump();
-
-        if( jumped && additionalJumpCount < 1 /*&& magicCrystalManager.haveMagicCrystal(MagicCrystalList.ACTIONDJUMP)*/ )
+        if( grounded )
         {
+            jumpSoundController.playClipWithStartTime(0.07f);
+        }
+
+        if( jumped && additionalJumpCount < 1 )
+        {
+            jumpSoundController.playClipWithStartTime(0.07f);
             ActionMustJump();
             additionalJumpCount++;
         }

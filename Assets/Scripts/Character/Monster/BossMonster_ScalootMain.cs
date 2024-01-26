@@ -22,6 +22,7 @@ public class BossMonster_ScalootMain : MonoBehaviour
     private Dictionary<BossMonster_ScalootState, float> delayDict;
     private BossMonster_ScalootState prevState = BossMonster_ScalootState.STANDING;
     private BossMonster_ScalootState nextState = BossMonster_ScalootState.ROAR;
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -37,6 +38,7 @@ public class BossMonster_ScalootMain : MonoBehaviour
 
         sum = standing + walk + roar + wing + wingDouble + flying + breath;
         monsterCtrl = GetComponent<BossMonster_ScalootController>();
+        audioSource = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -127,6 +129,10 @@ public class BossMonster_ScalootMain : MonoBehaviour
         if (collision.tag == "PlayerBody")
         {
             // Debug.Log("a");
+            if( audioSource )
+            {
+                if (!audioSource.isPlaying) audioSource.Play();
+            }
             monsterCtrl.activeSts = true;
             Destroy(this.GetComponent<BoxCollider2D>());
         }

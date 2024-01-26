@@ -22,6 +22,7 @@ public class BossMonster_DecasysMain : MonoBehaviour
     protected Transform roadConnection;
     private BossMonster_DecasysState prevState = BossMonster_DecasysState.WAIT;
     private BossMonster_DecasysState nextState = BossMonster_DecasysState.NON;
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class BossMonster_DecasysMain : MonoBehaviour
         sum = moveToPlayer + wait + backStep + attack1 + attackRoar;
         monsterCtrl = GetComponent<BossMonster_DecasysController>();
         roadConnection = transform.Find("RoadConnection");
+        audioSource = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -154,7 +156,12 @@ public class BossMonster_DecasysMain : MonoBehaviour
     {
         if (collision.tag == "PlayerBody")
         {
-            // Debug.Log("a");
+            //Debug.Log("a");
+            if( audioSource )
+            {
+                if (!audioSource.isPlaying) audioSource.Play();
+            }
+            
             monsterCtrl.activeSts = true;
             Destroy(this.GetComponent<BoxCollider2D>());
         }

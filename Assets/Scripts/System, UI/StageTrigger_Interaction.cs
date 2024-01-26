@@ -7,12 +7,14 @@ public class StageTrigger_Interaction : MonoBehaviour
     protected PlayerMain playerMain;
     protected MenuManager menuManager;
     protected FadeFilter fadeFilter;
+    protected FadeSound fadeSound;
 
     protected virtual void Awake()
     {
         playerMain = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMain>();
         menuManager = GameObject.Find("MenuManager").GetComponent<MenuManager>();
         fadeFilter = GameObject.Find("FadeFilter").GetComponent<FadeFilter>();
+        fadeSound = GameObject.FindGameObjectWithTag("BGM").GetComponent<FadeSound>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

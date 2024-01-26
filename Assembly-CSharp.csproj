@@ -60,6 +60,7 @@
     <Compile Include="Assets/Scripts/System, UI/MenuManagerWithoutPlayer.cs" />
     <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBoxPause.cs" />
     <Compile Include="Assets/Scripts/Character/AttackCollider.cs" />
+    <Compile Include="Assets/Scripts/System, UI/DataPackingString.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_BlancController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/hitImpact.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_NewStageGate.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/StageMaker.cs" />
     <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBox_Option.cs" />
+    <Compile Include="Assets/Scripts/System, UI/SaveData.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/BluePrint.cs" />
     <Compile Include="Assets/Scripts/System, UI/UI_FPS.cs" />
     <Compile Include="Assets/Scripts/Character/BaseController.cs" />
@@ -119,8 +121,8 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterSpawner.cs" />
     <Compile Include="Assets/Scripts/System, UI/ItemManager.cs" />
-    <Compile Include="Assets/Scripts/System, UI/SaveData.cs" />
-    <Compile Include="Assets/Scripts/System, UI/DataPackingString.cs" />
+    <Compile Include="Assets/Scripts/System, UI/SoundController.cs" />
+    <Compile Include="Assets/Scripts/System, UI/FadeSound.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

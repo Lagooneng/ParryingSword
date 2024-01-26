@@ -9,6 +9,7 @@ public class PlayerMain : MonoBehaviour
     PlayerController playerCtrl;
     CameraManager cam;
     MenuManager menuManager;
+    SoundController swordSoundController, parryingSoundController;
 
     bool climbing = false;
     bool climbJump = false;
@@ -24,6 +25,8 @@ public class PlayerMain : MonoBehaviour
         playerCtrl = GetComponent<PlayerController>();
         cam = Camera.main.GetComponentInChildren<CameraManager>();
         menuManager = GameObject.Find("MenuManager").GetComponent<MenuManager>();
+        swordSoundController = transform.Find("SwordSound").gameObject.GetComponent<SoundController>();
+        parryingSoundController = transform.Find("ParryingSound").gameObject.GetComponent<SoundController>();
         interactingObject = null;
         menu_SelectionBoxPause = GameObject.Find("SelectionBox_Pause").GetComponent<Menu_SelectionBoxPause>();
     }
@@ -191,5 +194,21 @@ public class PlayerMain : MonoBehaviour
     public bool getInteraction()
     {
         return interaction;
+    }
+
+    // 사운드 이펙트
+    public void onSwordSound()
+    {
+        swordSoundController.playClip();
+    }
+
+    public void onSwordSound2()
+    {
+        swordSoundController.playClipWithStartTime(0.15f);
+    }
+
+    public void onParryingSound()
+    {
+        parryingSoundController.playClipWithStartTime(0.25f);
     }
 }

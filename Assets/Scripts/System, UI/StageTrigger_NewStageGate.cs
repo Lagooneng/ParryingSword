@@ -16,6 +16,7 @@ public class StageTrigger_NewStageGate : StageTrigger_Interaction
         if (nextSceneName == "") return;
 
         fadeFilter.fadeOut();
+        fadeSound.fadeOut();
         Invoke("sceneChange", 1.7f);
     }
 
