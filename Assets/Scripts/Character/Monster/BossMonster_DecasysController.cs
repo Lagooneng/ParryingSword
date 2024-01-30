@@ -19,6 +19,8 @@ public class BossMonster_DecasysController : MonsterController
     private CameraEffects camEf;
     private bool acted = false;
     private AnimatorStateInfo animStateInfo;
+    private SoundController roarSoundContoller, normalSoundController, completionSoundController;
+    private AudioSource bgmAudioSource;
 
     public readonly static int AnimWalk =
         Animator.StringToHash("Base Layer.BossMonster_Decasys_Walk");
@@ -27,6 +29,10 @@ public class BossMonster_DecasysController : MonsterController
     {
         base.Awake();
         camEf = GameObject.Find("CameraManager").GetComponent<CameraEffects>();
+        roarSoundContoller = transform.Find("RoarSound").gameObject.GetComponent<SoundController>();
+        normalSoundController = transform.Find("NormalSound").gameObject.GetComponent<SoundController>();
+        completionSoundController = GameObject.Find("CompletionSound").GetComponent<SoundController>();
+        bgmAudioSource = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
         SetHP(hpMax, hpMax);
         movingWeight = 23;
         activeSts = false;
@@ -47,7 +53,8 @@ public class BossMonster_DecasysController : MonsterController
         {
             if (SetHP(hp - bodyCollider.damage, hpMax))
             {
-                Dead();
+                bgmAudioSource.mute = true;
+                animator.SetTrigger("Dead");
             }
             bodyCollider.damage = 0;
         }
@@ -109,6 +116,8 @@ public class BossMonster_DecasysController : MonsterController
 
     public override void FixedUpdateAI()
     {
+        if (hp <= 0.0f) return;
+
         switch (mState)
         {
             case BossMonster_DecasysState.WAIT:
@@ -222,5 +231,30 @@ public class BossMonster_DecasysController : MonsterController
     public void setSwayTime(float time)
     {
         camEf.setSwayTime(time);
+    }
+
+    public void onRoarSound()
+    {
+        roarSoundContoller.playClip();
+    }
+
+    public void onNormalSound()
+    {
+        normalSoundController.playClipWithStartTime(0.4f);
+    }
+
+    public void onCompletionSound()
+    {
+        completionSoundController.playClip();
+    }
+
+    public void onSlow()
+    {
+        Time.timeScale = 0.05f;
+    }
+
+    public void offSlow()
+    {
+        Time.timeScale = 1.0f;
     }
 }

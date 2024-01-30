@@ -22,7 +22,7 @@ public class Monster_HoriseController : MonsterController
     private void Start()
     {
         attackCollider.knockBackVector = new Vector2(500.0f * dir, 0.0f);
-        attackCollider.damage = 30.0f;
+        attackCollider.damage = 15.0f;
     }
 
     protected override void FixedUpdate()

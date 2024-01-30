@@ -15,11 +15,12 @@ public class SoundController : MonoBehaviour
         clipCount = audioClips.Length;
     }
 
+
     private void Start()
     {
-        if( isBGM )
+        if (isBGM)
         {
-            audioSource.volume = SaveData.SoundBGMVolume;
+            //audioSource.volume = SaveData.SoundBGMVolume;
         }
         else
         {
@@ -51,7 +52,7 @@ public class SoundController : MonoBehaviour
     public void playClip()
     {
         if (isBGM) return;
-        if( clipCount == 0 )
+        if (clipCount == 0)
         {
             audioSource.Play();
             return;
@@ -78,5 +79,5 @@ public class SoundController : MonoBehaviour
         audioSource.Play();
     }
 
-    
+
 }

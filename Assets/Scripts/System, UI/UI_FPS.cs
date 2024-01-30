@@ -15,6 +15,7 @@ public class UI_FPS : MonoBehaviour
     private void OnGUI()
     {
         float fps = 1.0f / Time.deltaTime;
+        //Debug.Log(fps);
         string text = string.Format("{0:N1} FPS", fps);
 
         Rect rect = new Rect(width, height, Screen.width, Screen.height);

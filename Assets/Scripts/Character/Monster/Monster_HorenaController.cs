@@ -26,7 +26,7 @@ public class Monster_HorenaController : MonsterController
     // 어택 컬라이더의 Awake에서 설정이 0으로 되어 있으니 Start에서 재지정 해야 됨
     private void Start()
     {
-        attackCollider.damage = 20.0f;
+        attackCollider.damage = 10.0f;
         attackCollider.knockBackVector = new Vector2(1500.0f * dir, 0.0f);
     }
 

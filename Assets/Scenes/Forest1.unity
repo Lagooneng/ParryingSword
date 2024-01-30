@@ -190,8 +190,8 @@ GameObject:
   m_Component:
   - component: {fileID: 273573121}
   - component: {fileID: 273573120}
-  - component: {fileID: 273573119}
   - component: {fileID: 273573122}
+  - component: {fileID: 273573119}
   m_Layer: 0
   m_Name: BGM03prairie
   m_TagString: BGM
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 273573118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda38198efc744685ba54654ad926e29, type: 3}
+  m_Script: {fileID: 11500000, guid: fed8566e0bf4f4291bf389869058a14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isBGM: 1
@@ -332,9 +332,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 273573118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 716a32ffa52ae45f9a374f670a157d99, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ecc2e9edfc264b2d81fa5bd52c10eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeState: 0
 --- !u!1 &643016627
 GameObject:
   m_ObjectHideFlags: 0

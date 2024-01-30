@@ -10,6 +10,8 @@ public static class SaveData
 
     public static float SoundBGMVolume = 1.0f;
     public static float SoundSEVolume = 1.0f;
+    public static int resolution = 1920;
+    public static int fullScreen = 1;
 
     // 데이터 검사 
     static void saveDataHeader(string dataGroupName)
@@ -28,7 +30,7 @@ public static class SaveData
             return false;
         }
 
-        if(PlayerPrefs.GetFloat("SaveDataVersion") != SaveDataVersion)
+        if (PlayerPrefs.GetFloat("SaveDataVersion") != SaveDataVersion)
         {
             Debug.Log("Version Error");
             return false;
@@ -80,10 +82,10 @@ public static class SaveData
     {
         try
         {
-            if( checkSaveDataHeader("SDG_GamePlay") )
+            if (checkSaveDataHeader("SDG_GamePlay"))
             {
                 SaveDate = PlayerPrefs.GetString("SaveDataDate");
-                
+
                 DataPackingString playerData = new DataPackingString();
                 playerData.decodeDataPackingString(
                     playerData.PlyerPrefsGetStringUTF8("PlayerData"));
@@ -91,13 +93,13 @@ public static class SaveData
                 PlayerController.hpMax = (float)playerData.getData("Player_HPMAX");
                 PlayerController.hp = (float)playerData.getData("Player_HP");
                 MagicCrystalManager.count = (int)playerData.getData("MagicCrystal_Heal");
-                
+
                 return true;
             }
         }
-        catch(System.Exception e)
+        catch (System.Exception e)
         {
-            Debug.LogWarning("SaveData.loadGamePlay : Failed(" + e.Message + ")" );
+            Debug.LogWarning("SaveData.loadGamePlay : Failed(" + e.Message + ")");
         }
 
         return false;
@@ -112,11 +114,13 @@ public static class SaveData
 
             PlayerPrefs.SetFloat("SoundBGMVolume", SoundBGMVolume);
             PlayerPrefs.SetFloat("SoundSEVolume", SoundSEVolume);
+            PlayerPrefs.SetInt("Resolution", resolution);
+            PlayerPrefs.SetInt("FullScreen", fullScreen);
 
             PlayerPrefs.Save();
             return true;
         }
-        catch(System.Exception e)
+        catch (System.Exception e)
         {
             Debug.LogWarning("SaveData.saveOption : Failed(" + e.Message + ")");
         }
@@ -128,14 +132,16 @@ public static class SaveData
     {
         try
         {
-            if(checkSaveDataHeader("SDG_Option"))
+            if (checkSaveDataHeader("SDG_Option"))
             {
                 SoundBGMVolume = PlayerPrefs.GetFloat("SoundBGMVolume");
                 SoundSEVolume = PlayerPrefs.GetFloat("SoundSEVolume");
+                resolution = PlayerPrefs.GetInt("Resolution");
+                fullScreen = PlayerPrefs.GetInt("FullScreen");
                 return true;
             }
         }
-        catch(System.Exception e)
+        catch (System.Exception e)
         {
             Debug.LogWarning("SaveData.loadOption : Failed(" + e.Message + ")");
         }
@@ -147,7 +153,7 @@ public static class SaveData
     {
         PlayerPrefs.DeleteAll();
 
-        if(init)
+        if (init)
         {
             SaveDate = "(non)";
             SoundBGMVolume = 1.0f;

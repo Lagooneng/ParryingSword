@@ -24,6 +24,9 @@ public class BossMonster_ScalootController : MonsterController
     private bool acted = false;
     private AnimatorStateInfo animStateInfo;
     private bool nowFlying = false;
+    private SoundController burstSoundController, breathSoundController,
+        roarSoundController, normalSoundController, completionSoundController;
+    private AudioSource bgmAudioSource;
 
     protected override void Awake()
     {
@@ -32,6 +35,12 @@ public class BossMonster_ScalootController : MonsterController
         SetHP(hpMax, hpMax);
         movingWeight = 15;
         activeSts = false;
+        burstSoundController = transform.Find("BurstSound").GetComponent<SoundController>();
+        breathSoundController = transform.Find("BreathSound").GetComponent<SoundController>();
+        roarSoundController = transform.Find("RoarSound").GetComponent<SoundController>();
+        normalSoundController = transform.Find("NormalSound").GetComponent<SoundController>();
+        completionSoundController = GameObject.Find("CompletionSound").GetComponent<SoundController>();
+        bgmAudioSource = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
     }
 
     // 어택 컬라이더의 Awake에서 설정이 0으로 되어 있으니 Start에서 재지정 해야 됨
@@ -47,7 +56,8 @@ public class BossMonster_ScalootController : MonsterController
         {
             if (SetHP(hp - bodyCollider.damage, hpMax))
             {
-                Dead();
+                bgmAudioSource.mute = true;
+                animator.SetTrigger("Dead");
             }
             bodyCollider.damage = 0;
         }
@@ -77,6 +87,8 @@ public class BossMonster_ScalootController : MonsterController
 
     public override void FixedUpdateAI()
     {
+        if (hp <= 0.0f) return;
+
         switch (mState)
         {
             case BossMonster_ScalootState.STANDING:
@@ -229,5 +241,40 @@ public class BossMonster_ScalootController : MonsterController
     public void offDarkEffect()
     {
         camEf.switchDarkEffect(false);
+    }
+
+    public void onBurstSound()
+    {
+        burstSoundController.playClip();
+    }
+
+    public void onBreathSound()
+    {
+        breathSoundController.playClipWithStartTime(0.2f);
+    }
+
+    public void onRoarSound()
+    {
+        roarSoundController.playClipWithStartTime(0.1f);
+    }
+
+    public void onNormalSound()
+    {
+        normalSoundController.playClipWithStartTime(0.2f);
+    }
+
+    public void onCompletionSound()
+    {
+        completionSoundController.playClip();
+    }
+
+    public void onSlow()
+    {
+        Time.timeScale = 0.05f;
+    }
+
+    public void offSlow()
+    {
+        Time.timeScale = 1.0f;
     }
 }

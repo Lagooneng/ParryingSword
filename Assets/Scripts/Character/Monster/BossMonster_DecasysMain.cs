@@ -16,13 +16,13 @@ public class BossMonster_DecasysMain : MonoBehaviour
 
     private int attackCount = 0;
 
-    private Dictionary<BossMonster_DecasysState, float> delayDict; 
+    private Dictionary<BossMonster_DecasysState, float> delayDict;
 
     private int num;
     protected Transform roadConnection;
     private BossMonster_DecasysState prevState = BossMonster_DecasysState.WAIT;
     private BossMonster_DecasysState nextState = BossMonster_DecasysState.NON;
-    private AudioSource audioSource;
+    private AudioSource bgmAudioSource;
 
     private void Awake()
     {
@@ -37,7 +37,7 @@ public class BossMonster_DecasysMain : MonoBehaviour
         sum = moveToPlayer + wait + backStep + attack1 + attackRoar;
         monsterCtrl = GetComponent<BossMonster_DecasysController>();
         roadConnection = transform.Find("RoadConnection");
-        audioSource = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
+        bgmAudioSource = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -57,14 +57,14 @@ public class BossMonster_DecasysMain : MonoBehaviour
                 nextState = BossMonster_DecasysState.BACKSTEP;
             }
         }
-        */ 
-        if( attackCount > 2 )
+        */
+        if (attackCount > 2)
         {
             nextState = BossMonster_DecasysState.WAIT;
             attackCount = 0;
         }
 
-        if( monsterCtrl.distanceToPlayerX() > 35 )
+        if (monsterCtrl.distanceToPlayerX() > 35)
         {
             nextState = BossMonster_DecasysState.MOVETOPLAYER;
         }
@@ -73,18 +73,18 @@ public class BossMonster_DecasysMain : MonoBehaviour
         {
             nextState = BossMonster_DecasysState.ATTACKROAR;
         }
-        
-        if ( nextState != BossMonster_DecasysState.NON )
+
+        if (nextState != BossMonster_DecasysState.NON)
         {
             monsterCtrl.setState(nextState, delayDict[nextState]);
             prevState = nextState;
-            
+
             return;
         }
         // ******************************************************************
 
         num = Random.Range(0, sum);
-        
+
         if (num < moveToPlayer)
         {
             if (prevState == BossMonster_DecasysState.MOVETOPLAYER) return;
@@ -100,7 +100,7 @@ public class BossMonster_DecasysMain : MonoBehaviour
 
             attackCount = 0;
         }
-        else if( num < moveToPlayer + backStep )
+        else if (num < moveToPlayer + backStep)
         {
             if (prevState == BossMonster_DecasysState.BACKSTEP &&
                 nextState != BossMonster_DecasysState.BACKSTEP) return;
@@ -111,7 +111,7 @@ public class BossMonster_DecasysMain : MonoBehaviour
 
             attackCount = 0;
         }
-        else if( num < moveToPlayer + backStep + attack1)
+        else if (num < moveToPlayer + backStep + attack1)
         {
             if (prevState == BossMonster_DecasysState.ATTACK1) return;
 
@@ -141,7 +141,7 @@ public class BossMonster_DecasysMain : MonoBehaviour
 
             attackCount += 1;
         }
-        else if(num < moveToPlayer + backStep + attack1 + attack2 + attackRoar + wait)
+        else if (num < moveToPlayer + backStep + attack1 + attack2 + attackRoar + wait)
         {
             if (attackCount == 0) return;
             monsterCtrl.setState(BossMonster_DecasysState.WAIT,
@@ -157,11 +157,11 @@ public class BossMonster_DecasysMain : MonoBehaviour
         if (collision.tag == "PlayerBody")
         {
             //Debug.Log("a");
-            if( audioSource )
+            if (bgmAudioSource)
             {
-                if (!audioSource.isPlaying) audioSource.Play();
+                if (!bgmAudioSource.isPlaying) bgmAudioSource.Play();
             }
-            
+
             monsterCtrl.activeSts = true;
             Destroy(this.GetComponent<BoxCollider2D>());
         }

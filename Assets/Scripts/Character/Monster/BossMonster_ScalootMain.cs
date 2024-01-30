@@ -22,7 +22,7 @@ public class BossMonster_ScalootMain : MonoBehaviour
     private Dictionary<BossMonster_ScalootState, float> delayDict;
     private BossMonster_ScalootState prevState = BossMonster_ScalootState.STANDING;
     private BossMonster_ScalootState nextState = BossMonster_ScalootState.ROAR;
-    private AudioSource audioSource;
+    private AudioSource bgmAudioSource;
 
     private void Awake()
     {
@@ -38,29 +38,29 @@ public class BossMonster_ScalootMain : MonoBehaviour
 
         sum = standing + walk + roar + wing + wingDouble + flying + breath;
         monsterCtrl = GetComponent<BossMonster_ScalootController>();
-        audioSource = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
+        bgmAudioSource = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
     {
         if (!monsterCtrl.activeSts) return;
         if (!monsterCtrl.timeCheck()) return;
-        
+
         prevState = nextState;
         nextState = BossMonster_ScalootState.NON;
 
         // 스테이트 강제 설정 ----------------------------------------------------
-        if ( monsterCtrl.hp < (monsterCtrl.hpMax / 2) && burstActualValue == 0)
+        if (monsterCtrl.hp < (monsterCtrl.hpMax / 2) && burstActualValue == 0)
         {
             burstActualValue = burst;
             sum += burst;
             nextState = BossMonster_ScalootState.BURST;
         }
-        else if( monsterCtrl.distanceToPlayerX() > 70 )
+        else if (monsterCtrl.distanceToPlayerX() > 70)
         {
             nextState = BossMonster_ScalootState.FLYING;
         }
-        else if(monsterCtrl.distanceToPlayerX() > 45)
+        else if (monsterCtrl.distanceToPlayerX() > 45)
         {
             nextState = BossMonster_ScalootState.WALK;
         }
@@ -85,13 +85,13 @@ public class BossMonster_ScalootMain : MonoBehaviour
 
             nextState = BossMonster_ScalootState.WALK;
         }
-        else if( num < standing + walk + roar ) // 포효 
+        else if (num < standing + walk + roar) // 포효 
         {
             if (prevState == BossMonster_ScalootState.ROAR) return;
 
             nextState = BossMonster_ScalootState.ROAR;
         }
-        else if( num < standing + walk + roar + wing )  // 날개 찍기 1회 
+        else if (num < standing + walk + roar + wing)  // 날개 찍기 1회 
         {
             if (prevState == BossMonster_ScalootState.WING) return;
 
@@ -113,12 +113,12 @@ public class BossMonster_ScalootMain : MonoBehaviour
 
             nextState = BossMonster_ScalootState.BREATH;
         }
-        else if( num < standing + walk + roar + wing + wingDouble + flying + breath + burst )
+        else if (num < standing + walk + roar + wing + wingDouble + flying + breath + burst)
         {
             if (prevState == BossMonster_ScalootState.BURST) return;
 
             nextState = BossMonster_ScalootState.BURST;
-            
+
         }
 
         monsterCtrl.setState(nextState, delayDict[nextState]);
@@ -129,9 +129,9 @@ public class BossMonster_ScalootMain : MonoBehaviour
         if (collision.tag == "PlayerBody")
         {
             // Debug.Log("a");
-            if( audioSource )
+            if (bgmAudioSource)
             {
-                if (!audioSource.isPlaying) audioSource.Play();
+                if (!bgmAudioSource.isPlaying) bgmAudioSource.Play();
             }
             monsterCtrl.activeSts = true;
             Destroy(this.GetComponent<BoxCollider2D>());

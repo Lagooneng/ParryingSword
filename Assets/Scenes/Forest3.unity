@@ -386,8 +386,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2144643617}
   - component: {fileID: 2144643616}
-  - component: {fileID: 2144643615}
   - component: {fileID: 2144643618}
+  - component: {fileID: 2144643615}
   m_Layer: 0
   m_Name: BGM04town2
   m_TagString: BGM
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2144643614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda38198efc744685ba54654ad926e29, type: 3}
+  m_Script: {fileID: 11500000, guid: fed8566e0bf4f4291bf389869058a14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isBGM: 1
@@ -528,9 +528,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2144643614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 716a32ffa52ae45f9a374f670a157d99, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ecc2e9edfc264b2d81fa5bd52c10eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeState: 0
 --- !u!1001 &3987395388159895815
 PrefabInstance:
   m_ObjectHideFlags: 0

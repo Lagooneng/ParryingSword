@@ -9,25 +9,36 @@ public class FadeSound : MonoBehaviour
     private float maxV;
     private float speed;
     private AudioSource audioSource;
-    FadeState fadeState = FadeState.NON;
+    public FadeState fadeState = FadeState.FADEIN;
 
     private void Awake()
     {
         maxV = SaveData.SoundBGMVolume;
-        speed = (maxV - minV) / 60.0f;
+        speed = (maxV - minV) / 300.0f;
         audioSource = GetComponent<AudioSource>();
-        fadeState = FadeState.FADEIN;
+    }
+
+    private void Start()
+    {
+        if (fadeState == FadeState.NON)
+        {
+            audioSource.volume = SaveData.SoundBGMVolume;
+        }
+        else if (fadeState == FadeState.FADEIN)
+        {
+            audioSource.volume = 0.0f;
+        }
     }
 
     private void Update()
     {
         if (!audioSource.isPlaying) return;
-
+        //Debug.Log(audioSource.volume);
         switch (fadeState)
         {
             case FadeState.FADEIN:
                 audioSource.volume += speed;
-                if (audioSource.volume > maxV )
+                if (audioSource.volume > maxV)
                 {
                     audioSource.volume = maxV;
                     fadeState = FadeState.NON;
@@ -36,7 +47,7 @@ public class FadeSound : MonoBehaviour
 
             case FadeState.FADEOUT:
                 audioSource.volume -= speed;
-                if( audioSource.volume < minV )
+                if (audioSource.volume < minV)
                 {
                     audioSource.volume = minV;
                     fadeState = FadeState.NON;

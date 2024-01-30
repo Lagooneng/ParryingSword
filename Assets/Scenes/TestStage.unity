@@ -929,7 +929,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1507112393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda38198efc744685ba54654ad926e29, type: 3}
+  m_Script: {fileID: 11500000, guid: fed8566e0bf4f4291bf389869058a14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isBGM: 1
@@ -1120,6 +1120,10 @@ PrefabInstance:
     - target: {fileID: 1042901054937045768, guid: 6e76e2fbf59564e6ba212353424dca87, type: 3}
       propertyPath: m_Name
       value: thorn
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042901054937045768, guid: 6e76e2fbf59564e6ba212353424dca87, type: 3}
+      propertyPath: m_TagString
+      value: EnemyArm
       objectReference: {fileID: 0}
     - target: {fileID: 1042901054937045772, guid: 6e76e2fbf59564e6ba212353424dca87, type: 3}
       propertyPath: damage
