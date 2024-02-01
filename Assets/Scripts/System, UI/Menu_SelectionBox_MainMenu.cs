@@ -54,7 +54,15 @@ public class Menu_SelectionBox_MainMenu : StageTrigger_Interaction
 
     private void btn0()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("WatingArea");
+        if( SaveData.checkGamePlayData() )
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("WatingArea");
+        }
+        else
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Tutorial");
+        }
+        
     }
 
     private void btn1()

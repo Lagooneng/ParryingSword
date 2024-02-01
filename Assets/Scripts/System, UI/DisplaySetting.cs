@@ -18,7 +18,7 @@ public class DisplaySetting : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log(orgWidth);
+        //Debug.Log(orgWidth);
         Application.targetFrameRate = 144;
         Screen.SetResolution(SaveData.resolution, SaveData.resolution / 16 * 9, FullScreenMode.MaximizedWindow);
     }

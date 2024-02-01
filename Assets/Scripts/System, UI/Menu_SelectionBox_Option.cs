@@ -41,6 +41,7 @@ public class Menu_SelectionBox_Option : StageTrigger_Interaction
         if (SaveData.fullScreen == 1)
         {
             fullScreenMode = FullScreenMode.MaximizedWindow;
+            // fullScreenMode = FullScreenMode.ExclusiveFullScreen;
         }
         else
         {
@@ -114,6 +115,7 @@ public class Menu_SelectionBox_Option : StageTrigger_Interaction
             {
                 SaveData.fullScreen = 1;
                 fullScreenMode = FullScreenMode.MaximizedWindow;
+                // fullScreenMode = FullScreenMode.ExclusiveFullScreen;
                 fullScreenText.text = "On";
             }
         }
@@ -174,6 +176,7 @@ public class Menu_SelectionBox_Option : StageTrigger_Interaction
             {
                 SaveData.fullScreen = 1;
                 fullScreenMode = FullScreenMode.MaximizedWindow;
+                // fullScreenMode = FullScreenMode.ExclusiveFullScreen;
                 fullScreenText.text = "On";
             }
         }

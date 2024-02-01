@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Character/Monster/Monster_BlancMain.cs" />
+    <Compile Include="Assets/Scripts/System, UI/FadeSound.cs" />
     <Compile Include="Assets/Scripts/System, UI/MenuManagerWithoutPlayer.cs" />
     <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBoxPause.cs" />
     <Compile Include="Assets/Scripts/Character/AttackCollider.cs" />
@@ -70,14 +71,17 @@
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_ScalootController.cs" />
     <Compile Include="Assets/Scripts/System, UI/CameraManager.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterController.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/BossMonster_ScalootMain.cs" />
     <Compile Include="Assets/Scripts/System, UI/LiquidController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/DemolishingBomb.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_DieAfterAtk.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HorenaController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_MagmaSlimeMain.cs" />
+    <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysMain.cs" />
     <Compile Include="Assets/Scripts/System, UI/Compass.cs" />
     <Compile Include="Assets/Scripts/System, UI/UI_MagicCrystalController.cs" />
     <Compile Include="Assets/Scripts/Character/Player/WireAction.cs" />
+    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBox_Option.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysController.cs" />
@@ -87,6 +91,7 @@
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_Interaction.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_FireGummyMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_TorsoMain.cs" />
+    <Compile Include="Assets/Scripts/System, UI/SoundController.cs" />
     <Compile Include="Assets/Scripts/System, UI/CameraScrollX.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HoriseController.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_ObserverController.cs" />
@@ -95,6 +100,7 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_HorenaMain.cs" />
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_NormalGate.cs" />
     <Compile Include="Assets/Scripts/Character/Player/PlayerBodyCollider.cs" />
+    <Compile Include="Assets/Scripts/System, UI/SaveData.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciController.cs" />
     <Compile Include="Assets/Scripts/System, UI/StageTrigger_NewStageGate.cs" />
     <Compile Include="Assets/Scripts/StageMaknig/StageMaker.cs" />
@@ -118,12 +124,7 @@
     <Compile Include="Assets/Scripts/Character/Monster/Monster_OcciMain.cs" />
     <Compile Include="Assets/Scripts/Character/Monster/MonsterSpawner.cs" />
     <Compile Include="Assets/Scripts/System, UI/ItemManager.cs" />
-    <Compile Include="Assets/Scripts/System, UI/SoundController.cs" />
-    <Compile Include="Assets/Scripts/System, UI/SaveData.cs" />
-    <Compile Include="Assets/Scripts/System, UI/FadeSound.cs" />
-    <Compile Include="Assets/Scripts/System, UI/Menu_SelectionBox_Option.cs" />
-    <Compile Include="Assets/Scripts/Character/Monster/BossMonster_DecasysMain.cs" />
-    <Compile Include="Assets/Scripts/Character/Monster/BossMonster_ScalootMain.cs" />
+    <Compile Include="Assets/Scripts/System, UI/endingSkip.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/Sound/Monster SFX - 111518/Notes.txt" />

@@ -54,7 +54,7 @@ public class BossMonster_DecasysController : MonsterController
             if (SetHP(hp - bodyCollider.damage, hpMax))
             {
                 bgmAudioSource.mute = true;
-                animator.SetTrigger("Dead");
+                animator.Play("BossMonster_Decasys_Dead");
             }
             bodyCollider.damage = 0;
         }

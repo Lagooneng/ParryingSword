@@ -9,7 +9,8 @@ public class PlayerMain : MonoBehaviour
     PlayerController playerCtrl;
     CameraManager cam;
     MenuManager menuManager;
-    SoundController swordSoundController, parryingSoundController, destructionSoundController;
+    SoundController swordSoundController, parryingSoundController,
+        destructionSoundController, healSoundController;
 
     bool climbing = false;
     bool climbJump = false;
@@ -28,6 +29,7 @@ public class PlayerMain : MonoBehaviour
         swordSoundController = transform.Find("SwordSound").gameObject.GetComponent<SoundController>();
         parryingSoundController = transform.Find("ParryingSound").gameObject.GetComponent<SoundController>();
         destructionSoundController = transform.Find("DestructionSound").gameObject.GetComponent<SoundController>();
+        healSoundController = transform.Find("HealSound").gameObject.GetComponent<SoundController>();
         interactingObject = null;
         menu_SelectionBoxPause = GameObject.Find("SelectionBox_Pause").GetComponent<Menu_SelectionBoxPause>();
     }
@@ -223,5 +225,10 @@ public class PlayerMain : MonoBehaviour
     public void oneDestructionSound()
     {
         destructionSoundController.playClipWithStartTime(0.25f);
+    }
+
+    public void onHealSound()
+    {
+        healSoundController.playClipWithStartTime(0.2f);
     }
 }

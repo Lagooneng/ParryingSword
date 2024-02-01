@@ -299,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 5996962191913882101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 6464913402590522989}
   - {fileID: 5996962193518953905}
@@ -365,8 +365,8 @@ MonoBehaviour:
   velocityMin: {x: -100, y: -10}
   velocityMax: {x: 100, y: 10}
   movingWeight: 20
-  hpMax: 10
   dropItem: {fileID: 0}
+  hpMax: 10
 --- !u!114 &5996962191913882106
 MonoBehaviour:
   m_ObjectHideFlags: 0

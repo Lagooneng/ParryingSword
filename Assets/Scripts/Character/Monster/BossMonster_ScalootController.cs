@@ -57,7 +57,7 @@ public class BossMonster_ScalootController : MonsterController
             if (SetHP(hp - bodyCollider.damage, hpMax))
             {
                 bgmAudioSource.mute = true;
-                animator.SetTrigger("Dead");
+                animator.Play("BossMonster_Scaloot_Dead");
             }
             bodyCollider.damage = 0;
         }
